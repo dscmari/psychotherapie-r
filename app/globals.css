@@ -23,10 +23,11 @@ body {
 
 h1 {
   font-family: var(--font-lora), serif;
-  font-size: 2.5rem; /* 40px */
+  font-size: 2rem; /* 40px */
   font-weight: 600;
   line-height: 1.2;
   letter-spacing: -0.02em;
+  margin-bottom: 1rem;
 }
 
 h2 {
@@ -35,6 +36,7 @@ h2 {
   font-weight: 500;
   line-height: 1.35;
   letter-spacing: -0.01em;
+  margin-bottom: 1rem;
 }
 
 p,

@@ -12,21 +12,21 @@ type Props = {
 export default function DesktopNavbar({ className }: Props) {
   return (
     <div className={`mx-auto pb-4 px-16 ${className}`}>
-      <div className="flex justify-end gap-8 font-light p-4 ">
+      <div className="flex justify-end gap-8 font-light p-4 text-sm ">
           <div className="flex items-center gap-2 ">
           <House className="shrink-0 size-4" />
-          <span >Nußbaumstraße 14, 80336 München</span>
+          <span>Nußbaumstraße 14, 80336 München</span>
         </div>
         <div className="flex items-center gap-2 ">
           <Phone className="shrink-0 size-4" />
-          <span >+49 1234 123456</span>
+          <span>+49 1234 123456</span>
         </div>
         <div className="flex items-center gap-2">
           <Mail className="shrink-0 size-4" />
           <span>info@musterfrau.de</span>
         </div>
       </div>
-      <div className="flex items-center gap-16">
+      <div className="flex items-center gap-16 mt-4">
         <Link className="font-semibold !font-lora text-xl" href={"/"}>Psychotherapie Praxis Anne Julia Röhl</Link>
         <ShiftingDropDown />
         <div className="flex items-center gap-8">

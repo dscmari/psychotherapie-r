@@ -34,11 +34,14 @@ export default function Navbar({ className }: Props) {
 
   return (
     <div className={`${className}`}>
-      {/* Mobile */}
-      <div className="xl:hidden px-4 pt-4 md:p-12 w-full pb-4">
+      {/* mobile & tablet */}
+      <div className="xl:hidden w-full p-4">
         <div className="flex justify-between items-center">
-          <Link href="/" className="font-semibold font-lora text-xl" >
+          <Link href="/" className="font-semibold font-lora text-xl sm:hidden" >
             Psychotherapie Röhl
+          </Link>
+             <Link href="/" className="hidden sm:block font-semibold font-lora text-xl" >
+            Psychotherapie Praxis Anne <br /> Julia Röhl
           </Link>
           <div className="flex items-center gap-4">
             <div className="burgermenu" id="burger-menu" onClick={toggleMenu}>
