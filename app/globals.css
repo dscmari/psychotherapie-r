@@ -121,3 +121,9 @@ span:nth-child(3) {
   text-decoration-thickness: 0.2em; /* Adjust thickness as desired */
   transition: text-decoration-color 0.3s ease-in-out; /* Smooth transition effect */
 }
+
+@media (forced-colors: active) {
+  .dein-element {
+    forced-color-adjust: none;
+  }
+}
