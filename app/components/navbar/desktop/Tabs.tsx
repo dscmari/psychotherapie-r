@@ -41,7 +41,7 @@ const Tabs = () => {
     {
       title: "Blog",
       Component: NavVideos,
-      link: "/blog/",
+      link: "/#/",
     },
   ].map((n, idx) => ({ ...n, id: idx + 1 }));
 

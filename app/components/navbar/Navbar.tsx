@@ -111,7 +111,7 @@ export default function Navbar({ className }: Props) {
                         className="pb-1 border-b-2 border-slate-200"
                         onClick={() => setShowMenu((prev) => !prev)}
                       >
-                        <Link href="/besser-schlafen/">Psychoonkologie</Link>
+                        <Link href="#">Psychoonkologie</Link>
                       </div>
                     </div>
                   </motion.ol>
@@ -129,7 +129,7 @@ export default function Navbar({ className }: Props) {
                   </Link>
                 </div>
                 <div className="pb-1 border-b-2 border-slate-200 w-full flex justify-start">
-                  <Link href={"/ueber-mich/"} className="text-right">
+                  <Link href={"/#/"} className="text-right">
                     Blog
                   </Link>
                 </div>
