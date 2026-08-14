@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Lora, DM_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/navbar/Navbar";
@@ -11,9 +11,10 @@ export const metadata: Metadata = {
   title: "Psychotherapie Roehl",
   description:
     "Private Praxis für psychologische Psychotherapie mit dem Schwerpunkt auf Psychoonkologie und Trauma",
-  other: {
-    "color-scheme": "light dark",
-  },
+};
+
+export const viewport: Viewport = {
+  colorScheme: "light dark",
 };
 
 export default function RootLayout({
