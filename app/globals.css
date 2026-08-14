@@ -83,8 +83,8 @@ button {
 }
 
 @media (prefers-color-scheme: dark) {
-  .burgermenu > span {
-     background-color: red; 
+  .dark .burgermenu > span {
+     background-color: blue; 
   }
 }
 

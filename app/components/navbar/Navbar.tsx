@@ -43,7 +43,7 @@ export default function Navbar({ className }: Props) {
              <Link href="/" className="hidden sm:block font-semibold font-lora text-xl" >
             Psychotherapie Praxis Anne <br /> Julia Röhl
           </Link>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 dark">
             <div className="burgermenu" id="burger-menu" onClick={toggleMenu}>
               <span className="top"></span>
               <span className="middle"></span>
