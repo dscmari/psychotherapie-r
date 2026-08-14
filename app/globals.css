@@ -47,78 +47,45 @@ button {
 }
 
 .burgermenu {
-  width: 40px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   position: relative;
   margin: 1rem;
   margin-right: 0;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: 0.5s ease-in-out;
-  -moz-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
   cursor: pointer;
+  /* Textfarbe setzen – wird via fill="currentColor" an das SVG weitergegeben */
+  color: var(--color-stone); 
 }
 
-.burgermenu > span {
+.burgermenu svg {
   display: block;
-  position: absolute;
-  height: 3px;
   width: 100%;
-  border-radius: 9px;
-  opacity: 1;
-  left: 0;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: 0.5s ease-in-out;
-  -moz-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-  background-color: var(--color-stone);
+  height: 100%;
 }
 
-@media (prefers-color-scheme: dark) {
-  .burgermenu > span {
-     background-color: blue; 
-  }
+/* Grundstyling aller drei Striche (rect) */
+.burgermenu rect {
+  transition: all 0.5s ease-in-out;
+  transform-origin: center;
+  transform-box: fill-box; 
 }
 
-span:nth-child(1) {
-  top: 0px;
+/* --- OFFENER ZUSTAND (Animation zum X) --- */
+
+/* 1. Oberer Strich (.top) */
+.burgermenu.open .top {
+  transform: translateY(10px) rotate(135deg);
 }
 
-span:nth-child(2) {
-  top: 10px;
-}
-
-span:nth-child(3) {
-  top: 20px;
-}
-
-.top.open {
-  top: 18px;
-  -webkit-transform: rotate(135deg);
-  -moz-transform: rotate(135deg);
-  -o-transform: rotate(135deg);
-  transform: rotate(135deg);
-}
-
-.middle.open {
+/* 2. Mittlerer Strich (.middle) */
+.burgermenu.open .middle {
   opacity: 0;
-  left: -60px;
+  transform: translateX(-60px);
 }
 
-.bottom.open {
-  top: 18px;
-  -webkit-transform: rotate(-135deg);
-  -moz-transform: rotate(-135deg);
-  -o-transform: rotate(-135deg);
-  transform: rotate(-135deg);
+/* 3. Unterer Strich (.bottom) */
+.burgermenu.open .bottom {
+  transform: translateY(-10px) rotate(-135deg);
 }
 
 .active {
