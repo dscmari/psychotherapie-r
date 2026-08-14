@@ -46,11 +46,11 @@ export default function Navbar({ className }: Props) {
           >
             Psychotherapie Praxis Anne <br /> Julia Röhl
           </Link>
-          <a className="burgermenu" id="burger-menu" onClick={toggleMenu}>
-            <a className="top"></a>
-            <a className="middle"></a>
-            <a className="bottom"></a>
-          </a>
+          <Link href={"#"} className="burgermenu" id="burger-menu" onClick={toggleMenu}>
+            <span className="top"></span>
+            <span className="middle"></span>
+            <span className="bottom"></span>
+          </Link>
         </div>
         {showMenu ? (
           <div>

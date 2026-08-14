@@ -63,7 +63,7 @@ button {
   cursor: pointer;
 }
 
-.burgermenu > a {
+.burgermenu > span {
   display: block;
   position: absolute;
   height: 3px;
@@ -83,20 +83,20 @@ button {
 }
 
 @media (prefers-color-scheme: dark) {
-  .burgermenu > a {
+  .burgermenu > span {
      background-color: blue; 
   }
 }
 
-.burgermenu > a.top {
+span:nth-child(1) {
   top: 0px;
 }
 
-.burgermenu > a.middle {
+span:nth-child(2) {
   top: 10px;
 }
 
-.burgermenu > a.bottom {
+span:nth-child(3) {
   top: 20px;
 }
 
