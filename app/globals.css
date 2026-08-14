@@ -79,7 +79,7 @@ button {
   -moz-transition: 0.5s ease-in-out;
   -o-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
-  background-color: var(--color-stone);
+  background-color: white;
 }
 
 @media (prefers-color-scheme: dark) {
