@@ -79,11 +79,11 @@ button {
   -moz-transition: 0.5s ease-in-out;
   -o-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
-  background-color: white;
+  background-color: red;
 }
 
 @media (prefers-color-scheme: dark) {
-  .dark .burgermenu > span {
+  .burgermenu > span {
      background-color: blue; 
   }
 }
