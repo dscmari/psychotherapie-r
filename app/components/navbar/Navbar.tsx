@@ -37,18 +37,19 @@ export default function Navbar({ className }: Props) {
       {/* mobile & tablet */}
       <div className="xl:hidden w-full p-4">
         <div className="flex justify-between items-center">
-          <Link href="/" className="font-semibold font-lora text-xl sm:hidden dark" >
+          <Link href="/" className="font-semibold font-lora text-xl sm:hidden">
             Psychotherapie Röhl
           </Link>
-             <Link href="/" className="hidden sm:block font-semibold font-lora text-xl" >
+          <Link
+            href="/"
+            className="hidden sm:block font-semibold font-lora text-xl"
+          >
             Psychotherapie Praxis Anne <br /> Julia Röhl
           </Link>
-          <div className="">
-            <a className="burgermenu block" id="burger-menu" onClick={toggleMenu}>
-              <span className="top"></span>
-              <span className="middle"></span>
-              <span className="bottom"></span>
-            </a>
+          <div className="burgermenu" id="burger-menu" onClick={toggleMenu}>
+            <a className="top"></a>
+            <a className="middle"></a>
+            <a className="bottom"></a>
           </div>
         </div>
         {showMenu ? (
@@ -90,28 +91,22 @@ export default function Navbar({ className }: Props) {
                   >
                     <div className="flex flex-col gap-4 mr-8 mt-4 font-semibold">
                       <div
-                      className="pt-4 pb-1 border-b-2 border-slate-200 w-full flex justify-start"
+                        className="pt-4 pb-1 border-b-2 border-slate-200 w-full flex justify-start"
                         onClick={() => setShowMenu((prev) => !prev)}
                       >
-                        <Link href="/#/">
-                          Verhaltenstherapie
-                        </Link>
+                        <Link href="/#/">Verhaltenstherapie</Link>
                       </div>
                       <div
                         className="pb-1 border-b-2 border-slate-200"
                         onClick={() => setShowMenu((prev) => !prev)}
                       >
-                        <Link
-                          href="/#/"
-                        >
-                          Traumatherapie
-                        </Link>
+                        <Link href="/#/">Traumatherapie</Link>
                       </div>
                       <div
                         className="pb-1 border-b-2 border-slate-200"
                         onClick={() => setShowMenu((prev) => !prev)}
                       >
-                        <Link href="#">Psychoonkologie</Link>
+                        <Link href="/besser-schlafen/">Psychoonkologie</Link>
                       </div>
                     </div>
                   </motion.ol>
@@ -129,7 +124,7 @@ export default function Navbar({ className }: Props) {
                   </Link>
                 </div>
                 <div className="pb-1 border-b-2 border-slate-200 w-full flex justify-start">
-                  <Link href={"/#/"} className="text-right">
+                  <Link href={"/ueber-mich/"} className="text-right">
                     Blog
                   </Link>
                 </div>
