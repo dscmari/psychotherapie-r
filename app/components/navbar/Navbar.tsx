@@ -37,7 +37,7 @@ export default function Navbar({ className }: Props) {
       {/* mobile & tablet */}
       <div className="xl:hidden w-full p-4">
         <div className="flex justify-between items-center">
-          <Link href="/" className="font-semibold font-lora text-xl sm:hidden" >
+          <Link href="/" className="font-semibold font-lora text-xl sm:hidden dark" >
             Psychotherapie Röhl
           </Link>
              <Link href="/" className="hidden sm:block font-semibold font-lora text-xl" >
