@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: "Psychotherapie Roehl",
   description:
     "Private Praxis für psychologische Psychotherapie mit dem Schwerpunkt auf Psychoonkologie und Trauma",
+  other: {
+    "color-scheme": "light dark",
+  },
 };
 
 export default function RootLayout({
@@ -26,7 +29,7 @@ export default function RootLayout({
       <body className="">
         <Navbar />
         <main>{children}</main>
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );
