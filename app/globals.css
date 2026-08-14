@@ -82,6 +82,11 @@ button {
   background-color: var(--color-stone);
 }
 
+.dark .burgermenu > span {
+  background-color: var(--color-stone);
+}
+
+
 span:nth-child(1) {
   top: 0px;
 }
@@ -120,10 +125,4 @@ span:nth-child(3) {
   text-underline-offset: 0.4rem; /* Adjust offset if needed */
   text-decoration-thickness: 0.2em; /* Adjust thickness as desired */
   transition: text-decoration-color 0.3s ease-in-out; /* Smooth transition effect */
-}
-
-@media (forced-colors: active) {
-  .dein-element {
-    forced-color-adjust: none;
-  }
 }

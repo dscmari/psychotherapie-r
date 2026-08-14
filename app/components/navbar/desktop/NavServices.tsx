@@ -23,7 +23,7 @@ const NavServices = () => {
             href="/#/"
             className="font-semibold hover:underline"
           >
-            Psychoonkologie
+           Psychologische Begleitung bei Krebs und anderen körperlichen Erkrankungen
           </Link>
         </div>
       </div>

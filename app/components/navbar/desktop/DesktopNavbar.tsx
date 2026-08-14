@@ -27,7 +27,7 @@ export default function DesktopNavbar({ className }: Props) {
         </div>
       </div>
       <div className="flex items-center gap-16 mt-4">
-        <Link className="font-semibold !font-lora text-xl" href={"/"}>Psychotherapie Praxis Anne Julia Röhl</Link>
+        <Link className="font-semibold !font-lora text-xl" href={"/"}>Privatpraxis für Psychotherapie Anne Julia Röhl <br /> (M.sc. psych., Psychologische Psychotherapeutin, Psychoonkologin)</Link>
         <ShiftingDropDown />
         <div className="flex items-center gap-8">
           <ContactBtn />

@@ -33,6 +33,11 @@ const Tabs = () => {
       Component: NavPricing,
       link: "/#/",
     },
+        {
+      title: "Online-Psychotherapie & Psychotherapy in English",
+      Component: NavPricing,
+      link: "/#/",
+    },
     {
       title: "Ablauf & Kosten",
       Component: NavWorkshops,
