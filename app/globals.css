@@ -80,8 +80,6 @@ button {
   -o-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   background-color: var(--color-stone);
-forced-color-adjust: none;
-  -webkit-forced-color-adjust: none;
 }
 
 @media (prefers-color-scheme: dark) {

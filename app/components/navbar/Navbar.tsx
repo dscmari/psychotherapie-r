@@ -47,10 +47,45 @@ export default function Navbar({ className }: Props) {
             Psychotherapie Praxis Anne <br /> Julia Röhl
           </Link>
           <Link href={"#"}>test</Link>
-          <Link href={"#"} className="burgermenu" id="burger-menu" onClick={toggleMenu}>
-            <span className="top"></span>
-            <span className="middle"></span>
-            <span className="bottom"></span>
+          <Link
+            href="#"
+            className="burgermenu"
+            id="burger-menu"
+            onClick={toggleMenu}
+            aria-label="Menü öffnen"
+          >
+            <svg
+              width="40"
+              height="30"
+              viewBox="0 0 40 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                className="top"
+                y="0"
+                width="40"
+                height="3"
+                rx="1.5"
+                fill="currentColor"
+              />
+              <rect
+                className="middle"
+                y="10"
+                width="40"
+                height="3"
+                rx="1.5"
+                fill="currentColor"
+              />
+              <rect
+                className="bottom"
+                y="20"
+                width="40"
+                height="3"
+                rx="1.5"
+                fill="currentColor"
+              />
+            </svg>
           </Link>
         </div>
         {showMenu ? (
