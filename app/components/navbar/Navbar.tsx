@@ -35,7 +35,7 @@ export default function Navbar({ className }: Props) {
   return (
     <div className={`${className}`}>
       {/* mobile & tablet */}
-      <div className="xl:hidden w-full p-4">
+      <div className="lg:hidden w-full p-4 md:px-8">
         <div className="flex justify-between items-center">
           <Link href="/" className="font-semibold font-lora text-xl sm:hidden">
             Psychotherapie Röhl
@@ -46,17 +46,41 @@ export default function Navbar({ className }: Props) {
           >
             Psychotherapie Praxis Anne <br /> Julia Röhl
           </Link>
-          <Link href={"#"}>test2</Link>
           <div
-            className={`burgermenu ${showMenu ? 'open' : ''}`}
+            className={`burgermenu ${showMenu ? "open" : ""}`}
             id="burger-menu"
             onClick={toggleMenu}
             aria-label="Menü öffnen"
           >
-            <svg className="" viewBox="0 0 40 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect className="top" width="40" height="3" rx="1.5" fill="currentColor" />
-                <rect className="middle" y="10" width="40" height="3" rx="1.5" fill="currentColor" />
-                <rect className="bottom" y="20" width="40" height="3" rx="1.5" fill="currentColor" />
+            <svg
+              className="text-sage-brown"
+              viewBox="0 0 40 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                className="top"
+                width="40"
+                height="3"
+                rx="1.5"
+                fill="currentColor"
+              />
+              <rect
+                className="middle"
+                y="10"
+                width="40"
+                height="3"
+                rx="1.5"
+                fill="currentColor"
+              />
+              <rect
+                className="bottom"
+                y="20"
+                width="40"
+                height="3"
+                rx="1.5"
+                fill="currentColor"
+              />
             </svg>
           </div>
         </div>
@@ -144,7 +168,7 @@ export default function Navbar({ className }: Props) {
         ) : null}
       </div>
       {/* Desktop */}
-      <div className="hidden xl:block w-full">
+      <div className="hidden lg:block w-full">
         <DesktopNavbar />
       </div>
     </div>

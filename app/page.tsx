@@ -56,7 +56,12 @@ export default function Home() {
       </section>
       <section className="py-24 lg:py-32 px-4 md:px-16 lg:px-32 ">
         <h2>//TODO weitere Inhalte</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus recusandae eveniet harum, doloremque velit illo alias. Ex laborum at velit eveniet explicabo veniam in incidunt minus hic magni, vero repellendus.</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+          recusandae eveniet harum, doloremque velit illo alias. Ex laborum at
+          velit eveniet explicabo veniam in incidunt minus hic magni, vero
+          repellendus.
+        </p>
       </section>
     </div>
   );

@@ -17,7 +17,9 @@ body {
   --font-lora: var(--font-lora);
   --font-dm-sans: var(--font-dm-sans);
   --color-stone: oklch(26.8% 0.007 34.298); /* stone-800 */
+  --color-stone-light: oklch(98.5% 0.001 106.423); /* stone-50 */
   --color-sage: oklch(65% 0.06 145);
+  --color-sage-brown: oklch(55% 0.16 445);
   --color-cta: oklch(64.6% 0.222 41.116); /* cta */
 }
 
@@ -54,7 +56,7 @@ button {
   margin-right: 0;
   cursor: pointer;
   /* Textfarbe setzen – wird via fill="currentColor" an das SVG weitergegeben */
-  color: var(--color-stone); 
+  color: var(--color-sage-brown);
 }
 
 .burgermenu svg {
@@ -67,7 +69,7 @@ button {
 .burgermenu rect {
   transition: all 0.5s ease-in-out;
   transform-origin: center;
-  transform-box: fill-box; 
+  transform-box: fill-box;
 }
 
 /* --- OFFENER ZUSTAND (Animation zum X) --- */
@@ -88,9 +90,29 @@ button {
   transform: translateY(-10px) rotate(-135deg);
 }
 
-.active {
-  text-decoration: underline;
-  text-underline-offset: 0.4rem; /* Adjust offset if needed */
-  text-decoration-thickness: 0.2em; /* Adjust thickness as desired */
-  transition: text-decoration-color 0.3s ease-in-out; /* Smooth transition effect */
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  padding-bottom: 4px;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-sage-brown);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+.nav-link.active::after {
+  transform: scaleX(1);
 }
