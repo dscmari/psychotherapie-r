@@ -17,7 +17,8 @@ export default function Hero({ className, title }: Props) {
     <div className={`${className}`}>
       {/* mobile */}
       <div className="sm:hidden flex-col">
-        <Image
+        <div className="relative">
+      <Image
           src="/images/40145-1280_small.jpg"
           alt="Portrait von Psychotherapeuting Anne Julia Röhl"
           width={400}
@@ -25,14 +26,28 @@ export default function Hero({ className, title }: Props) {
           className="mx-auto"
           loading="eager"
         />
+        <div className="absolute bottom-2 px-4 pt-1 text-sm">
+      <span>Anne Julia Röhl</span>
+         
+
+        </div>
+        <div>
+          
+        </div>
+        </div>
         <div className="text-start px-4 mt-4">
-          <div className="flex flex-col text-xl !font-lora font-semibold">
-            <h3 className="text-sage-brown !mb-0">
-                Psychologische Psychotherapie
+          <div className="flex flex-col !font-lora font-semibold">
+            <h3 className="!text-xl text-sage-brown !mb-0">
+              Psychologische Psychotherapie
             </h3>
-            <h3 className="dark:text-stone-800"> Traumatherapie & Psychoonkologie</h3>
+            <h3 className="!text-xl dark:text-stone-800">
+              {" "}
+              Traumatherapie & Psychoonkologie
+            </h3>
           </div>
-          <h3 className="mt-2 font-lora dark:text-stone-800">Privatpraxis in München</h3>
+          <h3 className="mt-2 font-lora dark:text-stone-800">
+            Privatpraxis in München
+          </h3>
           <p className="mt-4">
             Jeder Mensch kann im Laufe seines Lebens an die Grenzen seelischer
             Belastbarkeit kommen. Als approbierte{" "}
@@ -43,7 +58,7 @@ export default function Hero({ className, title }: Props) {
             unterstützen, in Krisen und herausfordernden Lebenssituationen neue
             Perspektiven zu finden.
           </p>
-          <div className="flex flex-col mt-12 gap-4 justify-center">
+          <div className="flex flex-col mt-8 gap-4 justify-center">
             <ContactBtn className="" />
             <Link
               href={"#"}
@@ -127,17 +142,18 @@ export default function Hero({ className, title }: Props) {
               href={"#"}
               className={`!text-sage-brown bg-stone-50 border border-sage-brown px-4 py-2  font-semibold tracking-tight rounded-xl whitespace-nowrap hover:shadow-xl w-40 text-center`}
             >
-              Methoden
+              Psychoonkologie
             </Link>
           </div>
         </div>
       </div>
 
       {/* desktop */}
-      <div className="hidden lg:flex px-32 flex-nowrap items-center gap-12 pt-40 xl:pb-26 2xl:pb-40  2xl:pt-52">
-        <div className="flex-1">
-          <div className="">
-            <h1 className="xl:!text-4xl/12 font-bold">
+      {/* lg-xl */}
+      <div className="hidden lg:flex justify-center 2xl:hidden lg:px-16 xl:px-32 gap-4 pt-20 xl:pb-26 2xl:pb-40 2xl:pt-32 ">
+        <div className="flex-1 min-w-0 overflow-visible">
+          <div className="relative">
+            <h1 className="xl:!text-4xl/12 font-bold w-max pt-4 pr-4 pb-4 bg-stone-50 rounded-br-xl">
               <span className="!text-sage-brown">
                 Psychologische Psychotherapie
               </span>{" "}
@@ -145,8 +161,83 @@ export default function Hero({ className, title }: Props) {
               Traumatherapie & Psychoonkologie
             </h1>
           </div>
-          <h2 className="mt-4 ">Privatpraxis in München</h2>
-          <p className="mt-4 max-w-4/5">
+          <h2 className="mt-4">Privatpraxis in München</h2>
+          <p className="mt-4">
+            Jeder Mensch kann im Laufe seines Lebens an die Grenzen seelischer
+            Belastbarkeit kommen. Als approbierte{" "}
+            <span className="!text-sage-brown font-semibold">
+              Psychologische Psychotherapeutin
+            </span>{" "}
+            (Verhaltenstherapie) und Psychoonkologin möchte ich Sie dabei
+            unterstützen, in Krisen und herausfordernden Lebenssituationen neue
+            Perspektiven zu finden.
+          </p>
+          <div className="hidden xl:block">
+            <h3 className="mt-4 font-lora font-semibold">
+              Psychologische Begleitung
+            </h3>
+        <p>
+             Ich begleite Menschen bei der Bewältigung psychischer Belastungen, traumatischer Erfahrungen, Ängsten, Depressionen sowie emotionalen Herausforderungen im Zusammenhang mit schweren oder chronischen Erkrankungen – empathisch, individuell und wissenschaftlich fundiert.
+            </p>
+          </div>
+
+          <div className="flex flex-col items-center gap-4 lg:flex-row mt-8">
+            <ContactBtn className="mx-4 lg:mx-0 " />
+            <Link
+              href={"#"}
+              className={`!text-sage-brown bg-stone-50 border border-sage-brown px-4 py-2  font-semibold tracking-tight rounded-xl whitespace-nowrap hover:shadow-xl w-40 text-center`}
+            >
+              Psychoonkologie
+            </Link>
+          </div>
+        </div>
+        <div className="flex-1">
+          <Image
+            src="/images/40145-1280_small.jpg"
+            alt="Portrait von Psychotherapeuting Anne Julia Röhl"
+            width={600}
+            height={400}
+            className="rounded-xl ml-8"
+            loading="eager"
+          />
+        </div>
+
+        {/* <div className="flex flex-col gap-4">
+          <Image
+            src="/images/G-F2_small.jpg"
+            alt="Praxisräume von Psychotherapeuting Anne Julia Röhl"
+            width={300}
+            height={300}
+            className="rounded-xl"
+            loading="eager"
+          />
+          <div className="max-w-[300px] flex flex-col">
+            <h2>Psychologische Begleitung in Krisen</h2>
+            <p>Begleitung bei Krebs und anderen Erkrankugnen Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dignissimos reprehenderit iure quam!</p>
+                    <Link
+              href={"#"}
+              className={` mt-4 !text-sage-brown bg-stone-50 border border-sage-brown px-4 py-2  font-semibold tracking-tight rounded-xl whitespace-nowrap hover:shadow-xl w-40 text-center`}
+            >
+              Methoden
+            </Link>
+          </div>
+        </div> */}
+      </div>
+
+      {/* ab 2xl */}
+      <div className="hidden 2xl:flex justify-center px-32 gap-4 pt-20 xl:pb-26 2xl:pb-40 2xl:pt-32 ">
+        <div className="min-w-0 w-1/4 overflow-visible">
+          <div className="relative">
+            <h1 className="xl:!text-4xl/12 font-bold w-max pt-4 pr-4 pb-4 bg-stone-50 rounded-br-xl">
+              <span className="!text-sage-brown">
+                Psychologische Psychotherapie
+              </span>{" "}
+              <br />
+              Traumatherapie & Psychoonkologie
+            </h1>
+          </div>
+          <h2 className="mt-4">Privatpraxis in München</h2>
+          <p className="mt-4">
             Jeder Mensch kann im Laufe seines Lebens an die Grenzen seelischer
             Belastbarkeit kommen. Als approbierte{" "}
             <span className="!text-sage-brown font-semibold">
@@ -158,7 +249,7 @@ export default function Hero({ className, title }: Props) {
           </p>
           <div className="flex flex-col items-center gap-4 lg:flex-row mt-8">
             <ContactBtn className="mx-4 lg:mx-0 " />
-            <Link
+               <Link
               href={"#"}
               className={`!text-sage-brown bg-stone-50 border border-sage-brown px-4 py-2  font-semibold tracking-tight rounded-xl whitespace-nowrap hover:shadow-xl w-40 text-center`}
             >
@@ -166,26 +257,37 @@ export default function Hero({ className, title }: Props) {
             </Link>
           </div>
         </div>
-        <div className="flex-1 relative h-[400px]">
-          <div className="absolute left-1/3 bottom-1/4 w-max">
-            <Image
-              src="/images/G-F2_small.jpg"
-              alt="Praxisräume von Psychotherapeuting Anne Julia Röhl"
-              width={400}
-              height={400}
-              className=""
-              loading="eager"
-            />
-          </div>
-          <div className="absolute top-1/5">
-            <Image
-              src="/images/40145-1280_small.jpg"
-              alt="Portrait von Psychotherapeuting Anne Julia Röhl"
-              width={400}
-              height={400}
-              className=""
-              loading="eager"
-            />
+        <div className="">
+          <Image
+            src="/images/40145-1280_small.jpg"
+            alt="Portrait von Psychotherapeuting Anne Julia Röhl"
+            width={600}
+            height={400}
+            className="rounded-xl ml-8"
+            loading="eager"
+          />
+        </div>
+
+        <div className="flex flex-col gap-4">
+          <Image
+            src="/images/G-F2_small.jpg"
+            alt="Praxisräume von Psychotherapeuting Anne Julia Röhl"
+            width={300}
+            height={300}
+            className="rounded-xl"
+            loading="eager"
+          />
+          <div className="max-w-[300px] flex flex-col">
+            <h2>Psychologische Begleitung</h2>
+            <p>
+             Ich begleite Menschen bei der Bewältigung psychischer Belastungen, traumatischer Erfahrungen, Ängsten, Depressionen sowie schweren oder chronischen Erkrankungen.
+            </p>
+            <Link
+              href={"#"}
+              className={` mt-4 !text-sage-brown bg-stone-50 border border-sage-brown px-4 py-2  font-semibold tracking-tight rounded-xl whitespace-nowrap hover:shadow-xl w-40 text-center`}
+            >
+              Psychoonkologie
+            </Link>
           </div>
         </div>
       </div>
