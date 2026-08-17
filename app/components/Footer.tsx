@@ -9,9 +9,9 @@ type Props = {
 export default function Footer({ className }: Props) {
   return (
     <footer className={`text-stone-50 bg-stone-600 ${className}`}>
-      <div className="p-4 lg:pt-32 lg:px-32 grid grid-cols-1 gap-12 lg:grid-cols-4">
+      <div className="p-4 lg:pt-32 md:px-16 xl:px-32 grid grid-cols-1 gap-12 lg:grid-cols-4">
         <div className="flex flex-col items-center lg:items-start gap-2 order-2 lg:order-1">
-          <ul className="flex flex-col gap-2">
+          <ul className="flex flex-col items-center lg:items-start gap-2">
             <li>Anne Julia Röhl</li>
             <li>www.psychotherapie-roehl.de</li>
             <li>+49 1234 123456</li>
@@ -20,7 +20,7 @@ export default function Footer({ className }: Props) {
           </ul>
         </div>
         <div className="flex flex-col gap-8 order-3 mb-12 lg:mb-0 lg:order-2">
-          <div className="flex flex-col items-center lg:items-start gap-2">
+          <div className="flex flex-col  items-center lg:items-start gap-2">
             <Link
               href={"#"}
               className="font-semibold underline underline-offset-4 !text-stone-50"
@@ -60,7 +60,7 @@ export default function Footer({ className }: Props) {
           </div>
         </div>
         <div className="lg:col-span-2 order-1 lg:order-3 mt-12 lg:mt-0 flex flex-col ">
-          <h1 className="text-center lg:text-start">
+          <h1 className="text-center lg:text-start !text-stone-light">
             {" "}
             Privatpraxis für Psychotherapie, Traumatherapie und Psychoonkologie
             in München

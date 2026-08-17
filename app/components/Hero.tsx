@@ -17,23 +17,19 @@ export default function Hero({ className, title }: Props) {
     <div className={`${className}`}>
       {/* mobile */}
       <div className="sm:hidden flex-col">
-        <div className="relative">
-      <Image
-          src="/images/40145-1280_small.jpg"
-          alt="Portrait von Psychotherapeuting Anne Julia Röhl"
-          width={400}
-          height={400}
-          className="mx-auto"
-          loading="eager"
-        />
-        <div className="absolute bottom-2 px-4 pt-1 text-sm">
-      <span>Anne Julia Röhl</span>
-         
-
-        </div>
-        <div>
-          
-        </div>
+        <div className="relative mx-auto">
+          <Image
+            src="/images/40145-1280_squooshed.jpg"
+            alt="Portrait von Psychotherapeuting Anne Julia Röhl"
+            width={600}
+            height={400}
+            className="mx-auto"
+            loading="eager"
+          />
+          <div className="absolute bottom-2 px-4 pt-1 text-sm">
+            <span>Anne Julia Röhl</span>
+          </div>
+          <div></div>
         </div>
         <div className="text-start px-4 mt-4">
           <div className="flex flex-col !font-lora font-semibold">
@@ -69,28 +65,6 @@ export default function Hero({ className, title }: Props) {
           </div>
         </div>
       </div>
-      {/* tablet & desktop */}
-      {/* <div
-        className="hidden md:block h-[100vh] relative bg-size-[auto_1000px] bg-no-repeat"
-        style={{ backgroundImage: `url(/images/40145_16zu9.png)` }}
-      >
-        <div className="max-w-4/5 xl:max-w-2/5 absolute top-1/2 -translate-y-1/2 left-1/8">
-          <div className="">
-            <h1 className="xl:!text-4xl/12 font-bold">
-              Psychotherapie, Traumatherapie & Psychoonkologie
-            </h1>
-          </div>
-          <h2 className="mt-4">Privatpraxis in München</h2>
-          <p className="mt-4">
-            Jeder Mensch kann im Laufe seines Lebens an die Grenzen seelischer
-            Belastbarkeit kommen. Als approbierte Psychologische
-            Psychotherapeutin (Verhaltenstherapie) und Psychoonkologin möchte
-            ich Sie dabei unterstützen, in Krisen und herausfordernden
-            Lebenssituationen neue Perspektiven zu finden.
-          </p>
-        </div>
-        
-      </div> */}
       {/* tablet */}
       <div className="hidden sm:flex lg:hidden flex-col gap-20">
         <div className="flex justify-center mt-12">
@@ -176,8 +150,12 @@ export default function Hero({ className, title }: Props) {
             <h3 className="mt-4 font-lora font-semibold">
               Psychologische Begleitung
             </h3>
-        <p>
-             Ich begleite Menschen bei der Bewältigung psychischer Belastungen, traumatischer Erfahrungen, Ängsten, Depressionen sowie emotionalen Herausforderungen im Zusammenhang mit schweren oder chronischen Erkrankungen – empathisch, individuell und wissenschaftlich fundiert.
+            <p>
+              Ich begleite Menschen bei der Bewältigung psychischer Belastungen,
+              traumatischer Erfahrungen, Ängsten, Depressionen sowie emotionalen
+              Herausforderungen im Zusammenhang mit schweren oder chronischen
+              Erkrankungen – empathisch, individuell und wissenschaftlich
+              fundiert.
             </p>
           </div>
 
@@ -247,13 +225,13 @@ export default function Hero({ className, title }: Props) {
             unterstützen, in Krisen und herausfordernden Lebenssituationen neue
             Perspektiven zu finden.
           </p>
-          <div className="flex flex-col items-center gap-4 lg:flex-row mt-8">
+          <div className="flex items-center gap-4 mt-8">
             <ContactBtn className="mx-4 lg:mx-0 " />
-               <Link
+            <Link
               href={"#"}
               className={`!text-sage-brown bg-stone-50 border border-sage-brown px-4 py-2  font-semibold tracking-tight rounded-xl whitespace-nowrap hover:shadow-xl w-40 text-center`}
             >
-              Methoden
+              Ablauf & Kosten
             </Link>
           </div>
         </div>
@@ -280,7 +258,9 @@ export default function Hero({ className, title }: Props) {
           <div className="max-w-[300px] flex flex-col">
             <h2>Psychologische Begleitung</h2>
             <p>
-             Ich begleite Menschen bei der Bewältigung psychischer Belastungen, traumatischer Erfahrungen, Ängsten, Depressionen sowie schweren oder chronischen Erkrankungen.
+              Ich begleite Menschen bei der Bewältigung psychischer Belastungen,
+              traumatischer Erfahrungen, Ängsten, Depressionen sowie schweren
+              oder chronischen Erkrankungen.
             </p>
             <Link
               href={"#"}
