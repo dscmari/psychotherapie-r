@@ -4,12 +4,14 @@ import Link from "next/link";
 import ContactBtn from "../../btns/ContactBtn";
 import { House, Mail, Phone } from "lucide-react";
 import { ShiftingDropDown } from "./ShiftingDropDown";
+import { usePathname } from "next/navigation";
 
 type Props = {
   className?: string;
 };
 
 export default function DesktopNavbar({ className }: Props) {
+  const pathname = usePathname()
   return (
     <div className={`relative z-100 mx-auto pb-4 px-4 xl:px-16 ${className}`}>
       <div className="flex justify-between font-light py-4 text-sm ">
@@ -39,7 +41,7 @@ export default function DesktopNavbar({ className }: Props) {
         {/* <ShiftingDropDown /> */}
         <div className="flex flex-col gap-2 !font-lora">
           <div className="flex gap-8 xl:gap-16">
-            <Link className="nav-link" href={"#"} >
+            <Link className={`nav-link ${pathname === "/verhaltenstherapie" ? "active" : ""}`} href={"/verhaltenstherapie/"} >
               Verhaltenstherapie
             </Link>
             <Link className="nav-link" href={"#"}>
