@@ -27,7 +27,7 @@ export default function HeroHome({ className, title }: Props) {
             className="mx-auto"
             loading="eager"
           />
-          <div className="absolute bottom-2 right-2 px-4 pt-1 text-sm flex flex-col items-end">
+          <div className="absolute bottom-2 right-2 px-4 pt-1 text-sm/4 flex flex-col items-end">
             <span>Anne Julia Röhl</span>
             <span>Psychotherapeutin</span>
           </div>
@@ -58,12 +58,7 @@ export default function HeroHome({ className, title }: Props) {
           </p>
           <div className="flex flex-col mt-8 gap-4 justify-center">
             <ContactBtn className="" />
-            <Link
-              href={"#"}
-              className={`!text-sage-brown bg-stone-50 border border-sage-brown px-4 py-2  font-semibold tracking-tight rounded-xl whitespace-nowrap hover:shadow-xl w-full text-center`}
-            >
-              Methoden
-            </Link>
+            <TopicBtn text={"Ablauf & Kosten"} path={"/#/"} />
           </div>
         </div>
       </div>
@@ -114,12 +109,7 @@ export default function HeroHome({ className, title }: Props) {
           </p>
           <div className="flex mt-8 gap-4 justify-center">
             <ContactBtn className="" />
-            <Link
-              href={"#"}
-              className={`!text-sage-brown bg-stone-50 border border-sage-brown px-4 py-2  font-semibold tracking-tight rounded-xl whitespace-nowrap hover:shadow-xl w-40 text-center`}
-            >
-              Psychoonkologie
-            </Link>
+            <TopicBtn text={"Ablauf & Kosten"} path={"/#/"} />
           </div>
         </div>
       </div>
@@ -224,7 +214,7 @@ export default function HeroHome({ className, title }: Props) {
           </p>
           <div className="flex items-center gap-4 mt-8">
             <ContactBtn className="mx-4 lg:mx-0 " />
-           <TopicBtn text={"Ablauf & Kosten"} path={"/#/"} />
+            <TopicBtn text={"Ablauf & Kosten"} path={"/#/"} />
           </div>
         </div>
         <div className="">

@@ -78,7 +78,7 @@ export default function Footer({ className }: Props) {
                         <TopicBtn
                           text={"Ausbildung & Qualifikation"}
                           path={"/#/"}
-                          className="w-60 text-stone-light"
+                          className="w-60 lg:w-60 text-stone-light"
                         />
                       </div>
         </div>
