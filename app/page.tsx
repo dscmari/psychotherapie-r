@@ -1,13 +1,14 @@
 import Image from "next/image";
-import Hero from "./components/Hero";
+import HeroHome from "./components/HeroHome";
 import Link from "next/link";
 import { HandHeart, Leaf, Lightbulb } from "lucide-react";
 import ContactBtn from "./components/btns/ContactBtn";
+import TopicBtn from "./components/btns/TopicBtn";
 
 export default function Home() {
   return (
     <div>
-      <Hero />
+      <HeroHome />
       <section className="pt-24 lg:pt-32 xl:pt-16 px-4 md:px-16 lg:px-32 ">
         <h1 className="text-center ">Behandlungsschwerpunkte</h1>
         <div className="mt-12 grid lg:grid-cols-3 gap-12 sm:gap-16 max-w-5xl mx-auto">
@@ -78,12 +79,10 @@ export default function Home() {
             </p>
             <div className="flex flex-col lg:flex-row items-center gap-4 mt-4">
               <ContactBtn className="w-full lg:w-44 " />
-              <Link
-                href={"#"}
-                className={`!text-sage-brown bg-stone-50 border border-sage-brown px-4 py-2  font-semibold tracking-tight rounded-xl whitespace-nowrap hover:shadow-xl w-full lg:w-44 text-center`}
-              >
-                Verhaltenstherapie
-              </Link>
+              <TopicBtn
+                text={"Verhaltenstherapie"}
+                path={"/verhaltenstherapie/"}
+              />
             </div>
           </div>
         </div>
@@ -93,7 +92,7 @@ export default function Home() {
               src={"/images/40145-1171_squooshed.jpg"}
               width={600}
               height={300}
-              alt="Portraitbild von Psychotherapeutin Anne Maria Röhl"
+              alt="Portraitbild von Psychotherapeutin Anne Julia Röhl"
               className="sm:rounded-xl"
             />
           </div>
@@ -102,7 +101,7 @@ export default function Home() {
               src={"/images/G-F5_squooshed.jpg"}
               width={600}
               height={300}
-              alt="Bild der Psychotherapiepraxis von Psychotherapeutin Anne Maria Röhl"
+              alt="Bild der Psychotherapiepraxis von Psychotherapeutin Anne Julia Röhl"
               className="sm:rounded-xl"
             />
           </div>
@@ -115,7 +114,7 @@ export default function Home() {
             src={"/images/G-F5_squooshed.jpg"}
             width={600}
             height={300}
-            alt="Bild der Psychotherapiepraxis von Psychotherapeutin Anne Maria Röhl"
+            alt="Bild der Psychotherapiepraxis von Psychotherapeutin Anne Julia Röhl"
             className="sm:rounded-xl"
           />
         </div>
@@ -141,12 +140,7 @@ export default function Home() {
 
             <div className="flex flex-col lg:flex lg:flex-row items-center gap-4 mt-4">
               <ContactBtn className="w-full lg:w-44 " />
-              <Link
-                href={"#"}
-                className={`!text-sage-brown bg-stone-50 border border-sage-brown px-4 py-2  font-semibold tracking-tight rounded-xl whitespace-nowrap hover:shadow-xl w-full lg:w-44 text-center`}
-              >
-                Psychoonkologie
-              </Link>
+              <TopicBtn text={"Psychoonkologie"} path={"/#/"} />
             </div>
           </div>
         </div>
@@ -164,12 +158,7 @@ export default function Home() {
             </p>
             <div className="flex flex-col lg:flex-row items-center gap-4 mt-4">
               <ContactBtn className="w-full lg:w-44 " />
-              <Link
-                href={"#"}
-                className={`!text-sage-brown bg-stone-50 border border-sage-brown px-4 py-2  font-semibold tracking-tight rounded-xl whitespace-nowrap hover:shadow-xl w-full lg:w-44 text-center`}
-              >
-               Psychoonkologie
-              </Link>
+              <TopicBtn text={"Psychoonkologie"} path={"/#/"} />
             </div>
           </div>
         </div>
@@ -178,7 +167,7 @@ export default function Home() {
             src={"/images/G-F4_squooshed.jpg"}
             width={600}
             height={300}
-            alt="Portraitbild von Psychotherapeutin Anne Maria Röhl"
+            alt="Portraitbild von Psychotherapeutin Anne Julia Röhl"
             className="sm:rounded-xl"
           />
         </div>
@@ -206,21 +195,16 @@ export default function Home() {
             </p>
             <div className="flex flex-col lg:flex-row items-center gap-4 mt-4">
               <ContactBtn className="w-full lg:w-44" />
-              <Link
-                href={"#"}
-                className={`!text-sage-brown bg-stone-50 border border-sage-brown px-4 py-2  font-semibold tracking-tight rounded-xl whitespace-nowrap hover:shadow-xl w-full lg:w-44 text-center`}
-              >
-                Traumtherapie
-              </Link>
+              <TopicBtn text={"Traumatherapie"} path={"/#/"} />
             </div>
           </div>
         </div>
         <div className="lg:hidden xl:block">
           <Image
-            src={"/images/40145-1065.jpg"}
+            src={"/images/40145-1065_squooshed.jpg"}
             width={600}
             height={300}
-            alt="Portraitbild von Psychotherapeutin Anne Maria Röhl"
+            alt="Portraitbild von Psychotherapeutin Anne Julia Röhl"
             className="sm:rounded-xl"
           />
         </div>

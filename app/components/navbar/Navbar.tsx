@@ -121,12 +121,12 @@ export default function Navbar({ className }: Props) {
                       isSelected ? "" : ""
                     }`}
                   >
-                    <div className="flex flex-col gap-4 mr-8 mt-4 font-semibold">
+                    <div className="flex flex-col gap-4 mr-8 font-semibold">
                       <div
                         className="pt-4 pb-1 border-b-2 border-slate-200 w-full flex justify-start"
                         onClick={() => setShowMenu((prev) => !prev)}
                       >
-                        <Link href="/#/">Verhaltenstherapie</Link>
+                        <Link href="/verhaltenstherapie/">Verhaltenstherapie</Link>
                       </div>
                       <div
                         className="pb-1 border-b-2 border-slate-200"
@@ -158,6 +158,11 @@ export default function Navbar({ className }: Props) {
                 <div className="pb-1 border-b-2 border-slate-200 w-full flex justify-start">
                   <Link href={"/ueber-mich/"} className="text-right">
                     Blog
+                  </Link>
+                </div>
+                <div className="pb-1 border-b-2 border-slate-200 w-full flex justify-start">
+                  <Link href={"/#/"} className="text-right">
+                    Psychotherapy 🇬🇧
                   </Link>
                 </div>
 

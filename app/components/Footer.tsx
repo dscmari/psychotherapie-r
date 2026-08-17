@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import ContactBtn from "./btns/ContactBtn";
+import TopicBtn from "./btns/TopicBtn";
 
 type Props = {
   className?: string;
@@ -72,7 +73,14 @@ export default function Footer({ className }: Props) {
             ich Sie dabei unterstützen, in Krisen und herausfordernden
             Lebenssituationen neue Perspektiven zu finden.
           </p>
-          <ContactBtn className="bg-custom-bronce mt-8 self-center lg:self-start" />
+               <div className="flex flex-col lg:flex-row items-center gap-4 mt-4">
+                        <ContactBtn className="w-full lg:w-44 " />
+                        <TopicBtn
+                          text={"Ausbildung & Qualifikation"}
+                          path={"/#/"}
+                          className="w-60 text-stone-light"
+                        />
+                      </div>
         </div>
       </div>
       <div className="px-4 lg:px-32 pt-4 lg:pt-16 flex flex-col lg:flex-row items-center lg:justify-center gap-2 lg:gap-8">
