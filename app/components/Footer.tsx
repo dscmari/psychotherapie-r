@@ -9,7 +9,7 @@ type Props = {
 
 export default function Footer({ className }: Props) {
   return (
-    <footer className={`text-stone-50 bg-stone-600 ${className}`}>
+    <footer className={`text-stone-50 bg-sage ${className}`}>
       <div className="p-4 lg:pt-32 md:px-16 xl:px-32 grid grid-cols-1 gap-12 lg:grid-cols-4">
         <div className="flex flex-col items-center lg:items-start gap-2 order-2 lg:order-1">
           <ul className="flex flex-col items-center lg:items-start gap-2">
@@ -73,14 +73,6 @@ export default function Footer({ className }: Props) {
             ich Sie dabei unterstützen, in Krisen und herausfordernden
             Lebenssituationen neue Perspektiven zu finden.
           </p>
-               <div className="flex flex-col lg:flex-row items-center gap-4 mt-4">
-                        <ContactBtn className="w-full lg:w-44 " />
-                        <TopicBtn
-                          text={"Ausbildung & Qualifikation"}
-                          path={"/#/"}
-                          className="w-60 lg:w-60 text-stone-light"
-                        />
-                      </div>
         </div>
       </div>
       <div className="px-4 lg:px-32 pt-4 lg:pt-16 flex flex-col lg:flex-row items-center lg:justify-center gap-2 lg:gap-8">

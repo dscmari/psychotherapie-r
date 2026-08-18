@@ -18,11 +18,26 @@ export default function Home() {
               <h2 className="!font-semibold">Verhaltenstherapie</h2>
               <p>Moderne Psychotherapie für nachhaltige Veränderungen</p>
               <Link
-                href={"#"}
+                href={"/verhaltenstherapie/"}
                 className="block mt-2 underline !text-sage font-semibold"
               >
                 Mehr erfahren
               </Link>
+            </div>
+          </div>
+          <div className="flex flex-col">
+            <div className="flex flex-col gap-8 items-center">
+              <HandHeart className="text-sage" size={82} strokeWidth={1} />
+              <div className="text-center">
+                <h2 className="!font-semibold">Psychoonkologie</h2>
+                <p>Psychologische Begleitung bei Krebserkrankungen</p>
+                <Link
+                  href={"#"}
+                  className="block mt-2 underline !text-sage font-semibold"
+                >
+                  Mehr erfahren
+                </Link>
+              </div>
             </div>
           </div>
           <div className="flex flex-col">
@@ -38,21 +53,6 @@ export default function Home() {
                   Mehr erfahren
                 </Link>
               </div>
-            </div>
-          </div>
-          <div className="flex flex-col">
-            <div className="flex flex-col gap-8 items-center">
-              <HandHeart className="text-sage" size={82} strokeWidth={1} />
-              <div className="text-center">
-                <h2 className="!font-semibold">Psychoonkologie</h2>
-                <p>Psychologische Begleitung bei Krebs</p>
-              </div>
-              <Link
-                href={"#"}
-                className="block mt-auto underline !text-sage font-semibold"
-              >
-                Mehr erfahren
-              </Link>
             </div>
           </div>
         </div>

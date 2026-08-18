@@ -31,7 +31,6 @@ export default function HeroHome({ className, title }: Props) {
             <span>Anne Julia Röhl</span>
             <span>Psychotherapeutin</span>
           </div>
-          <div></div>
         </div>
         <div className="text-start px-4 mt-4">
           <div className="flex flex-col !font-lora font-semibold">
@@ -166,27 +165,6 @@ export default function HeroHome({ className, title }: Props) {
             loading="eager"
           />
         </div>
-
-        {/* <div className="flex flex-col gap-4">
-          <Image
-            src="/images/G-F2_small.jpg"
-            alt="Praxisräume von Psychotherapeuting Anne Julia Röhl"
-            width={300}
-            height={300}
-            className="rounded-xl"
-            loading="eager"
-          />
-          <div className="max-w-[300px] flex flex-col">
-            <h2>Psychologische Begleitung in Krisen</h2>
-            <p>Begleitung bei Krebs und anderen Erkrankugnen Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dignissimos reprehenderit iure quam!</p>
-                    <Link
-              href={"#"}
-              className={` mt-4 !text-sage-brown bg-stone-50 border border-sage-brown px-4 py-2  font-semibold tracking-tight rounded-xl whitespace-nowrap hover:shadow-xl w-40 text-center`}
-            >
-              Methoden
-            </Link>
-          </div>
-        </div> */}
       </div>
 
       {/* ab 2xl */}
@@ -212,7 +190,7 @@ export default function HeroHome({ className, title }: Props) {
             unterstützen, in Krisen und herausfordernden Lebenssituationen neue
             Perspektiven zu finden.
           </p>
-          <div className="flex items-center gap-4 mt-8">
+          <div className="flex items-center gap-4 mt-4">
             <ContactBtn className="mx-4 lg:mx-0 " />
             <TopicBtn text={"Ablauf & Kosten"} path={"/#/"} />
           </div>
@@ -244,7 +222,7 @@ export default function HeroHome({ className, title }: Props) {
               traumatischer Erfahrungen, Ängsten, Depressionen sowie schweren
               oder chronischen Erkrankungen.
             </p>
-            <TopicBtn text={"Psychoonkologie"} path={"/#/"} />
+            <TopicBtn className="mt-4" text={"Psychoonkologie"} path={"/#/"} />
           </div>
         </div>
       </div>
