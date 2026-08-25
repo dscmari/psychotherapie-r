@@ -29,19 +29,19 @@ export default function Features({ className, data }: Props) {
 
   return (
     <div
-      className={`bg-sage flex flex-col xl:flex-row xl:items-start gap-12 lg:gap-16 xl:gap-32 text-stone-light ${className}`}
+      className={`bg-sage-dark flex flex-col 2xl:flex-row 2xl:items-start gap-12 lg:gap-16 2xl:gap-32 text-stone-light ${className}`}
     >
       <div className="flex-1 flex flex-col items-center lg:items-start gap-4">
         <span className="font-light text-sm !text-stone-light">
           {subheader}
         </span>
-        <h1 className="mb-8 lg:!text-3xl/12 xl:!text-5xl/14 !font-bold tracking-wide !text-stone-light">
+        <h1 className="mb-8 lg:!text-3xl/12 2xl:!text-5xl/14 !font-bold tracking-wide !text-stone-light">
           {headline}
         </h1>
-        <p className="xl:text-base/8 text-center lg:text-start !text-stone-light lg:max-w-3/5 xl:max-w-full">
+        <p className="2xl:text-base/8 text-center lg:text-start !text-stone-light lg:max-w-3/5 2xl:max-w-full">
           {intro}
         </p>
-        <ContactBtn className="mx-auto lg:mx-0 mt-8 bg-stone-light !text-sage hover:!bg-sage-brown hover:!text-stone-50" />
+        <ContactBtn className="mx-auto lg:mx-0 mt-8 hover:!bg-sage-brown" />
       </div>
       <div className="flex-2 grid grid-cols-1 lg:grid-cols-2 gap-16 mt-4">
         {bullets.map((bullet, index) => {

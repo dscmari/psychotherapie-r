@@ -34,12 +34,12 @@ export default function DesktopNavbar({ className }: Props) {
           </div>
         </div>
       </div>
-      <div className="flex items-start justify-between gap-16 mt-4 ">
-        <Link className="font-semibold !font-lora text-xl 2xl:self-center" href={"/"}>
+      <div className="flex items-start justify-between gap-16 mt-4 dark:text-stone">
+        <Link className={`font-semibold !font-lora text-xl 2xl:self-center nav-link`} href={"/"}>
           Psychotherapie <br /> Anne Julia Röhl
         </Link>
         {/* <ShiftingDropDown /> */}
-        <div className="flex flex-col gap-2 !font-lora">
+        <div className="flex flex-col gap-2 !font-lora ">
           <div className="flex gap-8 xl:gap-16">
             <Link className={`nav-link ${pathname === "/verhaltenstherapie" ? "active" : ""}`} href={"/verhaltenstherapie/"} >
               Verhaltenstherapie

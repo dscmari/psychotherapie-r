@@ -1,30 +1,30 @@
-import { Siren, CloudRain, BatteryLow, Utensils } from "lucide-react";
+import { Siren, CloudRain, BatteryLow, Utensils, ClipboardCheck, Compass, HeartHandshake, Sprout } from "lucide-react";
 
 export const verhaltenstherapieFeatures = {
-  headline: "Anwendungsfelder",
+  headline: "Vorteile der Verhaltenstherapie",
   subheader: "Verhaltenstherapie",
   intro:
-    "Unterstützung bietet die Verhaltenstherapie bei zahlreichen psychischen und psychosomatischen Beschwerden.",
+    "Die Verhaltenstherapie zählt zu den am besten erforschten Psychotherapieverfahren und wird von den gesetzlichen und privaten Krankenkassen anerkannt. ",
   bullets: [
-    {
-      icon: <Siren className="shrink-0" size={36} />,
-      header: "Ängste und Panik",
-      text: "Gezielte Methoden helfen Ihnen dabei, das Nervensystem zu beruhigen, feste Angstkreisläufe zu durchbrechen und so wieder mehr innere Ruhe im Alltag zu gewinnen.",
-    },
-    {
-      icon: <CloudRain className="shrink-0" size={36} />,
-      header: "Depression",
-      text: "Bei anhaltender Niedergeschlagenheit und Antriebslosigkeit helfen wir Ihnen, neue Lebensfreude, Energie und Perspektiven zu finden.",
-    },
-    {
-      icon: <BatteryLow className="shrink-0" size={36} />,
-      header: "Stress und Erschöpfung",
-      text: "Wenn chronische Überlastung zur Erschöpfung führt, unterstützen wir Sie dabei, Grenzen zu setzen, Ressourcen aufzutanken und Ihre Balance wiederzufinden.",
-    },
-    {
-      icon: <Utensils className="shrink-0" size={36} />,
-      header: "Essstörungen",
-      text: "Wir begleiten Sie auf dem Weg zu einem gesunden Bezug zu Essen und Ihrem Körper, um wieder mehr Unbeschwertheit und Selbstwertgefühl zu erlangen.",
-    },
+{
+  icon: <Compass className="shrink-0" size={36} />,
+  header: "Alltagsnahe Unterstützung",
+  text: "Die Verhaltenstherapie setzt direkt an Ihren konkreten Herausforderungen im Alltag an. Gemeinsam erarbeiten wir praxisnahe Lösungen, die sich unmittelbar in Ihrem Leben umsetzen lassen.",
+},
+{
+  icon: <ClipboardCheck className="shrink-0" size={36} />,
+  header: "Konkrete Übungen",
+  text: "Durch gezielte, wissenschaftlich fundierte Techniken und Übungen lernen Sie neue Denk- und Verhaltensmuster, die Sie aktiv zwischen den Sitzungen anwenden und einüben können.",
+},
+{
+  icon: <Sprout className="shrink-0" size={36} />,
+  header: "Nachhaltige Verönderung",
+  text: "Statt nur Symptome kurzfristig zu lindern, zielt die Verhaltenstherapie auf dauerhafte Veränderungen ab, die Ihnen auch langfristig helfen, stabil und selbstwirksam zu bleiben.",
+},
+{
+  icon: <HeartHandshake className="shrink-0" size={36} />,
+  header: "Verbesserung der Lebenssituation",
+  text: "Mit einem klaren, strukturierten Vorgehen unterstützen wir Sie dabei, Ihre Lebensqualität spürbar zu steigern und wieder mehr Zufriedenheit in verschiedenen Lebensbereichen zu erleben.",
+},
   ],
 };

@@ -35,7 +35,7 @@ export default function Navbar({ className }: Props) {
   return (
     <div className={`${className}`}>
       {/* mobile & tablet */}
-      <div className="lg:hidden w-full p-4 md:px-8">
+      <div className="lg:hidden w-full p-4 md:px-8 dark:text-stone">
         <div className="flex justify-between items-center">
           {/* <Link href="/" className="font-semibold font-lora text-xl sm:hidden">
             Psychotherapie Röhl
@@ -166,7 +166,7 @@ export default function Navbar({ className }: Props) {
                   </Link>
                 </div>
 
-                <ContactBtn className="mx-auto" />
+                <ContactBtn className="mx-auto mt-8" />
               </div>
             </motion.div>
           </div>

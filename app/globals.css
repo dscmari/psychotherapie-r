@@ -6,6 +6,7 @@
   --color-stone: oklch(26.8% 0.007 34.298); /* stone-800 */
   --color-stone-light: oklch(98.5% 0.001 106.423); /* stone-50 */
   --color-sage: oklch(65% 0.06 145);
+   --color-sage-dark: oklch(65% 0.06 545);
   --color-sage-brown: oklch(55% 0.16 445);
   --color-cta: oklch(64.6% 0.222 41.116); /* cta */
 }
