@@ -1,9 +1,21 @@
 import Image from "next/image";
 import HeroHome from "./components/HeroHome";
 import Link from "next/link";
-import { HandHeart, Leaf, Lightbulb } from "lucide-react";
+import {
+  CheckCheck,
+  HandHeart,
+  Info,
+  Leaf,
+  Lightbulb,
+  Mail,
+  MessageCircleCheck,
+  NotebookPen,
+  ZoomIn,
+} from "lucide-react";
 import ContactBtn from "./components/btns/ContactBtn";
 import TopicBtn from "./components/btns/TopicBtn";
+import ScrollToTopBtn from "./components/btns/ScrollToTopBtn";
+import Reimbursement from "./components/Reimbursement";
 
 export default function Home() {
   return (
@@ -209,6 +221,9 @@ export default function Home() {
           />
         </div>
       </section>
+      <section className="px-4 sm:px-16 xl:px-32 pt-24 lg:pt-32 xl:flex flex-col justify-center items-center">
+        <Reimbursement />
+      </section>
       <section className="py-24 lg:py-32 px-4 md:px-16 lg:px-32 ">
         <h2>//TODO weitere Inhalte</h2>
         <p>
@@ -218,6 +233,7 @@ export default function Home() {
           repellendus.
         </p>
       </section>
+      <ScrollToTopBtn />
     </div>
   );
 }

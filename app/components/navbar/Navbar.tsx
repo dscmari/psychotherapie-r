@@ -151,7 +151,7 @@ export default function Navbar({ className }: Props) {
                   </Link>
                 </div>
                 <div className="pb-1 border-b-2 border-slate-200 w-full flex justify-start">
-                  <Link href={"/#/"} className="text-right">
+                  <Link href={"/ablauf-und-kosten/"} className="text-right">
                     Ablauf und Kosten
                   </Link>
                 </div>

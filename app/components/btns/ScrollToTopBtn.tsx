@@ -1,8 +1,9 @@
-"use client";
+'use client'
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-
+import scrollToTop from "@/app/utils/scrollToTop";
 import { ArrowUp } from "lucide-react";
+
 
 export default function ScrollToTopBtn() {
   const [isVisible, setIsVisible] = useState(false);
@@ -14,10 +15,6 @@ export default function ScrollToTopBtn() {
     } else {
       setIsVisible(false);
     }
-  };
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   useEffect(() => {
@@ -35,10 +32,10 @@ export default function ScrollToTopBtn() {
     <>
       {isVisible && (
         <button
-          className="fixed bottom-10 bg-black/30 right-10 rounded-4xl p-2 cursor-pointer"
+          className="hidden md:block fixed bottom-10 bg-stone right-10 opacity-50 rounded-4xl p-2 cursor-pointer"
           onClick={scrollToTop}
         >
-          <ArrowUp color="white" size={24} />
+          <ArrowUp className="text-stone-light" size={24} />
         </button>
       )}
     </>

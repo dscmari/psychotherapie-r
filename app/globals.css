@@ -116,7 +116,7 @@ span{
 .nav-link {
   position: relative;
   text-decoration: none;
-  padding-bottom: 4px;
+  padding-bottom: 2px;
 }
 
 .nav-link::after {

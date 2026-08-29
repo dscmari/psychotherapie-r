@@ -57,7 +57,7 @@ export default function HeroHome({ className, title }: Props) {
           </p>
           <div className="flex flex-col mt-8 gap-4 justify-center">
             <ContactBtn className="" />
-            <TopicBtn text={"Ablauf & Kosten"} path={"/#/"} />
+            <TopicBtn text={"Ablauf & Kosten"} path={"/ablauf-und-kosten/"} />
           </div>
         </div>
       </div>
@@ -106,9 +106,9 @@ export default function HeroHome({ className, title }: Props) {
             unterstützen, in Krisen und herausfordernden Lebenssituationen neue
             Perspektiven zu finden.
           </p>
-          <div className="flex mt-8 gap-4 justify-center">
-            <ContactBtn className="" />
-            <TopicBtn text={"Ablauf & Kosten"} path={"/#/"} />
+       <div className="flex flex-col items-center gap-4 lg:flex-row mt-8">
+            <ContactBtn className="w-full lg:w-44 mx-4 lg:mx-0 " />
+            <TopicBtn text={`Ablauf & Kosten`} path={`/ablauf-und-kosten/`} />
           </div>
         </div>
       </div>
@@ -192,7 +192,7 @@ export default function HeroHome({ className, title }: Props) {
           </p>
           <div className="flex items-center gap-4 mt-4">
             <ContactBtn className="mx-4 lg:mx-0 " />
-            <TopicBtn text={"Ablauf & Kosten"} path={"/#/"} />
+            <TopicBtn text={"Ablauf & Kosten"} path={"/ablauf-und-kosten/"} />
           </div>
         </div>
         <div className="">

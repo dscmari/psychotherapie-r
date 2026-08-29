@@ -11,7 +11,7 @@ type Props = {
 };
 
 export default function DesktopNavbar({ className }: Props) {
-  const pathname = usePathname()
+  const pathname = usePathname();
   return (
     <div className={`relative z-100 mx-auto pb-4 px-4 xl:px-16 ${className}`}>
       <div className="flex justify-between font-light py-4 text-sm ">
@@ -35,13 +35,19 @@ export default function DesktopNavbar({ className }: Props) {
         </div>
       </div>
       <div className="flex items-start justify-between gap-16 mt-4 dark:text-stone">
-        <Link className={`font-semibold !font-lora text-xl 2xl:self-center nav-link`} href={"/"}>
+        <Link
+          className={`font-semibold !font-lora text-xl 2xl:self-center nav-link`}
+          href={"/"}
+        >
           Psychotherapie <br /> Anne Julia Röhl
         </Link>
         {/* <ShiftingDropDown /> */}
         <div className="flex flex-col gap-2 !font-lora ">
           <div className="flex gap-8 xl:gap-16">
-            <Link className={`nav-link ${pathname === "/verhaltenstherapie" ? "active" : ""}`} href={"/verhaltenstherapie/"} >
+            <Link
+              className={`nav-link ${pathname === "/verhaltenstherapie" ? "active" : ""}`}
+              href={"/verhaltenstherapie/"}
+            >
               Verhaltenstherapie
             </Link>
             <Link className="nav-link" href={"#"}>
@@ -52,11 +58,12 @@ export default function DesktopNavbar({ className }: Props) {
             </Link>
 
             <Link className="nav-link lg:hidden 2xl:inline-block" href={"#"}>
-            
               Ausbildung & Qualifikation
             </Link>
-               <Link className="nav-link hidden lg:inline-block 2xl:hidden" href={"#"}>
-            
+            <Link
+              className="nav-link hidden lg:inline-block 2xl:hidden"
+              href={"#"}
+            >
               Qualifikation
             </Link>
           </div>
@@ -67,7 +74,10 @@ export default function DesktopNavbar({ className }: Props) {
             <Link className="nav-link" href={"#"}>
               Psychotherapy 🇬🇧
             </Link>
-            <Link className="nav-link" href={"#"}>
+            <Link
+              className={`nav-link ${pathname === "/ablauf-und-kosten" ? "active" : ""}`}
+              href={"/ablauf-und-kosten/"}
+            >
               Ablauf & Kosten
             </Link>
             <Link className="nav-link" href={"#"}>
