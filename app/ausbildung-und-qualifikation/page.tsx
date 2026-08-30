@@ -33,7 +33,7 @@ export default function page() {
                 <SendHorizontal className="shrink-0 text-sage" />
                 <Link
                   href={"/verhaltenstherapie/"}
-                  className="underline underline-offset-2"
+                  className="underline underline-offset-2 dark:text-stone"
                 >
                   Verhaltenstherapie
                 </Link>
@@ -42,7 +42,7 @@ export default function page() {
                 <SendHorizontal className="shrink-0 text-sage" />
                 <Link
                   href={"/psychoonkologie/"}
-                  className="underline underline-offset-2"
+                  className="underline underline-offset-2 dark:text-stone"
                 >
                   Psychoonkologie
                 </Link>
@@ -51,7 +51,7 @@ export default function page() {
                 <SendHorizontal className="shrink-0 text-sage" />
                 <Link
                   href={"/Trauma/"}
-                  className="underline underline-offset-2"
+                  className="underline underline-offset-2 dark:text-stone"
                 >
                   Trauma
                 </Link>
