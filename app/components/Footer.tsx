@@ -73,10 +73,14 @@ export default function Footer({ className }: Props) {
             ich Sie dabei unterstützen, in Krisen und herausfordernden
             Lebenssituationen neue Perspektiven zu finden.
           </p>
-                 <div className="flex flex-col lg:flex-row items-center gap-4 mt-8">
-                        <ContactBtn className="w-full lg:w-44 " />
-                        <TopicBtn text={"Ablauf & Kosten"} path={"/ablauf-und-kosten/"} className="border-none" />
-                      </div>
+          <div className="flex flex-col lg:flex-row items-center gap-4 mt-8">
+            <ContactBtn className="w-full lg:w-44 hover:bg-sage-brown" />
+            <TopicBtn
+              text={"Ablauf & Kosten"}
+              path={"/ablauf-und-kosten/"}
+              className="border-none"
+            />
+          </div>
         </div>
       </div>
       <div className="px-4 lg:px-32 pt-4 lg:pt-16 flex flex-col lg:flex-row items-center lg:justify-center gap-2 lg:gap-8">
