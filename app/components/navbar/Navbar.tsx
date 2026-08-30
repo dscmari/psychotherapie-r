@@ -146,7 +146,7 @@ export default function Navbar({ className }: Props) {
               </AnimatePresence>
               <div className="flex flex-col items-start  gap-4 pb-12 font-semibold text-custom-blue">
                 <div className="pt-4 pb-1 border-b-2 border-slate-200 w-full flex justify-start">
-                  <Link href={"/#/"} className="text-right">
+                  <Link href={"/ausbildung-und-qualifikation/"} className="text-right">
                     Ausbildung & Qualifikation
                   </Link>
                 </div>

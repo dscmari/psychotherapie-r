@@ -5,6 +5,7 @@ import Features from "../components/Features";
 import { verhaltenstherapieFeatures } from "../data/features";
 import ContactBtn from "../components/btns/ContactBtn";
 import TopicBtn from "../components/btns/TopicBtn";
+import ScrollToTopBtn from "../components/btns/ScrollToTopBtn";
 
 export default function page() {
   const issues = [
@@ -91,6 +92,7 @@ export default function page() {
           auf.
         </p>
       </section>
+         <ScrollToTopBtn />
     </div>
   );
 }

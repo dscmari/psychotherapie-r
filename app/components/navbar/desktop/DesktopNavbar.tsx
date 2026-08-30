@@ -56,13 +56,15 @@ export default function DesktopNavbar({ className }: Props) {
             <Link className="nav-link" href={"#"}>
               Psychoonkologie
             </Link>
-
-            <Link className="nav-link lg:hidden 2xl:inline-block" href={"#"}>
+               <Link
+              className={`nav-link lg:hidden 2xl:inline-block ${pathname === "/ausbildung-und-qualifikation/" ? "active" : ""}`}
+              href={"/ausbildung-und-qualifikation/"}
+            >
               Ausbildung & Qualifikation
             </Link>
             <Link
-              className="nav-link hidden lg:inline-block 2xl:hidden"
-              href={"#"}
+              className={`nav-link hidden lg:inline-block 2xl:hidden ${pathname === "/ausbildung-und-qualifikation/" ? "active" : ""}`}
+              href={"/ausbildung-und-qualifikation/"}
             >
               Qualifikation
             </Link>
