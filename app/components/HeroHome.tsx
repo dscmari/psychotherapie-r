@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import ContactBtn from "./btns/ContactBtn";
-import Link from "next/link";
 import TopicBtn from "./btns/TopicBtn";
 
 type Props = {
@@ -20,7 +19,7 @@ export default function HeroHome({ className, title }: Props) {
       <div className="sm:hidden flex-col">
         <div className="relative mx-auto">
           <Image
-            src="/images/40145-1280_squooshed.jpg"
+            src="/images/portraits/40145-1280_squooshed.jpg"
             alt="Portrait von Psychotherapeuting Anne Julia Röhl"
             width={600}
             height={400}
@@ -76,7 +75,7 @@ export default function HeroHome({ className, title }: Props) {
           </div>
           <div className="">
             <Image
-              src="/images/40145-1280_small.jpg"
+              src="/images/portraits/40145-1280_small.jpg"
               alt="Portrait von Psychotherapeuting Anne Julia Röhl"
               width={500}
               height={400}
@@ -157,7 +156,7 @@ export default function HeroHome({ className, title }: Props) {
         </div>
         <div className="flex-1">
           <Image
-            src="/images/40145-1280_small.jpg"
+            src="/images/portraits/40145-1280_small.jpg"
             alt="Portrait von Psychotherapeuting Anne Julia Röhl"
             width={600}
             height={400}
@@ -197,7 +196,7 @@ export default function HeroHome({ className, title }: Props) {
         </div>
         <div className="">
           <Image
-            src="/images/40145-1280_small.jpg"
+            src="/images/portraits/40145-1280_small.jpg"
             alt="Portrait von Psychotherapeuting Anne Julia Röhl"
             width={600}
             height={400}

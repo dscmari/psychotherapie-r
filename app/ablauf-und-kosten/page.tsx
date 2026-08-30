@@ -1,7 +1,6 @@
 import Hero from "../components/Hero";
 import { ablaufKostenHero } from "../data/hero";
 import Image from "next/image";
-import Link from "next/link";
 import ContactBtn from "../components/btns/ContactBtn";
 import TopicBtn from "../components/btns/TopicBtn";
 import Process from "../components/Process";

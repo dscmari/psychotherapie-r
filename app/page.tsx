@@ -2,15 +2,9 @@ import Image from "next/image";
 import HeroHome from "./components/HeroHome";
 import Link from "next/link";
 import {
-  CheckCheck,
   HandHeart,
-  Info,
   Leaf,
   Lightbulb,
-  Mail,
-  MessageCircleCheck,
-  NotebookPen,
-  ZoomIn,
 } from "lucide-react";
 import ContactBtn from "./components/btns/ContactBtn";
 import TopicBtn from "./components/btns/TopicBtn";
@@ -101,7 +95,7 @@ export default function Home() {
         <div className="flex gap-4 ">
           <div className="mx-auto">
             <Image
-              src={"/images/40145-1171_squooshed.jpg"}
+              src={"/images/portraits/40145-1171_squooshed.jpg"}
               width={600}
               height={300}
               alt="Portraitbild von Psychotherapeutin Anne Julia Röhl"
@@ -213,7 +207,7 @@ export default function Home() {
         </div>
         <div className="lg:hidden xl:block">
           <Image
-            src={"/images/40145-1065_squooshed.jpg"}
+            src={"/images/portraits/40145-1065_squooshed.jpg"}
             width={600}
             height={300}
             alt="Portraitbild von Psychotherapeutin Anne Julia Röhl"
