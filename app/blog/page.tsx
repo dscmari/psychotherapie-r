@@ -25,13 +25,12 @@ const options = { next: { revalidate: 30 } };
 
 export default async function Blog() {
   const posts = await client.fetch<SanityDocument[]>(POSTS_QUERY, {}, options);
-  console.log(posts.length);
 
   return (
     <div className="">
       <div className="pt-12 lg:px-32 px-4 lg:pt-32 lg:pb-16 xl:max-w-3/4 2xl:max-w-2/3">
         <h1 className="text-center md:px-32 lg:px-0 lg:text-start 2xl:!text-5xl/14">
-          Titel für Übersicht Blogartike einfügen
+          Titel für Übersicht Blogartikel einfügen
         </h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
