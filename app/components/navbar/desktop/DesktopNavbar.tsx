@@ -82,7 +82,7 @@ export default function DesktopNavbar({ className }: Props) {
             >
               Ablauf & Kosten
             </Link>
-            <Link className="nav-link" href={"#"}>
+            <Link className="nav-link" href={"/blog/"}>
               Blog
             </Link>
           </div>
