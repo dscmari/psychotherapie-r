@@ -13,7 +13,10 @@ export const qualifications = [
     },
         {
       description:
-        "Weiterbildung in Spezieller Psychotraumatologie (DeGPT)",
+        "In laufender Weiterbildung in spezieller Psychotraumatherapie (DEGPT)",
+    },
+    {
+description: "Staatlich geprüfte Rettungsassistentin"
     },
             {
       description:

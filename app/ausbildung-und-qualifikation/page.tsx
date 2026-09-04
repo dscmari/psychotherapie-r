@@ -1,7 +1,11 @@
 import Image from "next/image";
 import ContactBtn from "../components/btns/ContactBtn";
 import TopicBtn from "../components/btns/TopicBtn";
-import { MessageCircle, SendHorizontal } from "lucide-react";
+import {
+  CircleSmall,
+  MessageCircle,
+  SendHorizontal,
+} from "lucide-react";
 import Link from "next/link";
 import Qualifications from "../components/Qualifications";
 import { qualifications } from "../data/qualifications";
@@ -17,15 +21,15 @@ export default function page() {
             <h1 className="!text-sage-brown pt-8">
               Ausbildung & Qualifikation
             </h1>
-            <h2> Approbierte Psychologische Psychotherapeutin</h2>
+            <h2>Staatlich approbierte Psychologische Psychotherapeutin</h2>
             <p>
-              Ich bin approbierte Psychologische Psychotherapeutin mit den
-              Schwerpunkten Trauma und Psychoonkologie. Durch meine umfassende
-              Berufserfahrung in der ambulanten und stationären Psychotherapie
-              sowie im klinischen Bereich, unter anderem in der Onkologie,
-              Schmerztherapie sowie Notfall- und Palliativmedizin, begleite ich
-              Menschen in sehr unterschiedlichen und oft herausfordernden
-              Lebenssituationen.
+              Ich bin staatlich approbierte Psychologische Psychotherapeutin mit
+              den Schwerpunkten Trauma und Psychoonkologie. Durch meine
+              umfassende Berufserfahrung in der ambulanten und stationären
+              Psychotherapie sowie im klinischen Bereich, unter anderem in der
+              Onkologie, Schmerztherapie sowie Notfall- und Palliativmedizin,
+              begleite ich Menschen in sehr unterschiedlichen und oft
+              herausfordernden Lebenssituationen.
             </p>
             <h2 className="mt-4">Meine Schwerpunkte</h2>
             <div className="flex flex-col gap-4">
@@ -44,16 +48,16 @@ export default function page() {
                   href={"/psychoonkologie/"}
                   className="underline underline-offset-2 dark:text-stone"
                 >
-                  Psychoonkologie
+                  Psychoonkologische Beratung
                 </Link>
               </div>
               <div className="flex gap-4">
                 <SendHorizontal className="shrink-0 text-sage" />
                 <Link
-                  href={"/Trauma/"}
+                  href={"/traumatherapie/"}
                   className="underline underline-offset-2 dark:text-stone"
                 >
-                  Trauma
+                  Traumatherapie
                 </Link>
               </div>
             </div>
@@ -91,21 +95,21 @@ export default function page() {
             </p>
             <div className="flex flex-col gap-4 mt-4">
               <div className="flex gap-4">
-                <MessageCircle className="shrink-0 text-sage" />
+                <CircleSmall className="shrink-0 text-sage" />
                 <span>Was gibt meinem Leben Bedeutung?</span>
               </div>
               <div className="flex gap-4">
-                <MessageCircle className="shrink-0 text-sage" />
+                <CircleSmall className="shrink-0 text-sage" />
                 <span>Was trägt mich in schwierigen Zeiten?</span>
               </div>
               <div className="flex gap-4">
-                <MessageCircle className="shrink-0 text-sage" />
+                <CircleSmall className="shrink-0 text-sage" />
                 <span>
                   Welche Werte, Beziehungen und Ziele sind mir wichtig?
                 </span>
               </div>
               <div className="flex gap-4">
-                <MessageCircle className="shrink-0 text-sage" />
+                <CircleSmall className="shrink-0 text-sage" />
                 <span>
                   Wie kann ich trotz Belastung Lebensqualität und innere
                   Orientierung bewahren?
@@ -163,9 +167,9 @@ export default function page() {
           </p>
         </div>
       </section>
-        <section className="pt-16 pb-24 md:py-16 lg:py-32 px-4 md:px-8 lg:px-16 xl:px-32">
-          <h1>Ausbildung & psychotherapeutische Qualifikation</h1>
-          <Qualifications qualifications={qualifications} className="max-w-4xl" />
+      <section className="pt-16 pb-24 md:py-16 lg:py-32 px-4 md:px-8 lg:px-16 xl:px-32">
+        <h1>Ausbildung & psychotherapeutische Qualifikation</h1>
+        <Qualifications qualifications={qualifications} className="max-w-4xl" />
       </section>
     </div>
   );

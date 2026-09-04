@@ -17,7 +17,9 @@ export default function Footer({ className }: Props) {
             <li>www.psychotherapie-roehl.de</li>
             <li>+49 1234 123456</li>
             <li>info@musterfrau.de</li>
-            <li> Nußbaumstraße 14, 80336 München</li>
+            <li>c/o Praxis am Nussbaumpark</li>
+            <li>Nußbaumstraße 14</li>
+            <li>80336 München</li>
           </ul>
         </div>
         <div className="flex flex-col gap-8 order-3 mb-12 lg:mb-0 lg:order-2">
@@ -63,7 +65,7 @@ export default function Footer({ className }: Props) {
         <div className="lg:col-span-2 order-1 lg:order-3 mt-12 lg:mt-0 flex flex-col ">
           <h1 className="text-center lg:text-start !text-stone-light">
             {" "}
-            Privatpraxis für Psychotherapie, Traumatherapie und Psychoonkologie
+            Privatpraxis für Psychotherapie, Traumatherapie & Psychoonkologie
             in München
           </h1>
           <p className="mb-2 !text-stone-50 text-center lg:text-start">

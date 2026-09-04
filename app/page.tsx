@@ -1,11 +1,7 @@
 import Image from "next/image";
 import HeroHome from "./components/HeroHome";
 import Link from "next/link";
-import {
-  HandHeart,
-  Leaf,
-  Lightbulb,
-} from "lucide-react";
+import { HandHeart, Leaf, Lightbulb } from "lucide-react";
 import ContactBtn from "./components/btns/ContactBtn";
 import TopicBtn from "./components/btns/TopicBtn";
 import ScrollToTopBtn from "./components/btns/ScrollToTopBtn";
@@ -95,10 +91,10 @@ export default function Home() {
         <div className="flex gap-4 ">
           <div className="mx-auto">
             <Image
-              src={"/images/portraits/40145-1171_squooshed.jpg"}
+              src={"/images/G-F4_squooshed.jpg"}
               width={600}
               height={300}
-              alt="Portraitbild von Psychotherapeutin Anne Julia Röhl"
+              alt="Bild der Psychotherapiepraxis von Psychotherapeutin Anne Julia Röhl"
               className="sm:rounded-xl"
             />
           </div>
@@ -173,7 +169,7 @@ export default function Home() {
             src={"/images/G-F4_squooshed.jpg"}
             width={600}
             height={300}
-            alt="Portraitbild von Psychotherapeutin Anne Julia Röhl"
+            alt="Bild der Praxisräume von Psychotherapeutin Anne Julia Röhl"
             className="sm:rounded-xl"
           />
         </div>
@@ -216,7 +212,48 @@ export default function Home() {
         </div>
       </section>
       <section className="px-4 sm:px-16 xl:px-32 pt-24 lg:pt-32">
-        <Reimbursement />
+        {/* <Reimbursement /> */}
+        <h2>Was mache ich, wenn ich keinen Psychotherapieplatz finde?</h2>
+        <h1>
+          Psychotherapie auf Selbstzahlerbasis & Kostenerstattungsverfahren
+        </h1>
+        <div className="max-w-4xl flex flex-col gap-4">
+          <p>
+            Für gesetzlich Versicherte müssten in München ausreichend
+            Therapieplätze vorhanden sein. Die Realität zeigt, dass der Bedarf
+            an Psychotherapie höher ist als die verfügbaren Therapieplätze in
+            Kassenpraxen.
+          </p>
+          <p>
+            Eine Psychotherapie auf Selbstzahlerbasis bietet Ihnen deutlich mehr
+            Flexibilität und Unabhängigkeit als eine kassenfinanzierte
+            Behandlung. Sie profitieren von kurzen Wartezeiten, freier
+            Terminwahl und einer Behandlung, die individuell auf Ihre
+            Bedürfnisse zugeschnitten ist, ohne Vorgaben durch Diagnoseraster
+            oder Sitzungskontingente der Krankenkassen. Zudem bleibt Ihre
+            Behandlung vollständig vertraulich: Es erfolgt keine Meldung der
+            Diagnose an die Krankenkasse, was insbesondere bei sensiblen Themen
+            wie beruflicher Absicherung (z. B. Verbeamtung,
+            Berufsunfähigkeitsversicherung) von Vorteil sein kann.
+          </p>
+          <p>
+            Sollte eine vollständige Selbstzahlung für Sie nicht infrage kommen,
+            besteht unter bestimmten Voraussetzungen die Möglichkeit, die Kosten
+            über das Kostenerstattungsverfahren anteilig von Ihrer gesetzlichen
+            Krankenkasse erstattet zu bekommen. Mehr dazu erfahren Sie{" "}
+            <Link
+              href="https://www.ptk-bayern.de/ptk/web.nsf/id/li_veranstaltungkostenerstattung2018.html"
+              className="text-sage-dark underline underline-offset-2"
+            >
+              hier
+            </Link>{" "}
+            .
+          </p>
+          <div className="flex flex-col lg:flex-row items-center gap-4 mt-4">
+            <ContactBtn className="w-full lg:w-44" />
+            <TopicBtn text={"Ablauf & Kosten"} path={"/ablauf-und-kosten/"} />
+          </div>
+        </div>
       </section>
       <section className="py-24 lg:py-32 px-4 md:px-16 lg:px-32 ">
         <h2>//TODO weitere Inhalte</h2>

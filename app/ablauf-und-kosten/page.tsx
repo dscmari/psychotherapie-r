@@ -7,6 +7,7 @@ import Process from "../components/Process";
 import { processCircles } from "../data/process";
 import Reimbursement from "../components/Reimbursement";
 import ScrollToTopBtn from "../components/btns/ScrollToTopBtn";
+import Link from "next/link";
 
 export default function page() {
   const { title, subtitle, text_1, text_2, btn, imgPath } = ablaufKostenHero;
@@ -92,28 +93,26 @@ export default function page() {
               <p>
                 Privatversicherungen und Beihilfeversicherungen übernehmen die
                 Kosten in der Regel voll oder teilweise, je nach Ihrem Tarif.
-              </p>
-              <p>
-                SelbstzahlerInnen können die Behandlung selbstverständlich
-                ebenfalls in Anspruch nehmen, ohne Antrag und Formalitäten. Ich
-                empfehle, die Kostenübernahme vorab kurz mit Ihrer Versicherung
-                zu klären.
+                Ich empfehle, die Kostenübernahme vorab kurz mit Ihrer
+                Versicherung zu klären. SelbstzahlerInnen können die Behandlung
+                selbstverständlich ebenfalls in Anspruch nehmen, ohne Antrag und
+                Formalitäten.
               </p>
               <p>
                 Als Privatpraxis für Psychotherapie kann ich{" "}
                 <span className="font-semibold"> nicht </span> mit gesetzlichen
                 Krankenkassen abrechnen. Wenn Sie gesetzlich versichert sind,
                 besteht jedoch die Möglichkeit, bei Ihrer gesetzlichen
-                Krankenkasse einen Antrag auf eine{" "}
-                <a
-                  className="!text-sage-dark underline"
-                  href="#kostenerstattung"
+                Krankenkasse einen Antrag auf eine Kostenerstattungsverfahren zu
+                stellen. Weitere Informationen hierzu finden Sie{" "}
+                <Link
+                  href="
+https://www.ptk-bayern.de/ptk/web.nsf/id/li_veranstaltungkostenerstattung2018.html"
+                  className="text-sage-dark underline underline-offset-2"
                 >
-                  Kostenerstattungsverfahren
-                </a>{" "}
-                zu stellen. Weitere Informationen hierzu finden Sie unter (siehe
-                Info im Reiter- Broschüre zum Kostenerstattungsverfahren){" "}
-                <span className="!text-red-500">Konkrete URL?</span>
+                  hier
+                </Link>
+                .
               </p>
             </div>
           </div>
@@ -127,9 +126,9 @@ export default function page() {
             />
           </div>
         </div>
-        <div className="px-4 sm:px-0 mt-8 max-w-3xl">
+        <div className="px-4 sm:px-0 pt-16 xl:pt-32 max-w-3xl flex flex-col items-center mx-auto">
           <h2>Kontaktaufnahme</h2>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 items-center text-center">
             <p>
               Sie möchten einen Termin vereinbaren oder haben Fragen zu meinem
               psychotherapeutischen Angebot? Gerne können Sie mich telefonisch
@@ -143,13 +142,17 @@ export default function page() {
             <p>Ich freue mich auf Ihre Kontaktaufnahme.</p>
             <div className="flex flex-col items-center gap-4 lg:flex-row mt-8">
               <ContactBtn className="w-full lg:w-44 mx-4 lg:mx-0 " />
-              <TopicBtn text={"Verhaltenstherapie"} path={`/verhaltenstherapie/`} />
+              <TopicBtn
+                text={"Ausbildung & Qualifikation"}
+                path={`/ausbildung-und-qualifikation/`}
+                className="lg:w-60"
+              />
             </div>
           </div>
         </div>
       </section>
       <section className="px-4 sm:px-16 xl:px-32 py-24 lg:py-32 ">
-        <Reimbursement />
+        {/* <Reimbursement /> */}
       </section>
       <ScrollToTopBtn />
     </div>

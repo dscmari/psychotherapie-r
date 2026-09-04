@@ -14,6 +14,7 @@ export default function page() {
               psychotherapeutischen Angebot? Gerne können Sie mich telefonisch
               oder per E-Mail kontaktieren.
             </p>
+            <p>Als <span className="!text-sage-brown">Privatpraxis</span>  kann die Abrechnung nicht direkt über die gesetzliche Krankenkasse erfolgen, sondern privat nach der Gebührenordnung für PsychotherapeutInnen (GOP).</p>
             <div className="flex flex-col gap-4 my-8">
               <Link href="tel: 123456789" className="flex items-center gap-4">
                 <Phone className="shrink-0 size-6 text-sage" />

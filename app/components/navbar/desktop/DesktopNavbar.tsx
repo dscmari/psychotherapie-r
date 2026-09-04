@@ -1,9 +1,7 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
 import ContactBtn from "../../btns/ContactBtn";
 import { House, Mail, Phone } from "lucide-react";
-import { ShiftingDropDown } from "./ShiftingDropDown";
 import { usePathname } from "next/navigation";
 
 type Props = {
@@ -13,16 +11,21 @@ type Props = {
 export default function DesktopNavbar({ className }: Props) {
   const pathname = usePathname();
   return (
-    <div className={`relative z-100 mx-auto pb-4 px-4 xl:px-16 ${className}`}>
+    <div className={`relative z-100 mx-auto pb-4 px-4 xl:px-16 2xl:px-32 ${className}`}>
       <div className="flex justify-between font-light py-4 text-sm ">
         <div className="flex flex-col">
-          <p>Privatpraxis für Psychotherapie Anne Julia Röhl</p>
+          <p>
+            <span className="!text-sage-brown">
+              Privatpraxis für Psychotherapie
+            </span>{" "}
+            Anne Julia Röhl
+          </p>
           <p>Psychologische Psychotherapeutin & Psychoonkologin</p>
         </div>
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-2 ">
             <House className="shrink-0 size-4" />
-            <span>Nußbaumstraße 14, 80336 München</span>
+            <span>c/o Praxis am Nussbaumpark, Nußbaumstraße 14, 80336 München</span>
           </div>
           <div className="flex items-center gap-2 ">
             <Phone className="shrink-0 size-4" />
@@ -39,7 +42,9 @@ export default function DesktopNavbar({ className }: Props) {
           className={`font-semibold !font-lora text-xl 2xl:self-center nav-link`}
           href={"/"}
         >
-          Psychotherapie <br /> Anne Julia Röhl
+          Anne Julia Röhl <br />
+          Psychotherapie{" "}
+          <span className="hidden 2xl:inline-block">Privatpraxis</span>
         </Link>
         {/* <ShiftingDropDown /> */}
         <div className="flex flex-col gap-2 !font-lora ">
@@ -56,7 +61,7 @@ export default function DesktopNavbar({ className }: Props) {
             <Link className="nav-link" href={"#"}>
               Psychoonkologie
             </Link>
-               <Link
+            <Link
               className={`nav-link lg:hidden 2xl:inline-block ${pathname === "/ausbildung-und-qualifikation/" ? "active" : ""}`}
               href={"/ausbildung-und-qualifikation/"}
             >
@@ -74,7 +79,7 @@ export default function DesktopNavbar({ className }: Props) {
               Online Psychotherapie
             </Link>
             <Link className="nav-link" href={"#"}>
-              Psychotherapy 🇬🇧
+              Psychotherapy in English 🇬🇧
             </Link>
             <Link
               className={`nav-link ${pathname === "/ablauf-und-kosten" ? "active" : ""}`}

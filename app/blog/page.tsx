@@ -41,7 +41,7 @@ export default async function Blog() {
       </div>
       <div className="grid lg:grid-cols-2 gap-24 lg:gap-12 m-8 mt-24 lg:m-32">
         {posts.map((post) => (
-          <div key={post._id} className="bg-custom-white dark rounded-xl">
+          <div key={post._id} className=" rounded-xl bg-stone-200">
             <Image
               src={post.imageUrl}
               alt={post.title}
@@ -57,7 +57,7 @@ export default async function Blog() {
               >
                 {post.title}
               </Link>
-              <p className="text-sm font-light">
+              <p className="text-sm font-light dark:!text-stone-light">
                 {post.excerpt?.substring(0, 140)}...
               </p>
               <Link

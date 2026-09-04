@@ -1,6 +1,4 @@
 import { SendHorizontal } from "lucide-react";
-import { div } from "motion/react-client";
-import React from "react";
 
 type Qualification = {
   description: string;

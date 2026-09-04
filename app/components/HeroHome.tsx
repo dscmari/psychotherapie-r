@@ -46,7 +46,7 @@ export default function HeroHome({ className, title }: Props) {
           </h3>
           <p className="mt-4">
             Jeder Mensch kann im Laufe seines Lebens an die Grenzen seelischer
-            Belastbarkeit kommen. Als approbierte{" "}
+            Belastbarkeit kommen. Als staatlich approbierte{" "}
             <span className="!text-sage-brown font-semibold">
               Psychologische Psychotherapeutin
             </span>{" "}
@@ -97,7 +97,7 @@ export default function HeroHome({ className, title }: Props) {
           <h2 className="mt-4 ">Privatpraxis in München</h2>
           <p className="mt-4 max-w-4/5 mx-auto">
             Jeder Mensch kann im Laufe seines Lebens an die Grenzen seelischer
-            Belastbarkeit kommen. Als approbierte{" "}
+            Belastbarkeit kommen. Als staatlich approbierte{" "}
             <span className="!text-sage-brown font-semibold">
               Psychologische Psychotherapeutin
             </span>{" "}
@@ -114,10 +114,11 @@ export default function HeroHome({ className, title }: Props) {
 
       {/* desktop */}
       {/* lg-xl */}
-      <div className="hidden lg:flex justify-center 2xl:hidden lg:px-16 xl:px-32 gap-4 pt-20 xl:pb-26 2xl:pb-40 2xl:pt-32 ">
-        <div className="flex-1 min-w-0 overflow-visible">
-          <div className="relative">
-            <h1 className="xl:!text-4xl/12 font-bold w-max pt-4 pr-4 pb-4 bg-stone-50 rounded-br-xl">
+      <div className="hidden lg:flex justify-center items-center lg:px-16 2xl:px-32 gap-4 pt-20 xl:pb-26 2xl:pb-40 2xl:pt-32">
+        <div className="flex-1 flex flex-col items-end">
+          <div>
+    <div className="">
+            <h1 className="xl:!text-4xl/12 font-bold pt-4 pr-4 pb-4 bg-stone-50 rounded-br-xl">
               <span className="!text-sage-brown">
                 Psychologische Psychotherapie
               </span>{" "}
@@ -126,9 +127,9 @@ export default function HeroHome({ className, title }: Props) {
             </h1>
           </div>
           <h2 className="mt-4">Privatpraxis in München</h2>
-          <p className="mt-4">
+          <p className="mt-4 max-w-2xl">
             Jeder Mensch kann im Laufe seines Lebens an die Grenzen seelischer
-            Belastbarkeit kommen. Als approbierte{" "}
+            Belastbarkeit kommen. Als staatlich approbierte{" "}
             <span className="!text-sage-brown font-semibold">
               Psychologische Psychotherapeutin
             </span>{" "}
@@ -136,7 +137,7 @@ export default function HeroHome({ className, title }: Props) {
             unterstützen, in Krisen und herausfordernden Lebenssituationen neue
             Perspektiven zu finden.
           </p>
-          <div className="hidden xl:block">
+          <div className="hidden xl:block max-w-2xl">
             <h3 className="mt-4 font-lora font-semibold">
               Psychologische Begleitung
             </h3>
@@ -151,9 +152,11 @@ export default function HeroHome({ className, title }: Props) {
 
           <div className="flex flex-col items-center gap-4 lg:flex-row mt-8">
             <ContactBtn className="mx-4 lg:mx-0 " />
-            <TopicBtn text={"Psychoonkologie"} path={"/#/"} />
+            <TopicBtn text={"Ablauf & Kosten"} path={"/ablauf-und-kosten/"} />
           </div>
         </div>
+          </div>
+      
         <div className="flex-1">
           <Image
             src="/images/portraits/40145-1280_small.jpg"
@@ -167,7 +170,8 @@ export default function HeroHome({ className, title }: Props) {
       </div>
 
       {/* ab 2xl */}
-      <div className="hidden 2xl:flex justify-center px-32 gap-4 pt-20 xl:pb-26 2xl:pb-40 2xl:pt-32 ">
+      
+      {/* <div className="hidden 2xl:flex justify-center px-32 gap-4 pt-20 xl:pb-26 2xl:pb-40 2xl:pt-32 ">
         <div className="min-w-0 w-1/4 overflow-visible">
           <div className="relative">
             <h1 className="xl:!text-4xl/12 font-bold w-max pt-4 pr-4 pb-4 bg-stone-50 rounded-br-xl">
@@ -181,7 +185,7 @@ export default function HeroHome({ className, title }: Props) {
           <h2 className="mt-4">Privatpraxis in München</h2>
           <p className="mt-4">
             Jeder Mensch kann im Laufe seines Lebens an die Grenzen seelischer
-            Belastbarkeit kommen. Als approbierte{" "}
+            Belastbarkeit kommen. Als staatlich approbierte{" "}
             <span className="!text-sage-brown font-semibold">
               Psychologische Psychotherapeutin
             </span>{" "}
@@ -224,7 +228,7 @@ export default function HeroHome({ className, title }: Props) {
             <TopicBtn className="mt-4" text={"Psychoonkologie"} path={"/#/"} />
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

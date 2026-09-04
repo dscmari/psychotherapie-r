@@ -44,7 +44,7 @@ export default function Navbar({ className }: Props) {
             href="/"
             className=" font-semibold font-lora text-xl"
           >
-            Psychotherapie Praxis  <br />Anne Julia Röhl
+            Private Psychotherapie Praxis  <br />Anne Julia Röhl
           </Link>
           <div
             className={`burgermenu ${showMenu ? "open" : ""}`}
@@ -162,7 +162,7 @@ export default function Navbar({ className }: Props) {
                 </div>
                 <div className="pb-1 border-b-2 border-slate-200 w-full flex justify-start">
                   <Link href={"/#/"} className="text-right">
-                    Psychotherapy 🇬🇧
+                    Psychotherapy in English 🇬🇧
                   </Link>
                 </div>
 

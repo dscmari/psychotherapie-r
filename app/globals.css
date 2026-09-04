@@ -9,6 +9,7 @@
    --color-sage-dark: oklch(65% 0.06 545);
   --color-sage-brown: oklch(55% 0.16 445);
   --color-cta: oklch(64.6% 0.222 41.116); /* cta */
+  --color-darkblue: oklch(39.1% 0.09 240.876); /* darkmode: sky-900 */
 }
 
 html {
@@ -184,3 +185,23 @@ span{
     color: var(--color-darkmode-white);
   }
 } */
+
+/* darkkmode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    background-color: var(--color-darkblue);
+  }
+  section {
+     background-color: var(--color-darkblue);
+  }
+  h1,
+  h2,
+  p {
+    color: var(--color-custom-white) !important;
+  }
+
+  .dark {
+    background-color: var(--color-darkmode-blue);
+    color: var(--color-custom-white);
+  }
+}

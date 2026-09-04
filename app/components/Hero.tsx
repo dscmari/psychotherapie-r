@@ -9,7 +9,7 @@ type Props = {
   subtitle: string;
   text_1: string | React.ReactNode;
   text_2?: string | React.ReactNode;
-  btn: string;
+  btn: {text: string, className?:string}
   imgPath: string;
 };
 
@@ -50,7 +50,7 @@ export default function Hero({
         <p className="lg:hidden xl:block mt-4">{text_2}</p>
         <div className="flex flex-col items-center gap-4 lg:flex-row mt-8">
           <ContactBtn className="w-full lg:w-44 mx-4 lg:mx-0 " />
-          <TopicBtn text={`${btn}`} path={`${slugify(btn)}`} />
+          <TopicBtn text={`${btn.text}`} path={`/${slugify(btn.text)}`} className={`${btn.className}`} />
         </div>
       </div>
     </div>
