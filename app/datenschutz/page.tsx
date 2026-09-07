@@ -1,6 +1,6 @@
 export default function page() {
   return (
-    <div>
+    <div className="dark">
       <section className="max-w-4xl mx-auto px-4 py-12 md:py-16 lg:py-32">
         <div className="">
           <h1 className="">Datenschutzerklärung</h1>
@@ -8,7 +8,7 @@ export default function page() {
         </div>
 
         <article className="mb-10">
-          <h2 className="text-xl font-semibold mb-4 flex items-center gap-2">
+          <h2 className=" mb-4 flex items-center gap-2">
             1. Name und Kontaktdaten des Verantwortlichen
           </h2>
           <div className="">
@@ -26,9 +26,7 @@ export default function page() {
         </article>
 
         <article className="mb-10">
-          <h2 className="text-xl font-semibold mb-4 flex items-center gap-2">
-            2. Hosting
-          </h2>
+          <h2 className=" mb-4 flex items-center gap-2">2. Hosting</h2>
           <p className="mb-4">
             Wir hosten die Inhalte unserer Website bei folgendem Anbieter:
           </p>
@@ -85,7 +83,7 @@ export default function page() {
             </p>
           </div>
           <div>
-            <h2 className="text-xl font-semibold my-4 flex items-center gap-2">
+            <h2 className=" my-4 flex items-center gap-2">
               SSL- bzw. TLS-Verschlüsselung
             </h2>
             <p className="mb-3">
@@ -112,7 +110,7 @@ export default function page() {
         </article>
 
         <article className="mb-10">
-          <h2 className="text-xl font-semibold mb-4 flex items-center gap-2">
+          <h2 className=" mb-4 flex items-center gap-2">
             3. Datenerfassung und Tracking
           </h2>
           <p>
@@ -128,7 +126,7 @@ export default function page() {
         </article>
 
         <article className="mb-10">
-          <h2 className="text-xl font-semibold mb-4 flex items-center gap-2">
+          <h2 className=" mb-4 flex items-center gap-2">
             4. Ihre Rechte als betroffene Person
           </h2>
           <p className="mb-4">
@@ -137,60 +135,62 @@ export default function page() {
           </p>
 
           <div className="grid gap-3 sm:grid-cols-2 mb-6">
-    <div className="border border-slate-200 rounded-lg p-3">
-      <h3 className="font-semibold text-sm">
-        Auskunft (Art. 15 DSGVO)
-      </h3>
-      <p className="text-xs text-slate-600 mt-1">
-        Auskunft über Ihre von uns verarbeiteten Daten verlangen.
-      </p>
-    </div>
+            <div className="border border-slate-200 rounded-lg p-3">
+              <h3 className="font-semibold text-sm">
+                Auskunft (Art. 15 DSGVO)
+              </h3>
+              <p className="text-xs mt-1">
+                Auskunft über Ihre von uns verarbeiteten Daten verlangen.
+              </p>
+            </div>
 
-    <div className="border border-slate-200 rounded-lg p-3">
-      <h3 className="font-semibold text-sm">
-        Berichtigung (Art. 16 DSGVO)
-      </h3>
-      <p className="text-xs text-slate-600 mt-1">
-        Korrektur unrichtiger oder unvollständiger Daten verlangen.
-      </p>
-    </div>
+            <div className="border border-slate-200 rounded-lg p-3">
+              <h3 className="font-semibold text-sm">
+                Berichtigung (Art. 16 DSGVO)
+              </h3>
+              <p className="text-xs mt-1">
+                Korrektur unrichtiger oder unvollständiger Daten verlangen.
+              </p>
+            </div>
 
-    <div className="border border-slate-200 rounded-lg p-3">
-      <h3 className="font-semibold text-sm">
-        Löschung (Art. 17 DSGVO)
-      </h3>
-      <p className="text-xs text-slate-600 mt-1">
-        Löschung Ihrer bei uns gespeicherten Daten verlangen.
-      </p>
-    </div>
+            <div className="border border-slate-200 rounded-lg p-3">
+              <h3 className="font-semibold text-sm">
+                Löschung (Art. 17 DSGVO)
+              </h3>
+              <p className="text-xs mt-1">
+                Löschung Ihrer bei uns gespeicherten Daten verlangen.
+              </p>
+            </div>
 
-    <div className="border border-slate-200 rounded-lg p-3">
-      <h3 className="font-semibold text-sm">
-        Einschränkung (Art. 18 DSGVO)
-      </h3>
-      <p className="text-xs text-slate-600 mt-1">
-        Einschränkung der Verarbeitung Ihrer Daten verlangen.
-      </p>
-    </div>
+            <div className="border border-slate-200 rounded-lg p-3">
+              <h3 className="font-semibold text-sm">
+                Einschränkung (Art. 18 DSGVO)
+              </h3>
+              <p className="text-xs mt-1">
+                Einschränkung der Verarbeitung Ihrer Daten verlangen.
+              </p>
+            </div>
 
-    <div className="border border-slate-200 rounded-lg p-3">
-      <h3 className="font-semibold text-sm">
-        Widerruf (Art. 7 Abs. 3 DSGVO)
-      </h3>
-      <p className="text-xs text-slate-600 mt-1">
-        Erteilte Einwilligungen jederzeit ohne Angabe von Gründen für die Zukunft widerrufen.
-      </p>
-    </div>
+            <div className="border border-slate-200 rounded-lg p-3">
+              <h3 className="font-semibold text-sm">
+                Widerruf (Art. 7 Abs. 3 DSGVO)
+              </h3>
+              <p className="text-xs mt-1">
+                Erteilte Einwilligungen jederzeit ohne Angabe von Gründen für
+                die Zukunft widerrufen.
+              </p>
+            </div>
 
-    <div className="border border-slate-200 rounded-lg p-3">
-      <h3 className="font-semibold text-sm">
-        Widerspruch (Art. 21 DSGVO)
-      </h3>
-      <p className="text-xs text-slate-600 mt-1">
-        Jederzeit gegen die Verarbeitung auf Basis berechtigter Interessen Widerspruch einlegen.
-      </p>
-    </div>
-  </div>
+            <div className="border border-slate-200 rounded-lg p-3">
+              <h3 className="font-semibold text-sm">
+                Widerspruch (Art. 21 DSGVO)
+              </h3>
+              <p className="text-xs mt-1">
+                Jederzeit gegen die Verarbeitung auf Basis berechtigter
+                Interessen Widerspruch einlegen.
+              </p>
+            </div>
+          </div>
           <div className="sm:col-span-2">
             <p className="font-semibold mb-2">
               Beschwerderecht bei der Aufsichtsbehörde:
@@ -219,7 +219,7 @@ export default function page() {
           </div>
         </article>
         <article className="mb-10 ">
-          <h2 className="text-xl font-semibold mb-4 flex items-center gap-2">
+          <h2 className=" mb-4 flex items-center gap-2">
             5. Kontaktaufnahme per E-Mail oder Telefon
           </h2>
 

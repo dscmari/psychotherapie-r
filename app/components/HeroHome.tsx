@@ -14,9 +14,9 @@ type Props = {
 
 export default function HeroHome({ className, title }: Props) {
   return (
-    <div className={`${className}`}>
+    <div className={`dark ${className}`}>
       {/* mobile */}
-      <div className="sm:hidden flex-col">
+      <section className="sm:hidden flex-col">
         <div className="relative mx-auto">
           <Image
             src="/images/portraits/40145-1280_squooshed.jpg"
@@ -59,9 +59,9 @@ export default function HeroHome({ className, title }: Props) {
             <TopicBtn text={"Ablauf & Kosten"} path={"/ablauf-und-kosten/"} />
           </div>
         </div>
-      </div>
+      </section>
       {/* tablet */}
-      <div className="hidden sm:flex lg:hidden flex-col gap-20">
+      <section className="hidden sm:flex lg:hidden flex-col gap-20">
         <div className="flex justify-center mt-12">
           <div className="">
             <Image
@@ -110,15 +110,15 @@ export default function HeroHome({ className, title }: Props) {
             <TopicBtn text={`Ablauf & Kosten`} path={`/ablauf-und-kosten/`} />
           </div>
         </div>
-      </div>
+      </section>
 
       {/* desktop */}
       {/* lg-xl */}
-      <div className="hidden lg:flex justify-center items-center lg:px-16 2xl:px-32 gap-4 pt-20 xl:pb-26 2xl:pb-40 2xl:pt-32">
+      <section className="hidden lg:flex justify-center items-center lg:px-16 2xl:px-32 gap-4 pt-20 xl:pb-26 2xl:pb-40 2xl:pt-32">
         <div className="flex-1 flex flex-col items-end">
           <div>
     <div className="">
-            <h1 className="xl:!text-4xl/12 font-bold pt-4 pr-4 pb-4 bg-stone-50 rounded-br-xl">
+            <h1 className="xl:!text-4xl/12 font-bold pt-4 pr-4 pb-4 bg-stone-50 dark:bg-darkblue rounded-br-xl">
               <span className="!text-sage-brown">
                 Psychologische Psychotherapie
               </span>{" "}
@@ -167,7 +167,7 @@ export default function HeroHome({ className, title }: Props) {
             loading="eager"
           />
         </div>
-      </div>
+      </section>
 
       {/* ab 2xl */}
       

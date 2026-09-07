@@ -33,7 +33,7 @@ export default function Navbar({ className }: Props) {
   };
 
   return (
-    <div className={`${className}`}>
+    <div className={`dark ${className}`}>
       {/* mobile & tablet */}
       <div className="lg:hidden w-full p-4 md:px-8 dark:text-stone">
         <div className="flex justify-between items-center">
@@ -98,7 +98,7 @@ export default function Navbar({ className }: Props) {
                 Behandlungsschwerpunkte
               </span>
               <ChevronDown
-                className={`transition-transform shrink-0 text-custom-blue ${
+                className={`transition-transform shrink-0 text-stone dark:text-stone-light ${
                   isSelected ? "scale-y-[-1]" : ""
                 }`}
               />
