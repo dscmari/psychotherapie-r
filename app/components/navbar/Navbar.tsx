@@ -53,7 +53,7 @@ export default function Navbar({ className }: Props) {
             aria-label="Menü öffnen"
           >
             <svg
-              className="text-sage-brown"
+              className="text-sage-brown dark:text-stone-light"
               viewBox="0 0 40 30"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -173,7 +173,7 @@ export default function Navbar({ className }: Props) {
         ) : null}
       </div>
       {/* Desktop */}
-      <div className="hidden lg:block w-full">
+      <div className="hidden lg:block">
         <DesktopNavbar />
       </div>
     </div>

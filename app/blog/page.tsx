@@ -27,8 +27,8 @@ export default async function Blog() {
   const posts = await client.fetch<SanityDocument[]>(POSTS_QUERY, {}, options);
 
   return (
-    <div className="">
-      <div className="pt-12 lg:px-32 px-4 lg:pt-32 lg:pb-16 xl:max-w-3/4 2xl:max-w-2/3">
+    <div className="dark:bg-darkblue">
+      <div className="pt-12 lg:px-32 px-4 lg:pt-32 xl:max-w-3/4 2xl:max-w-2/3 ">
         <h1 className="text-center md:px-32 lg:px-0 lg:text-start 2xl:!text-5xl/14">
           Titel für Übersicht Blogartikel einfügen
         </h1>
@@ -39,9 +39,9 @@ export default async function Blog() {
           iusto distinctio?
         </p>
       </div>
-      <div className="grid lg:grid-cols-2 gap-24 lg:gap-12 m-8 mt-24 lg:m-32">
+      <div className="grid lg:grid-cols-2 gap-24 lg:gap-12 p-4 py-24 lg:p-32">
         {posts.map((post) => (
-          <div key={post._id} className=" rounded-xl bg-stone-200">
+          <div key={post._id} className=" rounded-xl bg-sage-dark dark:bg-mist-900 text-stone-light">
             <Image
               src={post.imageUrl}
               alt={post.title}
@@ -57,7 +57,7 @@ export default async function Blog() {
               >
                 {post.title}
               </Link>
-              <p className="text-sm font-light dark:!text-stone-light">
+              <p className="text-sm font-light !text-stone-light">
                 {post.excerpt?.substring(0, 140)}...
               </p>
               <Link

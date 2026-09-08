@@ -33,10 +33,10 @@ export default function HeroHome({ className, title }: Props) {
         </div>
         <div className="text-start px-4 mt-4">
           <div className="flex flex-col !font-lora font-semibold">
-            <h3 className="!text-xl text-sage-brown !mb-0">
+            <h3 className="!text-xl !mb-0">
               Psychologische Psychotherapie
             </h3>
-            <h3 className="!text-xl dark:text-stone-800">
+            <h3 className="!text-xl">
               {" "}
               Traumatherapie & Psychoonkologie
             </h3>
@@ -47,7 +47,7 @@ export default function HeroHome({ className, title }: Props) {
           <p className="mt-4">
             Jeder Mensch kann im Laufe seines Lebens an die Grenzen seelischer
             Belastbarkeit kommen. Als staatlich approbierte{" "}
-            <span className="!text-sage-brown font-semibold">
+            <span className="!text-sage-brown dark:!text-stone-light font-semibold">
               Psychologische Psychotherapeutin
             </span>{" "}
             (Verhaltenstherapie) und Psychoonkologin möchte ich Sie dabei
@@ -105,7 +105,7 @@ export default function HeroHome({ className, title }: Props) {
             unterstützen, in Krisen und herausfordernden Lebenssituationen neue
             Perspektiven zu finden.
           </p>
-       <div className="flex flex-col items-center gap-4 lg:flex-row mt-8">
+          <div className="flex flex-col items-center gap-4 lg:flex-row mt-8">
             <ContactBtn className="w-full lg:w-44 mx-4 lg:mx-0 " />
             <TopicBtn text={`Ablauf & Kosten`} path={`/ablauf-und-kosten/`} />
           </div>
@@ -117,46 +117,46 @@ export default function HeroHome({ className, title }: Props) {
       <section className="hidden lg:flex justify-center items-center lg:px-16 2xl:px-32 gap-4 pt-20 xl:pb-26 2xl:pb-40 2xl:pt-32">
         <div className="flex-1 flex flex-col items-end">
           <div>
-    <div className="">
-            <h1 className="xl:!text-4xl/12 font-bold pt-4 pr-4 pb-4 bg-stone-50 dark:bg-darkblue rounded-br-xl">
-              <span className="!text-sage-brown">
-                Psychologische Psychotherapie
+            <div className="">
+              <h1 className="xl:!text-4xl/12 font-bold pt-4 pr-4 pb-4 bg-stone-50 dark:bg-darkblue rounded-br-xl">
+                <span className="!text-sage-brown">
+                  Psychologische Psychotherapie
+                </span>{" "}
+                <br />
+                Traumatherapie & Psychoonkologie
+              </h1>
+            </div>
+            <h2 className="mt-4">Privatpraxis in München</h2>
+            <p className="mt-4 max-w-2xl">
+              Jeder Mensch kann im Laufe seines Lebens an die Grenzen seelischer
+              Belastbarkeit kommen. Als staatlich approbierte{" "}
+              <span className="!text-sage-brown font-semibold">
+                Psychologische Psychotherapeutin
               </span>{" "}
-              <br />
-              Traumatherapie & Psychoonkologie
-            </h1>
-          </div>
-          <h2 className="mt-4">Privatpraxis in München</h2>
-          <p className="mt-4 max-w-2xl">
-            Jeder Mensch kann im Laufe seines Lebens an die Grenzen seelischer
-            Belastbarkeit kommen. Als staatlich approbierte{" "}
-            <span className="!text-sage-brown font-semibold">
-              Psychologische Psychotherapeutin
-            </span>{" "}
-            (Verhaltenstherapie) und Psychoonkologin möchte ich Sie dabei
-            unterstützen, in Krisen und herausfordernden Lebenssituationen neue
-            Perspektiven zu finden.
-          </p>
-          <div className="hidden xl:block max-w-2xl">
-            <h3 className="mt-4 font-lora font-semibold">
-              Psychologische Begleitung
-            </h3>
-            <p>
-              Ich begleite Menschen bei der Bewältigung psychischer Belastungen,
-              traumatischer Erfahrungen, Ängsten, Depressionen sowie emotionalen
-              Herausforderungen im Zusammenhang mit schweren oder chronischen
-              Erkrankungen – empathisch, individuell und wissenschaftlich
-              fundiert.
+              (Verhaltenstherapie) und Psychoonkologin möchte ich Sie dabei
+              unterstützen, in Krisen und herausfordernden Lebenssituationen
+              neue Perspektiven zu finden.
             </p>
-          </div>
+            <div className="hidden xl:block max-w-2xl">
+              <h3 className="mt-4 font-lora font-semibold">
+                Psychologische Begleitung
+              </h3>
+              <p>
+                Ich begleite Menschen bei der Bewältigung psychischer
+                Belastungen, traumatischer Erfahrungen, Ängsten, Depressionen
+                sowie emotionalen Herausforderungen im Zusammenhang mit schweren
+                oder chronischen Erkrankungen – empathisch, individuell und
+                wissenschaftlich fundiert.
+              </p>
+            </div>
 
-          <div className="flex flex-col items-center gap-4 lg:flex-row mt-8">
-            <ContactBtn className="mx-4 lg:mx-0 " />
-            <TopicBtn text={"Ablauf & Kosten"} path={"/ablauf-und-kosten/"} />
+            <div className="flex flex-col items-center gap-4 lg:flex-row mt-8">
+              <ContactBtn className="mx-4 lg:mx-0 " />
+              <TopicBtn text={"Ablauf & Kosten"} path={"/ablauf-und-kosten/"} />
+            </div>
           </div>
         </div>
-          </div>
-      
+
         <div className="flex-1">
           <Image
             src="/images/portraits/40145-1280_small.jpg"
@@ -170,7 +170,7 @@ export default function HeroHome({ className, title }: Props) {
       </section>
 
       {/* ab 2xl */}
-      
+
       {/* <div className="hidden 2xl:flex justify-center px-32 gap-4 pt-20 xl:pb-26 2xl:pb-40 2xl:pt-32 ">
         <div className="min-w-0 w-1/4 overflow-visible">
           <div className="relative">

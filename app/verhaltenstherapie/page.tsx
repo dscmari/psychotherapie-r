@@ -32,7 +32,7 @@ export default function page() {
       />
       <Features
         data={verhaltenstherapieFeatures}
-        className="px-4 py-24 md:px-16 lg:p-32 mt-24 lg:mt-32 2xl:mt-48"
+        className="px-4 py-24 md:px-16 lg:p-32 mt-24 lg:mt-32 2xl:mt-48 dark:mt-0"
       />
       <section className="pt-24 lg:pt-32 px-4 md:px-16 lg:px-32 ">
         <div className="flex flex-col xl:flex-row gap-12 xl:gap-16">

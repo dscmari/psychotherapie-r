@@ -22,7 +22,7 @@ export default function Hero({
   imgPath,
 }: Props) {
   return (
-    <div className="dark flex flex-col gap-4 lg:gap-8 xl:gap-16 2xl:gap-32 lg:flex-row-reverse lg:items-start xl:items-center lg:px-16 xl:px-32 lg:pt-32">
+    <div className="dark flex flex-col gap-4 lg:gap-8 xl:gap-16 2xl:gap-32 lg:flex-row-reverse lg:items-start xl:items-center lg:px-16 xl:px-32 lg:pt-32 dark:py-8 dark:md:py-16 dark:lg:py-32">
       <div className="lg:flex-1 lg:flex flex-col">
         <div className="relative lg:w-[400px] xl:w-auto">
           <Image
@@ -42,7 +42,7 @@ export default function Hero({
         <p className="hidden lg:block xl:hidden mt-4">{text_2}</p>
       </div>
       <div className="px-4 sm:px-8 md:px-16 lg:px-0 lg:flex-1">
-        <h1 className="xl:!text-4xl/12 font-bold !text-sage-brown mt-4 lg:mt-0">
+        <h1 className="xl:!text-4xl/12 font-bold !text-sage-brown dark:!text-stone-light mt-4 lg:mt-0">
           {title}
         </h1>
         <h2>{subtitle}</h2>
