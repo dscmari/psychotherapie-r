@@ -119,7 +119,7 @@ export default function HeroHome({ className, title }: Props) {
           <div>
             <div className="">
               <h1 className="xl:!text-4xl/12 font-bold pt-4 pr-4 pb-4 bg-stone-50 dark:bg-darkblue rounded-br-xl">
-                <span className="!text-sage-brown">
+                <span className="!text-sage-brown dark:!text-stone-light">
                   Psychologische Psychotherapie
                 </span>{" "}
                 <br />
@@ -130,7 +130,7 @@ export default function HeroHome({ className, title }: Props) {
             <p className="mt-4 max-w-2xl">
               Jeder Mensch kann im Laufe seines Lebens an die Grenzen seelischer
               Belastbarkeit kommen. Als staatlich approbierte{" "}
-              <span className="!text-sage-brown font-semibold">
+              <span className="!text-sage-brown dark:!text-stone-light font-semibold">
                 Psychologische Psychotherapeutin
               </span>{" "}
               (Verhaltenstherapie) und Psychoonkologin möchte ich Sie dabei
@@ -138,7 +138,7 @@ export default function HeroHome({ className, title }: Props) {
               neue Perspektiven zu finden.
             </p>
             <div className="hidden xl:block max-w-2xl">
-              <h3 className="mt-4 font-lora font-semibold">
+              <h3 className="mt-4 font-lora font-semibold dark:!text-stone-light">
                 Psychologische Begleitung
               </h3>
               <p>

@@ -29,14 +29,11 @@ export default async function Blog() {
   return (
     <div className="dark:bg-darkblue">
       <div className="pt-12 lg:px-32 px-4 lg:pt-32 xl:max-w-3/4 2xl:max-w-2/3 ">
-        <h1 className="text-center md:px-32 lg:px-0 lg:text-start 2xl:!text-5xl/14">
-          Titel für Übersicht Blogartikel einfügen
+        <h1 className="text-center md:px-32 lg:px-0 lg:text-start !text-sage-brown dark:!text-stone-light">
+          Blogartikel
         </h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-          nulla vero soluta architecto nesciunt eaque nostrum ducimus fugiat
-          enim. Ea voluptates asperiores pariatur totam est, error porro quidem
-          iusto distinctio?
+       Hier finden Sie regelmäßig neue Blogartikel zu meinen Schwerpunktthemen: Verhaltenstherapie, Traumatherapie & Psychoonkologie sowie zu weiteren Themen der psychischen Gesundheit.
         </p>
       </div>
       <div className="grid lg:grid-cols-2 gap-24 lg:gap-12 p-4 py-24 lg:p-32">

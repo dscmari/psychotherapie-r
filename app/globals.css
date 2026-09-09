@@ -202,9 +202,4 @@ span {
   span, a {
     color: var(--color-stone-light) !important;
   }
-
-  .dark {
-    background-color: var(--color-darkblue);
-    color: var(--color-stone-light);
-  }
 }

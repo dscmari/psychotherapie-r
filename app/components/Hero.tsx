@@ -22,7 +22,7 @@ export default function Hero({
   imgPath,
 }: Props) {
   return (
-    <div className="dark flex flex-col gap-4 lg:gap-8 xl:gap-16 2xl:gap-32 lg:flex-row-reverse lg:items-start xl:items-center lg:px-16 xl:px-32 lg:pt-32 dark:py-8 dark:md:py-16 dark:lg:py-32">
+    <section className="flex flex-col gap-4 lg:gap-8 xl:gap-16 2xl:gap-32 lg:flex-row-reverse lg:items-start xl:items-center lg:px-16 xl:px-32 lg:pt-32 dark:py-8 dark:md:py-16 dark:lg:py-32">
       <div className="lg:flex-1 lg:flex flex-col">
         <div className="relative lg:w-[400px] xl:w-auto">
           <Image
@@ -53,6 +53,6 @@ export default function Hero({
           <TopicBtn text={`${btn.text}`} path={`/${slugify(btn.text)}`} className={`${btn.className}`} />
         </div>
       </div>
-    </div>
+    </section>
   );
 }

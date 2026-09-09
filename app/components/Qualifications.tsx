@@ -11,14 +11,13 @@ type Props = {
 
 export default function Qualifications({ className, qualifications }: Props) {
   return (
-
-      <div className={`flex flex-col gap-4 mt-8 ${className}`}>
-        {qualifications.map((e, index) => (
-          <div key={index} className="flex gap-4">
-            <SendHorizontal className="shrink-0 text-sage" />
-            <span>{e.description}</span>
-          </div>
-        ))}
+    <div className={`flex flex-col gap-4 mt-8 ${className}`}>
+      {qualifications.map((e, index) => (
+        <div key={index} className="flex gap-4">
+          <SendHorizontal className="shrink-0 text-sage" />
+          <span>{e.description}</span>
+        </div>
+      ))}
     </div>
   );
 }

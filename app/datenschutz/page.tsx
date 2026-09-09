@@ -1,7 +1,7 @@
 export default function page() {
   return (
-    <div className="dark">
-      <section className="max-w-4xl mx-auto px-4 py-12 md:py-16 lg:py-32">
+    <div className="dark:bg-darkblue">
+      <section className="max-w-7xl px-4 md:px-16 lg:px-32 py-12 md:py-16 lg:py-32">
         <div className="">
           <h1 className="">Datenschutzerklärung</h1>
           <p className="text-sm mb-4">Stand: September 2026</p>
@@ -92,11 +92,11 @@ export default function page() {
               Seitenbetreiber senden, eine SSL- bzw. TLS-Verschlüsselung. Eine
               verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile
               des Browsers von{" "}
-              <code className="bg-slate-100 px-1 py-0.5 rounded text-xs">
+              <code className="px-1 py-0.5 rounded text-xs">
                 http://
               </code>{" "}
               auf{" "}
-              <code className="bg-slate-100 px-1 py-0.5 rounded text-xs">
+              <code className="px-1 py-0.5 rounded text-xs">
                 https://
               </code>{" "}
               wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.

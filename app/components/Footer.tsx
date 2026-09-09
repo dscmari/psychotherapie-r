@@ -63,12 +63,12 @@ export default function Footer({ className }: Props) {
           </div>
         </div>
         <div className="lg:col-span-2 order-1 lg:order-3 mt-12 lg:mt-0 flex flex-col ">
-          <h1 className="text-center lg:text-start !text-stone-light">
+          <h2 className="!text-stone-light">
             {" "}
             Privatpraxis für Psychotherapie, Traumatherapie & Psychoonkologie
             in München
-          </h1>
-          <p className="mb-2 !text-stone-50 text-center lg:text-start">
+          </h2>
+          <p className="!text-stone-light">
             Jeder Mensch kann im Laufe seines Lebens an die Grenzen seelischer
             Belastbarkeit kommen. Als approbierte Psychologische
             Psychotherapeutin (Verhaltenstherapie) und Psychoonkologin möchte

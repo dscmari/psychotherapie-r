@@ -5,16 +5,16 @@ import Image from "next/image";
 export default function page() {
   return (
     <div>
-      <section className="pt-8 lg:pt-32 px-4 md:px-8 lg:px-32 h-screen">
+      <section className="pt-8 pb-24 lg:pt-32 px-4 md:px-8 lg:px-32 min-h-screen">
         <div className="flex flex-col lg:flex-row gap-16">
           <div className="flex-1 flex flex-col gap-4">
-            <h1 className="!text-sage-brown">Kontakt</h1>
+            <h1 className="!text-sage-brown dark:!text-stone-light">Kontakt</h1>
             <p className="max-w-2xl">
               Sie möchten einen Termin vereinbaren oder haben Fragen zu meinem
               psychotherapeutischen Angebot? Gerne können Sie mich telefonisch
               oder per E-Mail kontaktieren.
             </p>
-            <p>Als <span className="!text-sage-brown">Privatpraxis</span>  kann die Abrechnung nicht direkt über die gesetzliche Krankenkasse erfolgen, sondern privat nach der Gebührenordnung für PsychotherapeutInnen (GOP).</p>
+            <p>Als <span className="!text-sage-brown dark:!text-stone-light">Privatpraxis</span>  kann die Abrechnung nicht direkt über die gesetzliche Krankenkasse erfolgen, sondern privat nach der Gebührenordnung für PsychotherapeutInnen (GOP).</p>
             <div className="flex flex-col gap-4 my-8">
               <Link href="tel: 123456789" className="flex items-center gap-4">
                 <Phone className="shrink-0 size-6 text-sage" />

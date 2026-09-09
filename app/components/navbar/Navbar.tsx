@@ -33,7 +33,7 @@ export default function Navbar({ className }: Props) {
   };
 
   return (
-    <div className={`dark ${className}`}>
+    <div className={`dark:bg-darkblue ${className}`}>
       {/* mobile & tablet */}
       <div className="lg:hidden w-full p-4 md:px-8 dark:text-stone">
         <div className="flex justify-between items-center">
@@ -89,7 +89,7 @@ export default function Navbar({ className }: Props) {
             <div
               className={`flex items-center gap-4 pt-12 ${
                 isSelected
-                  ? "border-t border-slate-200"
+                  ? ""
                   : "border-b-2 border-slate-200"
               }`}
               onClick={() => setIsSelected((prev) => !prev)}
@@ -132,7 +132,7 @@ export default function Navbar({ className }: Props) {
                         className="pb-1 border-b-2 border-slate-200"
                         onClick={() => setShowMenu((prev) => !prev)}
                       >
-                        <Link href="/#/">Traumatherapie</Link>
+                        <Link href="/traumatherapie/">Traumatherapie</Link>
                       </div>
                       <div
                         className="pb-1 border-b-2 border-slate-200"

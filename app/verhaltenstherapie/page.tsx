@@ -37,7 +37,7 @@ export default function page() {
       <section className="pt-24 lg:pt-32 px-4 md:px-16 lg:px-32 ">
         <div className="flex flex-col xl:flex-row gap-12 xl:gap-16">
           <div className="flex-1 flex flex-col gap-4">
-            <h2>Wobei hilft die Verhaltenstherapie?</h2>
+            <h1>Wobei hilft die Verhaltenstherapie?</h1>
             <p>
               Im Mittelpunkt stehen dabei konkrete Lösungen für den Alltag.
               Gemeinsam werden individuelle Strategien entwickelt, um neue
@@ -82,9 +82,9 @@ export default function page() {
       <section className="py-12 lg:py-32 px-4 md:px-16 lg:px-32 ">
         <p className="text-center">
           Wenn Sie Unterstützung suchen oder Fragen zur Verhaltenstherapie
-          haben, nehme Sie gerne{" "}
+          haben, nehmen Sie gerne{" "}
           <Link
-            href={"/#/"}
+            href={"/kontakt/"}
             className="underline underline-offset-2 text-sage-dark font-semibold"
           >
             Kontakt
