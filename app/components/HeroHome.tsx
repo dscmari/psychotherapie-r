@@ -91,7 +91,7 @@ export default function HeroHome({ className, title }: Props) {
                 Psychologische Psychotherapie
               </span>{" "}
               <br />
-              Traumatherapie & Psychoonkologie
+              Psychoonkologie & Traumatherapie
             </h1>
           </div>
           <h2 className="mt-4 ">Privatpraxis in München</h2>
@@ -123,7 +123,7 @@ export default function HeroHome({ className, title }: Props) {
                   Psychologische Psychotherapie
                 </span>{" "}
                 <br />
-                Traumatherapie & Psychoonkologie
+                Psychoonkologie & Traumatherapie
               </h1>
             </div>
             <h2 className="mt-4">Privatpraxis in München</h2>

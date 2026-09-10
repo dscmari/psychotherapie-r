@@ -33,12 +33,17 @@ export default async function Blog() {
           Blogartikel
         </h1>
         <p>
-       Hier finden Sie regelmäßig neue Blogartikel zu meinen Schwerpunktthemen: Verhaltenstherapie, Traumatherapie & Psychoonkologie sowie zu weiteren Themen der psychischen Gesundheit.
+          Hier finden Sie regelmäßig neue Blogartikel zu meinen
+          Schwerpunktthemen: Verhaltenstherapie, Traumatherapie &
+          Psychoonkologie sowie zu weiteren Themen der psychischen Gesundheit.
         </p>
       </div>
       <div className="grid lg:grid-cols-2 gap-24 lg:gap-12 p-4 py-24 lg:p-32">
         {posts.map((post) => (
-          <div key={post._id} className=" rounded-xl bg-sage-dark dark:bg-mist-900 text-stone-light">
+          <div
+            key={post._id}
+            className="dark:bg-mist-900 rounded-b-xl"
+          >
             <Image
               src={post.imageUrl}
               alt={post.title}
@@ -46,7 +51,7 @@ export default async function Blog() {
               height={800}
               className=""
             />
-            <div className="mx-4 my-2 flex flex-col items-start">
+            <div className="px-4 py-2 flex flex-col items-start border-x border-b rounded-b-xl border-sage-brown dark:border-0">
               <Link
                 href={`/${post.slug.current}`}
                 className="gap-2 pt-4  underline font-semibold text-lg"

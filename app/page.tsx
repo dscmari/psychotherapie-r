@@ -5,7 +5,6 @@ import { HandHeart, Leaf, Lightbulb } from "lucide-react";
 import ContactBtn from "./components/btns/ContactBtn";
 import TopicBtn from "./components/btns/TopicBtn";
 import ScrollToTopBtn from "./components/btns/ScrollToTopBtn";
-import Reimbursement from "./components/Reimbursement";
 
 export default function Home() {
   return (
@@ -34,7 +33,7 @@ export default function Home() {
                 <h2 className="!font-semibold">Psychoonkologie</h2>
                 <p>Psychologische Begleitung bei Krebserkrankungen</p>
                 <Link
-                  href={"#"}
+                  href={"/psychoonkologie/"}
                   className="block mt-2 underline !text-sage font-semibold"
                 >
                   Mehr erfahren
@@ -49,7 +48,7 @@ export default function Home() {
                 <h2 className="!font-semibold">Traumatherapie</h2>
                 <p>Professionelle Unterstützung nach belastenden Erfahrungen</p>
                 <Link
-                  href={"#"}
+                  href={"/traumatherapie/"}
                   className="block mt-2 underline !text-sage font-semibold"
                 >
                   Mehr erfahren

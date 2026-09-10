@@ -59,18 +59,19 @@ export default function DesktopNavbar({ className }: Props) {
             >
               Verhaltenstherapie
             </Link>
+                      <Link
+              className={`nav-link ${pathname === "/psychoonkologie/" ? "active" : ""}`}
+              href={"/psychoonkologie/"}
+            >
+              Psychoonkologie
+            </Link>
             <Link
               className={`nav-link ${pathname === "/traumatherapie/" ? "active" : ""}`}
               href={"/traumatherapie/"}
             >
               Traumatherapie
             </Link>
-            <Link
-              className={`nav-link ${pathname === "/psychoonkologie/" ? "active" : ""}`}
-              href={"#"}
-            >
-              Psychoonkologie
-            </Link>
+  
             <Link
               className={`nav-link lg:hidden 2xl:inline-block ${pathname === "/ausbildung-und-qualifikation/" ? "active" : ""}`}
               href={"/ausbildung-und-qualifikation/"}

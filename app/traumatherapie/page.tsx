@@ -45,15 +45,15 @@ export default function page() {
         btn={btn}
         imgPath={imgPath}
       />
-      <section className="py-16 mt-24 lg:py-32 lg:mt-32 px-4 md:px-16 lg:px-32 bg-sage-dark dark:mt-0">
+      <section className="text-xl py-16 mt-24 lg:py-32 lg:mt-32 px-4 md:px-16 lg:px-32 bg-sage-dark dark:mt-0">
         <div className="text-center lg:text-start">
-          <span className="font-light text-sm !text-stone-light">
+          <span className="font-light text-xl !text-stone-light">
             Traumatherapie
           </span>
           <h1 className="mb-8 lg:!text-3xl/12 2xl:!text-5xl/14 !font-bold tracking-wide !text-stone-light">
             Symptome nach traumatischen Erfahrungen
           </h1>
-          <p className="2xl:text-base/8 text-center lg:text-start !text-stone-light lg:max-w-3/5 2xl:max-w-full">
+          <p className=" text-center lg:text-start !text-stone-light lg:max-w-3/5 2xl:max-w-full">
             Traumatische Belastungen zeigen sich häufig auf emotionaler,
             körperlicher und mentaler Ebene.
           </p>

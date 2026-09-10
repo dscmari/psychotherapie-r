@@ -132,13 +132,13 @@ export default function Navbar({ className }: Props) {
                         className="pb-1 border-b-2 border-slate-200"
                         onClick={() => setShowMenu((prev) => !prev)}
                       >
-                        <Link href="/traumatherapie/">Traumatherapie</Link>
+                        <Link href="/psychoonkologie/">Psychoonkologie</Link>
                       </div>
-                      <div
+                               <div
                         className="pb-1 border-b-2 border-slate-200"
                         onClick={() => setShowMenu((prev) => !prev)}
                       >
-                        <Link href="/besser-schlafen/">Psychoonkologie</Link>
+                        <Link href="/traumatherapie/">Traumatherapie</Link>
                       </div>
                     </div>
                   </motion.ol>

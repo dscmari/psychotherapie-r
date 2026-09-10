@@ -32,13 +32,13 @@ export default function Features({ className, data }: Props) {
       className={`bg-sage-dark flex flex-col 2xl:flex-row 2xl:items-start gap-12 lg:gap-16 2xl:gap-32 text-stone-light ${className}`}
     >
       <div className="flex-1 flex flex-col items-center lg:items-start gap-4">
-        <span className="font-light text-sm !text-stone-light">
+        <span className="font-light text-xl !text-stone-light">
           {subheader}
         </span>
         <h1 className="mb-8 lg:!text-3xl/12 2xl:!text-5xl/14 !font-bold tracking-wide !text-stone-light">
           {headline}
         </h1>
-        <p className="2xl:text-base/8 text-center lg:text-start !text-stone-light lg:max-w-3/5 2xl:max-w-full">
+        <p className="2xl:text-xl/10 text-xl text-center lg:text-start !text-stone-light lg:max-w-3/5 2xl:max-w-full">
           {intro}
         </p>
         <ContactBtn className="mx-auto lg:mx-0 mt-8 hover:!bg-sage-brown" />
@@ -53,7 +53,7 @@ export default function Features({ className, data }: Props) {
                   {bullet.header}
                 </h2>
               </div>
-              <p className="lg:text-base/8 !text-stone-light !font-semibold">
+              <p className="text-xl lg:text-xl/10 !text-stone-light">
                 {bullet.text}
               </p>
             </div>

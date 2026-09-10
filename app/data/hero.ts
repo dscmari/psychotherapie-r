@@ -22,6 +22,18 @@ export const traumaHero = {
   },
   imgPath: "/images/portraits/40145-1065_squooshed.jpg",
 };
+export const psyonkoHero= {
+  title: "Medizinische Psychologie & Psychoonkologie in München",
+  subtitle: "Psychologische Begleitung bei körperlichen Erkrankungen, chronischen Schmerzen und Krebs.",
+  text_1:
+    "Psychische Belastungen durch Krankheit, chronische Schmerzen oder eine Krebsdiagnose können das gesamte Leben beeinflussen. In meiner Praxis mit dem Schwerpunkt Medizinische Psychologie und Psychoonkologie in München begleite ich Sie professionell, empathisch und wissenschaftlich fundiert bei der Bewältigung emotionaler Herausforderungen rund um Gesundheit und Erkrankung.",
+  text_2:
+    "Ziel ist es, Ihre psychische Stabilität zu stärken, Ängste zu reduzieren und Ihre Lebensqualität nachhaltig zu verbessern.",
+  btn: {
+    text: "Ablauf & Kosten",
+  },
+  imgPath: "/images/G-F5_squooshed.jpg",
+};
 
 export const ablaufKostenHero = {
   title: "Ablauf & Kosten",
