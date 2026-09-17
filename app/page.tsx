@@ -31,7 +31,7 @@ export default function Home() {
               <HandHeart className="text-sage" size={82} strokeWidth={1} />
               <div className="text-center">
                 <h2 className="!font-semibold">Psychoonkologie</h2>
-                <p>Psychologische Begleitung bei Krebserkrankungen</p>
+                <p>Psychologische Begleitung bei körperlichen Erkrankungen</p>
                 <Link
                   href={"/psychoonkologie/"}
                   className="block mt-2 underline !text-sage font-semibold"

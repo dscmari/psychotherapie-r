@@ -16,6 +16,7 @@ export default function page() {
     "Belastende Kindheitserfahrungen",
     "Schwere Erkrankungen",
     "Traumatische Geburtserfahrungen",
+    "Traumatisierung im beruflichen Kontext (Polizei, Gesundheitswesen, Militär)"
   ];
 
   const emotionalSymptoms = [

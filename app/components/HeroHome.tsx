@@ -114,11 +114,11 @@ export default function HeroHome({ className, title }: Props) {
 
       {/* desktop */}
       {/* lg-xl */}
-      <section className="hidden lg:flex justify-center items-center lg:px-16 2xl:px-32 gap-4 pt-20 xl:pb-26 2xl:pb-40 2xl:pt-32">
-        <div className="flex-1 flex flex-col items-end">
+      <section className="hidden lg:flex  lg:px-16 2xl:px-32 xl:gap-16 pt-20 xl:pb-26 2xl:pb-40 2xl:pt-32">
+        <div className="xl:flex-1 flex flex-col items-end">
           <div>
             <div className="">
-              <h1 className="xl:!text-4xl/12 font-bold pt-4 pr-4 pb-4 bg-stone-50 dark:bg-darkblue rounded-br-xl">
+              <h1 className="xl:!text-4xl/12 font-bold bg-stone-50 dark:bg-darkblue rounded-br-xl">
                 <span className="!text-sage-brown dark:!text-stone-light">
                   Psychologische Psychotherapie
                 </span>{" "}
@@ -157,7 +157,7 @@ export default function HeroHome({ className, title }: Props) {
           </div>
         </div>
 
-        <div className="flex-1">
+        <div className="xl:flex-1">
           <Image
             src="/images/portraits/40145-1280_small.jpg"
             alt="Portrait von Psychotherapeuting Anne Julia Röhl"

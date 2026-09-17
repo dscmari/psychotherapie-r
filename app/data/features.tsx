@@ -18,7 +18,7 @@ export const verhaltenstherapieFeatures = {
 },
 {
   icon: <Sprout className="shrink-0" size={36} />,
-  header: "Nachhaltige Verönderung",
+  header: "Nachhaltige Veränderung",
   text: "Statt nur Symptome kurzfristig zu lindern, zielt die Verhaltenstherapie auf dauerhafte Veränderungen ab, die Ihnen auch langfristig helfen, stabil und selbstwirksam zu bleiben.",
 },
 {

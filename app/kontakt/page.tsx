@@ -20,14 +20,14 @@ export default function page() {
                 <Phone className="shrink-0 size-6 text-sage" />
                 <span className="!cursor-pointer text-lg underline underline-offset-2">
                   {" "}
-                  12345678910
+                  0176/21908630
                 </span>
               </Link>
               <Link href="mailto:" className="flex items-center gap-4">
                 <Mail className="shrink-0 size-6 text-sage" />
                 <span className="!cursor-pointer text-lg underline underline-offset-2">
                   {" "}
-                  info@musterfrau.de
+                  info@psychotherapie-roehl.de
                 </span>
               </Link>
             </div>

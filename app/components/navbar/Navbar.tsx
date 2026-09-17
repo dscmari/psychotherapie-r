@@ -44,7 +44,7 @@ export default function Navbar({ className }: Props) {
             href="/"
             className=" font-semibold font-lora text-xl"
           >
-            Private Psychotherapie Praxis  <br />Anne Julia Röhl
+            Psychotherapeutische Privatpraxis <br />Anne Julia Röhl
           </Link>
           <div
             className={`burgermenu ${showMenu ? "open" : ""}`}
@@ -166,7 +166,7 @@ export default function Navbar({ className }: Props) {
                   </Link>
                 </div>
 
-                <ContactBtn className="mx-auto mt-8" />
+                <ContactBtn className="mx-auto mt-8 w-full" />
               </div>
             </motion.div>
           </div>

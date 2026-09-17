@@ -12,7 +12,7 @@ export default function DesktopNavbar({ className }: Props) {
   const pathname = usePathname();
   return (
     <div
-      className={`relative z-100 mx-auto pb-4 px-4 xl:px-16 2xl:px-32 dark:bg-darkblue dark:text-stone-light ${className}`}
+      className={`relative z-100 mx-auto pb-4 px-4 xl:px-8 2xl:px-16 dark:bg-darkblue dark:text-stone-light ${className}`}
     >
       <div className="flex justify-between font-light py-4 text-sm ">
         <div className="flex flex-col">
@@ -24,8 +24,8 @@ export default function DesktopNavbar({ className }: Props) {
           </p>
           <p>Psychologische Psychotherapeutin & Psychoonkologin</p>
         </div>
-        <div className="flex items-center gap-4">
-          <div className="flex items-center gap-2 ">
+        <div className="grid grid-cols-2 xl:flex items-center gap-2 xl:gap-4">
+          <div className="flex items-center gap-2 col-span-2">
             <House className="shrink-0 size-4" />
             <span>
               c/o Praxis am Nussbaumpark, Nußbaumstraße 14, 80336 München
@@ -33,25 +33,26 @@ export default function DesktopNavbar({ className }: Props) {
           </div>
           <div className="flex items-center gap-2 ">
             <Phone className="shrink-0 size-4" />
-            <span>+49 1234 123456</span>
+            <span>0176/21908630</span>
           </div>
           <div className="flex items-center gap-2">
             <Mail className="shrink-0 size-4" />
-            <span>info@musterfrau.de</span>
+            <span>info@psychotherapie-roehl.de</span>
           </div>
         </div>
       </div>
-      <div className="flex items-start justify-between gap-16 mt-4 dark:text-stone">
+      <div className="flex items-start justify-between gap-16 mt-16 dark:text-stone">
         <Link
           className={`font-semibold !font-lora text-xl 2xl:self-center nav-link ${pathname === "/" ? "active" : ""}`}
           href={"/"}
         >
           Anne Julia Röhl <br />
-          Psychotherapie{" "}
-          <span className="hidden 2xl:inline-block">Privatpraxis</span>
+          <span className="whitespace-nowrap">
+            Psychotherapeutische Privatpraxis
+          </span>
         </Link>
         {/* <ShiftingDropDown /> */}
-        <div className="flex flex-col gap-2 !font-lora ">
+        <div className="lg:hidden 2xl:flex flex-col gap-2 !font-lora">
           <div className="flex gap-4 xl:gap-8 2xl:gap-16">
             <Link
               className={`nav-link ${pathname === "/verhaltenstherapie/" ? "active" : ""}`}
@@ -59,7 +60,7 @@ export default function DesktopNavbar({ className }: Props) {
             >
               Verhaltenstherapie
             </Link>
-                      <Link
+            <Link
               className={`nav-link ${pathname === "/psychoonkologie/" ? "active" : ""}`}
               href={"/psychoonkologie/"}
             >
@@ -71,7 +72,7 @@ export default function DesktopNavbar({ className }: Props) {
             >
               Traumatherapie
             </Link>
-  
+
             <Link
               className={`nav-link lg:hidden 2xl:inline-block ${pathname === "/ausbildung-und-qualifikation/" ? "active" : ""}`}
               href={"/ausbildung-und-qualifikation/"}
@@ -109,6 +110,60 @@ export default function DesktopNavbar({ className }: Props) {
         <div className="flex items-center gap-8">
           <ContactBtn />
         </div>
+      </div>
+      <div className="bg-sage/40 p-4 2xl:hidden gap-2 !font-lora mt-8">
+        <div className="flex flex-wrap xl:max-w-2/3 gap-x-16 gap-y-4">
+          <Link
+            className={`nav-link ${pathname === "/verhaltenstherapie/" ? "active" : ""}`}
+            href={"/verhaltenstherapie/"}
+          >
+            Verhaltenstherapie
+          </Link>
+          <Link
+            className={`nav-link ${pathname === "/psychoonkologie/" ? "active" : ""}`}
+            href={"/psychoonkologie/"}
+          >
+            Psychoonkologie
+          </Link>
+          <Link
+            className={`nav-link ${pathname === "/traumatherapie/" ? "active" : ""}`}
+            href={"/traumatherapie/"}
+          >
+            Traumatherapie
+          </Link>
+
+          <Link
+            className={`nav-link lg:hidden 2xl:inline-block ${pathname === "/ausbildung-und-qualifikation/" ? "active" : ""}`}
+            href={"/ausbildung-und-qualifikation/"}
+          >
+            Ausbildung & Qualifikation
+          </Link>
+          <Link
+            className={`nav-link hidden lg:inline-block 2xl:hidden ${pathname === "/ausbildung-und-qualifikation/" ? "active" : ""}`}
+            href={"/ausbildung-und-qualifikation/"}
+          >
+            Qualifikation
+          </Link>
+                    <Link className="nav-link" href={"#"}>
+            Online Psychotherapie
+          </Link>
+          <Link className="nav-link" href={"#"}>
+            Psychotherapy in English 🇬🇧
+          </Link>
+          <Link
+            className={`nav-link ${pathname === "/ablauf-und-kosten/" ? "active" : ""}`}
+            href={"/ablauf-und-kosten/"}
+          >
+            Ablauf & Kosten
+          </Link>
+          <Link
+            className={`nav-link ${pathname === "/blog/" ? "active" : ""}`}
+            href={"/blog/"}
+          >
+            Blog
+          </Link>
+        </div>
+  
       </div>
     </div>
   );
