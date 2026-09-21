@@ -87,10 +87,16 @@ export default function DesktopNavbar({ className }: Props) {
             </Link>
           </div>
           <div className="flex gap-4 xl:gap-8 2xl:gap-16">
-            <Link className="nav-link" href={"#"}>
+            <Link
+              className={`nav-link ${pathname === "/online-psychotherapie/" ? "active" : ""}`}
+              href={"/online-psychotherapie/"}
+            >
               Online Psychotherapie
             </Link>
-            <Link className="nav-link" href={"#"}>
+            <Link
+              className={`nav-link ${pathname === "/psychotherapy-in-english/" ? "active" : ""}`}
+              href={"/psychotherapy-in-english/"}
+            >
               Psychotherapy in English 🇬🇧
             </Link>
             <Link
@@ -144,10 +150,16 @@ export default function DesktopNavbar({ className }: Props) {
           >
             Qualifikation
           </Link>
-                    <Link className="nav-link" href={"#"}>
+          <Link
+            className={`nav-link ${pathname === "/online-psychotherapie/" ? "active" : ""}`}
+            href={"/online-psychotherapie/"}
+          >
             Online Psychotherapie
           </Link>
-          <Link className="nav-link" href={"#"}>
+          <Link
+            className={`nav-link ${pathname === "/psychotherapy-in-english/" ? "active" : ""}`}
+            href={"/psychotherapy-in-english/"}
+          >
             Psychotherapy in English 🇬🇧
           </Link>
           <Link
@@ -163,7 +175,6 @@ export default function DesktopNavbar({ className }: Props) {
             Blog
           </Link>
         </div>
-  
       </div>
     </div>
   );

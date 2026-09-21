@@ -48,3 +48,17 @@ export const ablaufKostenHero = {
   },
   imgPath: "/images/G-F2_sqooshed.jpg",
 };
+
+export const onlinePsychHero = {
+  title: "Online-Psychotherapie in München",
+  subtitle: "Transparente Übersicht zu Ablauf und Kosten der Therapie",
+  text_1:
+    "Eine Online-Psychotherapie in München bietet Ihnen die Möglichkeit, psychotherapeutische Gespräche flexibel und ortsunabhängig per Videotelefonie wahrzunehmen. Die Sitzungen finden in einem geschützten und vertraulichen Rahmen statt – ohne Anfahrtswege und mit der Möglichkeit, die Therapie gut in Ihren Alltag zu integrieren.",
+  text_2:
+    "Die Online-Therapie ermöglicht Ihnen, psychotherapeutische Unterstützung unabhängig davon wahrzunehmen, ob Sie direkt in München oder im Münchner Umland leben. Die Gespräche finden über eine sichere Videoverbindung statt und können von einem ruhigen, geschützten Ort aus geführt werden. Dabei steht Ihre persönliche Situation im Mittelpunkt. Gemeinsam betrachten wir, was Sie belastet, welche Veränderungen Sie sich wünschen und welche Schritte für Sie hilfreich sein können.",
+  btn: {
+    text: "Ausbildung & Qualifikation",
+    className: "lg:!w-60",
+  },
+  imgPath: "/images/G-F2_sqooshed.jpg",
+};

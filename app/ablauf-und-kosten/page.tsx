@@ -10,20 +10,35 @@ import ScrollToTopBtn from "../components/btns/ScrollToTopBtn";
 import Link from "next/link";
 
 export default function page() {
-  const { title, subtitle, text_1, text_2, btn, imgPath } = ablaufKostenHero;
+  const { title, subtitle, text_1, text_2} = ablaufKostenHero;
   return (
     <div>
-      <Hero
-        title={title}
-        subtitle={subtitle}
-        text_1={text_1}
-        text_2={text_2}
-        btn={btn}
-        imgPath={imgPath}
-      />
-      <section className="px-4 sm:px-16 xl:px-32 pt-24 lg:pt-32 flex flex-col items-center">
-        <h2>Wie funktioniert Psychotherapie?</h2>
-        <h1>Die Psychotherapie läuft in drei Phasen ab</h1>
+      <section className="px-4 md: lg:px-32 lg:pt-32 dark:py-8 dark:md:py-16 dark:lg:py-32">
+        <div className="lg:flex-1 lg:flex flex-col">
+          <p className="hidden lg:block xl:hidden mt-4">{text_2}</p>
+        </div>
+        <div className="px-4 sm:px-8 md:px-16 lg:px-0 lg:flex-1 max-w-4xl">
+          <h1 className="lg:!text-5xl font-bold !text-sage-brown dark:!text-stone-light mt-4 lg:mt-0">
+            {title}
+          </h1>
+          <h2>{subtitle}</h2>
+          <p>{text_1}</p>
+          <p className="lg:hidden xl:block mt-4">{text_2}</p>
+          <div className="flex flex-col items-center gap-4 lg:flex-row mt-8">
+            <ContactBtn className="w-full lg:w-44 mx-4 lg:mx-0 " />
+            <TopicBtn
+              text="Ausbildung & Qualifikation"
+              className="lg:!w-60"
+              path={"/ausbildung-und-qualifikation/"}
+            />
+          </div>
+        </div>
+      </section>
+      <section className="px-4 sm:px-16 xl:px-32 pt-24 lg:pt-48 flex flex-col items-center">
+        <h2 className="text-center">Wie funktioniert Psychotherapie?</h2>
+        <h1 className="text-center">
+          Die Psychotherapie läuft in drei Phasen ab
+        </h1>
         <Process circles={processCircles} />
         <div className="grid lg:grid-cols-2 2xl:grid-cols-3 gap-4 md:gap-8 xl:gap-12 mt-12 lg:mt-32">
           <div className="lg:max-w-lg">
@@ -106,8 +121,7 @@ export default function page() {
                 Krankenkasse einen Antrag auf eine Kostenerstattungsverfahren zu
                 stellen. Weitere Informationen hierzu finden Sie{" "}
                 <Link
-                  href="
-https://www.ptk-bayern.de/ptk/web.nsf/id/li_veranstaltungkostenerstattung2018.html"
+                  href="https://www.ptk-bayern.de/ptk/web.nsf/id/li_veranstaltungkostenerstattung2018.html"
                   className="text-sage-dark underline underline-offset-2"
                 >
                   hier

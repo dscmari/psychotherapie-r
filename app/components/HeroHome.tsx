@@ -114,7 +114,7 @@ export default function HeroHome({ className, title }: Props) {
 
       {/* desktop */}
       {/* lg-xl */}
-      <section className="hidden lg:flex  lg:px-16 2xl:px-32 xl:gap-16 pt-20 xl:pb-26 2xl:pb-40 2xl:pt-32">
+      <section className="hidden lg:flex px-16 lg:px-32 items-center xl:gap-16 pt-20 xl:pb-26 2xl:pb-40 2xl:pt-32">
         <div className="xl:flex-1 flex flex-col items-end">
           <div>
             <div className="">
@@ -127,7 +127,7 @@ export default function HeroHome({ className, title }: Props) {
               </h1>
             </div>
             <h2 className="mt-4">Privatpraxis in München</h2>
-            <p className="mt-4 max-w-2xl">
+            <p className="mt-4">
               Jeder Mensch kann im Laufe seines Lebens an die Grenzen seelischer
               Belastbarkeit kommen. Als staatlich approbierte{" "}
               <span className="!text-sage-brown dark:!text-stone-light font-semibold">
@@ -137,7 +137,7 @@ export default function HeroHome({ className, title }: Props) {
               unterstützen, in Krisen und herausfordernden Lebenssituationen
               neue Perspektiven zu finden.
             </p>
-            <div className="hidden xl:block max-w-2xl">
+            <div className="hidden xl:block">
               <h3 className="mt-4 font-lora font-semibold dark:!text-stone-light">
                 Psychologische Begleitung
               </h3>

@@ -160,8 +160,13 @@ export default function Navbar({ className }: Props) {
                     Blog
                   </Link>
                 </div>
+                        <div className="pb-1 border-b-2 border-slate-200 w-full flex justify-start">
+                  <Link href={"/online-psychotherapie/"} className="text-right">
+                    Online Psychotherpie
+                  </Link>
+                </div>
                 <div className="pb-1 border-b-2 border-slate-200 w-full flex justify-start">
-                  <Link href={"/#/"} className="text-right">
+                  <Link href={"/psychotherapy-in-english/"} className="text-right">
                     Psychotherapy in English 🇬🇧
                   </Link>
                 </div>

@@ -9,7 +9,7 @@ type Props = {
 
 export default function Footer({ className }: Props) {
   return (
-    <footer className={`bg-sage/40 ${className}`}>
+    <footer className={`bg-sage/40 dark:bg-stone-800 ${className}`}>
       <div className="p-4 lg:pt-32 md:px-16 xl:px-32 grid grid-cols-1 gap-12 lg:grid-cols-4">
         <div className="flex flex-col items-center lg:items-start gap-2 order-2 lg:order-1">
           <ul className="flex flex-col items-center lg:items-start gap-2">

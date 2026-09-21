@@ -16,7 +16,7 @@ export default function Process({ className, circles }: Props) {
         {circles.map((e, index) => (
           <div key={index}>
             <div
-              className={`${index === 2 ? "bg-none" : "bg-stone-light"} lg:relative z-50 h-80 w-80 rounded-full flex flex-col gap-8 items-center border-4 border-sage dark`}
+              className={`${index === 2 ? "bg-none" : "bg-stone-light"} lg:relative z-50 h-80 w-80 rounded-full flex flex-col gap-8 items-center border-4 border-sage dark:bg-darkblue`}
             >
               <div className="relative mt-12 bg-sage w-12 h-12 rounded-full flex items-center justify-center font-semibold ">
                 {index === 1 && (
