@@ -22,13 +22,13 @@ export default function page() {
         title={title}
         subtitle={subtitle}
         text_1={text_1}
-        text_2={text_2}
         btn={btn}
         imgPath={imgPath}
       />
       <section className="px-4 sm:px-16 xl:px-32 pt-24 lg:pt-48 flex flex-col items-center">
         <h2>Digitale Psychotherapie</h2>
         <h1 className="text-center">Ablauf der Online Psychotherapie</h1>
+        <p className="max-w-4xl mx-auto lg:text-center">Die Online-Therapie ermöglicht Ihnen, psychotherapeutische Unterstützung unabhängig davon wahrzunehmen, ob Sie direkt in München oder im Münchner Umland leben. Die Gespräche finden über eine sichere Videoverbindung statt und können von einem ruhigen, geschützten Ort aus geführt werden. Dabei steht Ihre persönliche Situation im Mittelpunkt. Gemeinsam betrachten wir, was Sie belastet, welche Veränderungen Sie sich wünschen und welche Schritte für Sie hilfreich sein können.</p>
         <Process circles={onlinePsyCircles} />
         <div className="grid lg:grid-cols-2 2xl:grid-cols-3 gap-4 md:gap-8 xl:gap-12 mt-12 lg:mt-32">
           <div className="lg:max-w-lg">

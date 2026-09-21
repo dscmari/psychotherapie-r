@@ -243,6 +243,7 @@ export default function Home() {
             <Link
               href="https://www.ptk-bayern.de/ptk/web.nsf/id/li_veranstaltungkostenerstattung2018.html"
               className="text-sage-dark underline underline-offset-2"
+              target="blank_"
             >
               hier
             </Link>{" "}

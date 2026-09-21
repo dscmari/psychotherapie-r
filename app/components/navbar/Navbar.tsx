@@ -162,7 +162,7 @@ export default function Navbar({ className }: Props) {
                 </div>
                         <div className="pb-1 border-b-2 border-slate-200 w-full flex justify-start">
                   <Link href={"/online-psychotherapie/"} className="text-right">
-                    Online Psychotherpie
+                    Online Psychotherapie
                   </Link>
                 </div>
                 <div className="pb-1 border-b-2 border-slate-200 w-full flex justify-start">

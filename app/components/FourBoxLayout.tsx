@@ -18,7 +18,7 @@ export default function FourBoxLayout({className, boxes}: Props) {
         {boxes.map((e, index) => (
           <div
             key={index}
-            className={`flex flex-col justify-between p-8 bg-white rounded-xl dark ${
+            className={`flex flex-col justify-between p-8 bg-white rounded-xl dark:bg-stone ${
               index === 1 || index === 2 ? "lg:col-span-2" : "col-span-1"
             }`}
           >
