@@ -12,15 +12,15 @@ export default function page() {
             1. Name und Kontaktdaten des Verantwortlichen
           </h2>
           <div className="">
-            <p className="font-medium">Praxis für Psychotherapie</p>
+            <p className="font-medium">Privatpraxis Psychotherapie</p>
             <p>Anne Julia Roehl</p>
             <p>c/o Praxis am Nussbaumpark, Nußbaumstraße 14, 80336 München</p>
-            <p className="pt-2 !text-red-500">
-              <span className="font-medium">Telefon:</span> 089 / 12345678
+            <p className="pt-2">
+              <span className="font-medium">Telefon:</span> 0176/21908630 
             </p>
-            <p className="!text-red-500">
+            <p className="">
               <span className="font-medium">E-Mail:</span>{" "}
-              kontakt@musterpraxis.de
+              info@psychotherapie-roehl.de
             </p>
           </div>
         </article>

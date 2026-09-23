@@ -5,6 +5,8 @@ import TopicBtn from "../components/btns/TopicBtn";
 import Hero from "../components/Hero";
 import { psyonkoHero } from "../data/hero";
 import ScrollToTopBtn from "../components/btns/ScrollToTopBtn";
+import { faqsPsychoonkologie } from "../data/faqs";
+import Accordeon from "../components/Accordeon";
 
 export default function page() {
   const issues = [
@@ -129,6 +131,12 @@ export default function page() {
             />
           </div>
         </div>
+      </section>
+      <section className="pt-24 lg:pt-48 px-4 md:px-16 lg:px-32 ">
+        <h1 className="text-center">
+          Häufig gestellte Fragen zur medizinischen Psychologie & Psychoonkologie
+        </h1>
+        <Accordeon faqs={faqsPsychoonkologie} className="mt-8 lg:mt-16" />
       </section>
       <section className="py-12 lg:py-32 px-4 md:px-16 lg:px-32 ">
         <p className="text-center">

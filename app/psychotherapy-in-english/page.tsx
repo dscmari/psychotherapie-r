@@ -4,6 +4,8 @@ import ContactBtn from "../components/btns/ContactBtn";
 import TopicBtn from "../components/btns/TopicBtn";
 import FourBoxLayout from "../components/FourBoxLayout";
 import { psyInEnglishFourBoxContent } from "../data/fourBoxData";
+import { faqsEnglishPsychotherapy } from "../data/faqs";
+import Accordeon from "../components/Accordeon";
 
 export default function page() {
   return (
@@ -105,6 +107,12 @@ export default function page() {
             </div>
           </div>
         </div>
+      </section>
+      <section className="pt-24 lg:pt-48 px-4 md:px-16 lg:px-32 ">
+        <h1 className="text-center">
+          Frequently asked questions about psychotherapy
+        </h1>
+        <Accordeon faqs={faqsEnglishPsychotherapy} className="mt-8 lg:mt-16" />
       </section>
     </div>
   );

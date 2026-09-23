@@ -5,6 +5,8 @@ import { HandHeart, Leaf, Lightbulb } from "lucide-react";
 import ContactBtn from "./components/btns/ContactBtn";
 import TopicBtn from "./components/btns/TopicBtn";
 import ScrollToTopBtn from "./components/btns/ScrollToTopBtn";
+import Accordeon from "./components/Accordeon";
+import { faqsHome } from "./data/faqs";
 
 export default function Home() {
   return (
@@ -254,6 +256,10 @@ export default function Home() {
             <TopicBtn text={"Ablauf & Kosten"} path={"/ablauf-und-kosten/"} />
           </div>
         </div>
+      </section>
+      <section className="pt-24 lg:pt-48 px-4 md:px-16 lg:px-32 ">
+        <h1 className="text-center">Häufig gestellte Fragen zur Psychotherapie</h1>
+        <Accordeon faqs={faqsHome} className="mt-8 lg:mt-16" />
       </section>
       <section className="py-24 lg:py-32 px-4 md:px-16 lg:px-32 ">
         <h2>//TODO weitere Inhalte</h2>

@@ -6,6 +6,8 @@ import ContactBtn from "../components/btns/ContactBtn";
 import TopicBtn from "../components/btns/TopicBtn";
 import ScrollToTopBtn from "../components/btns/ScrollToTopBtn";
 import { Activity, Brain, HeartPulse } from "lucide-react";
+import Accordeon from "../components/Accordeon";
+import { faqsTrauma } from "../data/faqs";
 
 export default function page() {
   const issues = [
@@ -16,7 +18,7 @@ export default function page() {
     "Belastende Kindheitserfahrungen",
     "Schwere Erkrankungen",
     "Traumatische Geburtserfahrungen",
-    "Traumatisierung im beruflichen Kontext (Polizei, Gesundheitswesen, Militär)"
+    "Traumatisierung im beruflichen Kontext (Polizei, Gesundheitswesen, Militär)",
   ];
 
   const emotionalSymptoms = [
@@ -204,6 +206,12 @@ export default function page() {
             auf.
           </p>
         </div>
+      </section>
+      <section className="pt-24 lg:pt-48 px-4 md:px-16 lg:px-32 ">
+        <h1 className="text-center">
+          Häufig gestellte Fragen zur Traumatherapie
+        </h1>
+        <Accordeon faqs={faqsTrauma} className="mt-8 lg:mt-16" />
       </section>
       <section className="py-12 lg:py-32 px-4 md:px-16 lg:px-32 "></section>
 

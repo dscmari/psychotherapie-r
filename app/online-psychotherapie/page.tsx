@@ -1,4 +1,3 @@
-
 import Hero from "../components/Hero";
 import { onlinePsychHero } from "../data/hero";
 import { onlinePsyCircles } from "../data/process";
@@ -6,6 +5,8 @@ import Process from "../components/Process";
 import Image from "next/image";
 import Link from "next/link";
 import { CircleSmall } from "lucide-react";
+import { faqsOnlinePsychotherapie } from "../data/faqs";
+import Accordeon from "../components/Accordeon";
 
 export default function page() {
   const { title, subtitle, text_1, text_2, btn, imgPath } = onlinePsychHero;
@@ -28,7 +29,16 @@ export default function page() {
       <section className="px-4 sm:px-16 xl:px-32 pt-24 lg:pt-48 flex flex-col items-center">
         <h2>Digitale Psychotherapie</h2>
         <h1 className="text-center">Ablauf der Online Psychotherapie</h1>
-        <p className="max-w-4xl mx-auto lg:text-center">Die Online-Therapie ermöglicht Ihnen, psychotherapeutische Unterstützung unabhängig davon wahrzunehmen, ob Sie direkt in München oder im Münchner Umland leben. Die Gespräche finden über eine sichere Videoverbindung statt und können von einem ruhigen, geschützten Ort aus geführt werden. Dabei steht Ihre persönliche Situation im Mittelpunkt. Gemeinsam betrachten wir, was Sie belastet, welche Veränderungen Sie sich wünschen und welche Schritte für Sie hilfreich sein können.</p>
+        <p className="max-w-4xl mx-auto lg:text-center">
+          Die Online-Therapie ermöglicht Ihnen, psychotherapeutische
+          Unterstützung unabhängig davon wahrzunehmen, ob Sie direkt in München
+          oder im Münchner Umland leben. Die Gespräche finden über eine sichere
+          Videoverbindung statt und können von einem ruhigen, geschützten Ort
+          aus geführt werden. Dabei steht Ihre persönliche Situation im
+          Mittelpunkt. Gemeinsam betrachten wir, was Sie belastet, welche
+          Veränderungen Sie sich wünschen und welche Schritte für Sie hilfreich
+          sein können.
+        </p>
         <Process circles={onlinePsyCircles} />
         <div className="grid lg:grid-cols-2 2xl:grid-cols-3 gap-4 md:gap-8 xl:gap-12 mt-12 lg:mt-32">
           <div className="lg:max-w-lg">
@@ -96,12 +106,36 @@ export default function page() {
                   <span>{e}</span>
                 </div>
               ))}
-              <p className="font-semibold mt-4">Ist Online Psychotherapie für mich geeignet?</p>
-              <p>Ob eine Psychotherapie online für Sie geeignet ist, hängt von Ihrer individuellen Situation und Ihrem Anliegen ab. Im persönlichen Erstgespräch können wir gemeinsam besprechen, ob eine Behandlung im Online-Setting sinnvoll ist oder ob eine Therapie vor Ort empfehlenswerter wäre.</p>
+              <p className="font-semibold mt-4">
+                Ist Online Psychotherapie für mich geeignet?
+              </p>
+              <p>
+                Ob eine Psychotherapie online für Sie geeignet ist, hängt von
+                Ihrer individuellen Situation und Ihrem Anliegen ab. Im
+                persönlichen Erstgespräch können wir gemeinsam besprechen, ob
+                eine Behandlung im Online-Setting sinnvoll ist oder ob eine
+                Therapie vor Ort empfehlenswerter wäre.
+              </p>
             </div>
           </div>
         </div>
-        <p className="mt-12 lg:mt-32 lg:text-center max-w-2xl mx-auto">Wenn Sie im Raum München leben und sich psychotherapeutische Unterstützung wünschen, können Sie gerne <Link className="underline text-sage font-semibold" href={"/kontakt/"}>Kontakt</Link> aufnehmen.</p>
+        <p className="mt-12 lg:mt-32 lg:text-center max-w-2xl mx-auto">
+          Wenn Sie im Raum München leben und sich psychotherapeutische
+          Unterstützung wünschen, können Sie gerne{" "}
+          <Link
+            className="underline text-sage font-semibold"
+            href={"/kontakt/"}
+          >
+            Kontakt
+          </Link>{" "}
+          aufnehmen.
+        </p>
+      </section>
+      <section className="pt-24 lg:pt-48 px-4 md:px-16 lg:px-32 ">
+        <h1 className="text-center">
+          Häufig gestellte Fragen zur Online Psychotherapie
+        </h1>
+        <Accordeon faqs={faqsOnlinePsychotherapie} className="mt-8 lg:mt-16" />
       </section>
     </div>
   );
