@@ -10,11 +10,11 @@ import { CircleSmall } from "lucide-react";
 export default function page() {
   const { title, subtitle, text_1, text_2, btn, imgPath } = onlinePsychHero;
   const reasons = [
-    "eine Psychotherapie in München ohne zusätzliche Anfahrtswege wünschen,",
-    "Ihre Therapietermine flexibel in Ihren Alltag integrieren möchten,",
-    "sich in Ihrer vertrauten Umgebung wohler fühlen,",
-    "beruflich oder familiär stark eingebunden sind,",
-    "nicht regelmäßig eine Praxis vor Ort aufsuchen können.",
+    "eine Psychotherapie in München ohne zusätzliche Anfahrtswege wünschen",
+    "Ihre Therapietermine flexibel in Ihren Alltag integrieren möchten",
+    "sich in Ihrer vertrauten Umgebung wohler fühlen",
+    "beruflich oder familiär stark eingebunden sind",
+    "nicht regelmäßig eine Praxis vor Ort aufsuchen können",
   ];
   return (
     <div>

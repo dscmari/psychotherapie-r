@@ -2,6 +2,8 @@ import React from "react";
 import Image from "next/image";
 import ContactBtn from "./btns/ContactBtn";
 import TopicBtn from "./btns/TopicBtn";
+import Link from "next/link";
+import { CircleSmall } from "lucide-react";
 
 type Props = {
   className?: string;
@@ -13,6 +15,14 @@ type Props = {
 };
 
 export default function HeroHome({ className, title }: Props) {
+  const reasons = [
+    "Psychischen Belastungen",
+    "Traumatischer Erfahrungen",
+    "Ängsten",
+    "Depressionen",
+    "Emotionalen Herausforderungen im Zusammenhang mit schweren oder chronischen Erkrankungen",
+  ];
+
   return (
     <div className={`dark ${className}`}>
       {/* mobile */}
@@ -33,13 +43,8 @@ export default function HeroHome({ className, title }: Props) {
         </div>
         <div className="text-start px-4 mt-4">
           <div className="flex flex-col !font-lora font-semibold">
-            <h3 className="!text-xl !mb-0">
-              Psychologische Psychotherapie
-            </h3>
-            <h3 className="!text-xl">
-              {" "}
-              Traumatherapie & Psychoonkologie
-            </h3>
+            <h3 className="!text-xl !mb-0">Psychologische Psychotherapie</h3>
+            <h3 className="!text-xl"> Traumatherapie & Psychoonkologie</h3>
           </div>
           <h3 className="mt-2 font-lora dark:text-stone-800">
             Privatpraxis in München
@@ -114,7 +119,68 @@ export default function HeroHome({ className, title }: Props) {
 
       {/* desktop */}
       {/* lg-xl */}
-      <section className="hidden lg:flex px-16 lg:px-32 items-center xl:gap-16 pt-20 xl:pb-26 2xl:pb-40 2xl:pt-32">
+      <section className="px-4 sm:px-16 xl:px-32 py-24 ">
+        <div className="flex flex-col xl:flex-row xl:items-center gap-8 xl:gap-24 lg:border-b-1 border-slate-300 pb-12">
+          <div className="flex-2 flex flex-col gap-4">
+            <span className="">Privatpraxis in München</span>
+            <h1 className="lg:!text-5xl/16 !tracking-tight font-bold bg-stone-50 dark:bg-darkblue rounded-br-xl">
+              <span className="!text-sage-brown dark:!text-stone-light">
+                Psychologische Psychotherapie
+              </span>{" "}
+              <br />
+              Psychoonkologie & Traumatherapie
+            </h1>
+          </div>
+          <p className="flex-1 lg:text-base/8 max-w-xl">
+            Jeder Mensch kann im Laufe seines Lebens an die Grenzen seelischer
+            Belastbarkeit kommen. In meiner psychotherapeutischen Privatpraxis
+            in München unterstütze ich Sie im Umgang mit psychischen
+            Belastungen.
+          </p>
+        </div>
+        <div className="flex flex-col lg:flex-row lg:items-center gap-12 lg:gap-24 lg:mt-12 xl:mt-24">
+          <div className="flex-1">
+            <Image
+              src="/images/portraits/40145-1280_small.jpg"
+              alt="Business environment in the office"
+              width={600}
+              height={400}
+              className="rounded-xl mx-auto"
+            />
+          </div>
+          <div className="flex-1">
+            <p className="text-base/8">
+              Als staatlich approbierte Psychologische Psychotherapeutin
+              (Verhaltenstherapie) und Psychoonkologin möchte ich Sie dabei
+              unterstützen, in Krisen und herausfordernden Lebenssituationen
+              neue Perspektiven zu finden.
+            </p>
+            <h2 className="lg:max-w-lg mt-8">
+              Psychologische Begleitung bei der Bewältigung von:
+            </h2>
+            <div className="flex flex-col gap-4 mt-8 max-w-xl">
+              {reasons.map((e: string, index: number) => (
+                <div key={index} className="flex items-start gap-4">
+                  <CircleSmall className="text-sage shrink-0" />
+                  <span>{e}</span>
+                </div>
+              ))}
+              <p className="font-semibold mt-4">
+                Empathisch, individuell und wissenschaftlich fundiert.
+              </p>
+              <div className="flex flex-col items-center gap-4 lg:flex-row mt-8">
+                <ContactBtn className="mx-4 lg:mx-0 " />
+                <TopicBtn
+                  text={"Ablauf & Kosten"}
+                  path={"/ablauf-und-kosten/"}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+{/* standard hero */}
+      {/* <section className="hidden lg:flex px-16 lg:px-32 items-center xl:gap-16 pt-20 xl:pb-26 2xl:pb-40 2xl:pt-32">
         <div className="xl:flex-1 flex flex-col items-end">
           <div>
             <div className="">
@@ -167,7 +233,7 @@ export default function HeroHome({ className, title }: Props) {
             loading="eager"
           />
         </div>
-      </section>
+      </section> */}
 
       {/* ab 2xl */}
 

@@ -23,7 +23,7 @@ export const verhaltenstherapieFeatures = {
 },
 {
   icon: <HeartHandshake className="shrink-0" size={36} />,
-  header: "Verbesserung der Lebenssituation",
+  header: "Verbesserung Lebenssituation",
   text: "Mit einem klaren, strukturierten Vorgehen unterstützen wir Sie dabei, Ihre Lebensqualität spürbar zu steigern und wieder mehr Zufriedenheit in verschiedenen Lebensbereichen zu erleben.",
 },
   ],
