@@ -29,7 +29,7 @@ export default function Home() {
               <p>Moderne Psychotherapie für nachhaltige Veränderungen</p>
               <Link
                 href={"/verhaltenstherapie/"}
-                className="block mt-2 underline !text-sage font-semibold"
+                className="block mt-2 underline !text-sage-dark dark:!text-sage font-semibold"
               >
                 Mehr erfahren
               </Link>
@@ -43,7 +43,7 @@ export default function Home() {
                 <p>Psychologische Begleitung bei körperlichen Erkrankungen</p>
                 <Link
                   href={"/psychoonkologie/"}
-                  className="block mt-2 underline !text-sage font-semibold"
+                  className="block mt-2 underline !text-sage-dark dark:!text-sage font-semibold"
                 >
                   Mehr erfahren
                 </Link>
@@ -58,7 +58,7 @@ export default function Home() {
                 <p>Professionelle Unterstützung nach belastenden Erfahrungen</p>
                 <Link
                   href={"/traumatherapie/"}
-                  className="block mt-2 underline !text-sage font-semibold"
+                  className="block mt-2 underline !text-sage-dark dark:!text-sage font-semibold"
                 >
                   Mehr erfahren
                 </Link>
@@ -238,15 +238,15 @@ export default function Home() {
             Sollte eine vollständige Selbstzahlung für Sie nicht infrage kommen,
             besteht unter bestimmten Voraussetzungen die Möglichkeit, die Kosten
             über das Kostenerstattungsverfahren anteilig von Ihrer gesetzlichen
-            Krankenkasse erstattet zu bekommen. Mehr dazu erfahren Sie{" "}
+            Krankenkasse erstattet zu bekommen. Mehr zum {" "} 
             <Link
               href="https://www.ptk-bayern.de/ptk/web.nsf/id/li_veranstaltungkostenerstattung2018.html"
-              className="text-sage-dark underline underline-offset-2"
+              className="text-sage-dark underline underline-offset-2 font-semibold"
               target="blank_"
             >
-              hier
-            </Link>{" "}
-            .
+                Formular zur Kostenerstattung der PTK Bayern erfahren Sie hier.
+            </Link>
+           
           </p>
           <div className="flex flex-col lg:flex-row items-center gap-4 mt-4">
             <ContactBtn className="w-full lg:w-44" />

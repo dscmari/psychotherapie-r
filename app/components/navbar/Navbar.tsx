@@ -49,6 +49,7 @@ export default function Navbar({ className }: Props) {
           <div
             className={`burgermenu ${showMenu ? "open" : ""}`}
             id="burger-menu"
+            role="button"
             onClick={toggleMenu}
             aria-label="Menü öffnen"
           >
