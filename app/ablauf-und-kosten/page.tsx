@@ -1,13 +1,17 @@
-import Hero from "../components/Hero";
 import { ablaufKostenHero } from "../data/hero";
 import Image from "next/image";
 import ContactBtn from "../components/btns/ContactBtn";
 import TopicBtn from "../components/btns/TopicBtn";
 import Process from "../components/Process";
 import { processCircles } from "../data/process";
-import Reimbursement from "../components/Reimbursement";
 import ScrollToTopBtn from "../components/btns/ScrollToTopBtn";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Ablauf und Kosten für Psychotherapie in München",
+  description: "Übersicht zu Ablauf und Kosten der Therapie in München | Pychologische Psychotherapeutin & Psychoonkologin Anne Julia Röhl"
+}
 
 export default function page() {
   const { title, subtitle, text_1, text_2} = ablaufKostenHero;
@@ -34,7 +38,7 @@ export default function page() {
           </div>
         </div>
       </section>
-      <section className="px-4 sm:px-16 xl:px-32 pt-24 lg:pt-48 flex flex-col items-center">
+      <section className="px-4 sm:px-16 xl:px-32 pt-24 lg:pt-32 xl:pt-48 flex flex-col items-center">
         <h2 className="text-center">Wie funktioniert Psychotherapie?</h2>
         <h1 className="text-center">
           Die Psychotherapie läuft in drei Phasen ab
@@ -94,7 +98,7 @@ export default function page() {
           </div>
         </div>
       </section>
-      <section className="sm:px-16 xl:px-32 pt-24 lg:pt-32">
+      <section className="sm:px-16 xl:px-32 pt-24 lg:pt-32 xl:pt-48">
         <div className="flex flex-col xl:flex-row xl:items-center gap-8 xl:gap-24">
           <div className="px-4 sm:px-0 flex-1 max-w-3xl">
             <h1>Kosten & Kostenübernahme</h1>

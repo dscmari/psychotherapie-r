@@ -7,6 +7,13 @@ import Link from "next/link";
 import { CircleSmall } from "lucide-react";
 import { faqsOnlinePsychotherapie } from "../data/faqs";
 import Accordeon from "../components/Accordeon";
+import { Metadata } from "next";
+
+
+export const metadata: Metadata = {
+  title: "Online Psychotherapie in München",
+  description: "Digitale Psychotherapie in München | Pychologische Psychotherapeutin & Psychoonkologin Anne Julia Röhl"
+}
 
 export default function page() {
   const { title, subtitle, text_1, text_2, btn, imgPath } = onlinePsychHero;

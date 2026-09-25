@@ -6,6 +6,12 @@ import { verhaltenstherapieFeatures } from "../data/features";
 import ContactBtn from "../components/btns/ContactBtn";
 import TopicBtn from "../components/btns/TopicBtn";
 import ScrollToTopBtn from "../components/btns/ScrollToTopBtn";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Verhaltenstherapie | Psychotherapie in München",
+  description:"Privatpraxis für Psychotherapie | Psychologische Psychotherapeutin & Psychoonkologin Anne Julia Röhl"
+};
 
 export default function page() {
   const issues = [

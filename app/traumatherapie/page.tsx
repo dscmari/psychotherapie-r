@@ -8,6 +8,12 @@ import ScrollToTopBtn from "../components/btns/ScrollToTopBtn";
 import { Activity, Brain, HeartPulse } from "lucide-react";
 import Accordeon from "../components/Accordeon";
 import { faqsTrauma } from "../data/faqs";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Traumatherapie in München",
+  description: "Psychotherapeutische Unterstützung nach belastenden Erfahrungen | Pychologische Psychotherapeutin & Psychoonkologin Anne Julia Röhl"
+}
 
 export default function page() {
   const issues = [

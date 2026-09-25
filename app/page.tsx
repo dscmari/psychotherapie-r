@@ -7,6 +7,13 @@ import TopicBtn from "./components/btns/TopicBtn";
 import ScrollToTopBtn from "./components/btns/ScrollToTopBtn";
 import Accordeon from "./components/Accordeon";
 import { faqsHome } from "./data/faqs";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Psychotherapie & Psychoonkologie in München",
+  description:
+    "Privatpraxis für Psychotherapie | Psychologische Psychotherapeutin & Psychoonkologin Anne Julia Röhl",
+};
 
 export default function Home() {
   return (
@@ -253,7 +260,7 @@ export default function Home() {
         </h1>
         <Accordeon faqs={faqsHome} className="mt-8 lg:mt-16" />
       </section>
-           <section className="py-12 lg:py-32 px-4 md:px-16 lg:px-32 "></section>
+      <section className="py-12 lg:py-32 px-4 md:px-16 lg:px-32 "></section>
       <ScrollToTopBtn />
     </div>
   );

@@ -7,6 +7,12 @@ import { psyonkoHero } from "../data/hero";
 import ScrollToTopBtn from "../components/btns/ScrollToTopBtn";
 import { faqsPsychoonkologie } from "../data/faqs";
 import Accordeon from "../components/Accordeon";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Medizinische Psychologie & Psychoonkologie in München",
+  description: "Psychologische Begleitung bei körperlichen Erkrankungen, chronischen Schmerzen und Krebs | Pychologische Psychotherapeutin & Psychoonkologin Anne Julia Röhl"
+};
 
 export default function page() {
   const issues = [

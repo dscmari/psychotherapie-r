@@ -5,6 +5,13 @@ import { CircleSmall, MessageCircle, SendHorizontal } from "lucide-react";
 import Link from "next/link";
 import Qualifications from "../components/Qualifications";
 import { qualifications } from "../data/qualifications";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Ausbildung Psychotherapeutin Anne Julia Röhl",
+  description: "Ausbildung und Qualifikation | Pychologische Psychotherapeutin & Psychoonkologin Anne Julia Röhl"
+}
+
 export default function page() {
   return (
     <div>

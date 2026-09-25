@@ -6,6 +6,12 @@ import FourBoxLayout from "../components/FourBoxLayout";
 import { psyInEnglishFourBoxContent } from "../data/fourBoxData";
 import { faqsEnglishPsychotherapy } from "../data/faqs";
 import Accordeon from "../components/Accordeon";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Psychotherapy in English in Munic",
+  description: "Psychological Support in English for Internationals and Locals in Munich | Pychologische Psychotherapeutin & Psychoonkologin Anne Julia Röhl"
+}
 
 export default function page() {
   return (
@@ -42,7 +48,7 @@ export default function page() {
           </div>
         </div>
       </section>
-      <section className="px-4 md:px-16 lg:px-32 pt-24 lg:pt-48 flex flex-col items-center">
+      <section className="px-4 md:px-16 lg:px-32 pt-24 lg:pt-32 xl:pt-48 flex flex-col items-center">
         <h1>My therapeutic focus</h1>
         <FourBoxLayout boxes={psyInEnglishFourBoxContent} className="mt-12" />
       </section>

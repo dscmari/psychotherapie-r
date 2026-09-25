@@ -6,8 +6,9 @@ import { SquareArrowOutUpRight } from "lucide-react";
 import { client } from "@/src/sanity/client";
 
 export const metadata: Metadata = {
-  title: "Videos, Podcast, Ratgeber rund um SEO, GEO & Ads",
-};
+  title: "Blogartikel zum Thema Psychologie und Psychotherapie",
+  description: "Texte und Informationen zum Thema psychische Gesundheit | Pychologische Psychotherapeutin & Psychoonkologin Anne Julia Röhl"
+}
 
 const POSTS_QUERY = `*[
   _type == "post"
