@@ -46,7 +46,7 @@ export default function page() {
         <h1>My therapeutic focus</h1>
         <FourBoxLayout boxes={psyInEnglishFourBoxContent} className="mt-12" />
       </section>
-      <section className="sm:px-16 xl:px-32 py-24 lg:py-48">
+      <section className="sm:px-16 xl:px-32 pt-24 lg:pt-32 xl:pt-48">
         <div className="flex flex-col xl:flex-row xl:items-center gap-8 xl:gap-24">
           <div className="px-4 sm:px-0 flex-1 max-w-3xl">
             <h1>Support for English-speaking patients in Munich</h1>
@@ -86,7 +86,7 @@ export default function page() {
             />
           </div>
         </div>
-        <div className="px-4 sm:px-0 pt-16 xl:pt-32 max-w-3xl flex flex-col items-center mx-auto">
+        <div className="px-4 sm:px-0 pt-16 lg:pt-32 xl:pt-48 max-w-3xl flex flex-col items-center mx-auto">
           <div className="flex flex-col gap-4 items-center text-center">
             <p className="font-semibold">
               Appointments in English are available by arrangement in my private
@@ -114,6 +114,7 @@ export default function page() {
         </h1>
         <Accordeon faqs={faqsEnglishPsychotherapy} className="mt-8 lg:mt-16" />
       </section>
+           <section className="py-12 lg:py-32 px-4 md:px-16 lg:px-32 "></section>
     </div>
   );
 }

@@ -163,10 +163,11 @@ export default function page() {
           </p>
         </div>
       </section>
-      <section className="pt-16 pb-24 md:py-16 lg:py-32 px-4 md:px-8 lg:px-16 xl:px-32">
+      <section className="pt-24 lg:pt-32 xl:pt-48 px-4 md:px-8 lg:px-16 xl:px-32">
         <h1>Ausbildung & psychotherapeutische Qualifikation</h1>
         <Qualifications qualifications={qualifications} className="max-w-4xl" />
       </section>
+           <section className="py-12 lg:py-32 px-4 md:px-16 lg:px-32 "></section>
     </div>
   );
 }

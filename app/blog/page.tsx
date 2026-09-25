@@ -28,7 +28,7 @@ export default async function Blog() {
 
   return (
     <div className="dark:bg-darkblue">
-      <div className="pt-12 lg:px-32 px-4 lg:pt-32 xl:max-w-3/4 2xl:max-w-2/3 ">
+      <div className="pt-12 lg:px-32 px-4 lg:pt-32 max-w-5xl">
         <h1 className="text-center md:px-32 lg:px-0 lg:text-start !text-sage-brown dark:!text-stone-light">
           Blogartikel
         </h1>
@@ -44,13 +44,16 @@ export default async function Blog() {
             key={post._id}
             className="dark:bg-mist-900 rounded-b-xl"
           >
+            <div className="">
             <Image
               src={post.imageUrl}
               alt={post.title}
-              width={1200}
-              height={800}
+              width={800}
+              height={500}
               className=""
             />
+            </div>
+
             <div className="px-4 py-2 flex flex-col items-start border-x border-b rounded-b-xl border-sage-brown dark:border-0">
               <Link
                 href={`/${post.slug.current}`}
@@ -59,7 +62,7 @@ export default async function Blog() {
               >
                 {post.title}
               </Link>
-              <p className="text-sm font-light !text-stone-light">
+              <p className="text-sm font-light dark:!text-stone-light pt-4">
                 {post.excerpt?.substring(0, 140)}...
               </p>
               <Link
@@ -68,7 +71,7 @@ export default async function Blog() {
                 target="_blank"
               >
                 Zum Post
-                <SquareArrowOutUpRight className="shrink-0" />
+                <SquareArrowOutUpRight className="shrink-0 text-sage-brown" />
               </Link>
             </div>
           </div>

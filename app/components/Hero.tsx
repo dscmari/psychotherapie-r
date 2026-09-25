@@ -42,7 +42,7 @@ export default function Hero({
         <p className="hidden lg:block xl:hidden mt-4">{text_2}</p>
       </div>
       <div className="px-4 sm:px-8 md:px-16 lg:px-0 lg:flex-1">
-        <h1 className="lg:!text-5xl font-bold !text-sage-brown dark:!text-stone-light mt-4 lg:mt-0">
+        <h1 className="lg:!text-5xl/14 font-bold !text-sage-brown dark:!text-stone-light mt-4 lg:mt-0">
           {title}
         </h1>
         <h2>{subtitle}</h2>

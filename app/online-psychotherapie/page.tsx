@@ -26,7 +26,7 @@ export default function page() {
         btn={btn}
         imgPath={imgPath}
       />
-      <section className="px-4 sm:px-16 xl:px-32 pt-24 lg:pt-48 flex flex-col items-center">
+      <section className="px-4 sm:px-16 xl:px-32 pt-24 lg:pt-32 xl:pt-48 flex flex-col items-center">
         <h2>Digitale Psychotherapie</h2>
         <h1 className="text-center">Ablauf der Online Psychotherapie</h1>
         <p className="max-w-4xl mx-auto lg:text-center">
@@ -71,7 +71,7 @@ export default function page() {
           </div>
         </div>
       </section>
-      <section className="px-4 sm:px-16 xl:px-32 py-24 lg:py-48">
+      <section className="px-4 sm:px-16 xl:px-32 pt-24 lg:pt-32 xl:pt-48">
         <div className="flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-24 lg:border-b-1 border-slate-300 pb-12">
           <div className="flex-1 flex flex-col gap-4">
             <span className="">Online Psychotherapie</span>
@@ -137,6 +137,7 @@ export default function page() {
         </h1>
         <Accordeon faqs={faqsOnlinePsychotherapie} className="mt-8 lg:mt-16" />
       </section>
+           <section className="py-12 lg:py-32 px-4 md:px-16 lg:px-32 "></section>
     </div>
   );
 }

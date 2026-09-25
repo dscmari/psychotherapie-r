@@ -48,7 +48,7 @@ export default function page() {
         btn={btn}
         imgPath={imgPath}
       />
-      <section className="text-xl py-16 mt-24 lg:py-32 lg:mt-32 px-4 md:px-16 lg:px-32 bg-sage-dark dark:mt-0">
+      <section className="text-xl py-16 mt-24 lg:py-32 lg:mt-32 xl:mt-48 px-4 md:px-16 lg:px-32 bg-sage-dark dark:mt-0">
         <div className="text-center lg:text-start">
           <span className="font-light text-xl !text-stone-light">
             Traumatherapie
@@ -127,7 +127,7 @@ export default function page() {
           </div>
         </div>
       </section>
-      <section className="pt-16 lg:pt-32 px-4 md:px-16 lg:px-32 ">
+      <section className="pt-16 lg:pt-32 xl:pt-48 px-4 md:px-16 lg:px-32 ">
         <div className="flex flex-col xl:flex-row gap-12 xl:gap-16">
           <div className="flex-1 flex flex-col gap-4">
             <h1>Wie entsteht ein Trauma?</h1>
@@ -175,7 +175,7 @@ export default function page() {
         </div>
       </section>
 
-      <section className="px-4 sm:px-16 xl:px-32 pt-24 lg:pt-32 lg:text-center flex flex-col items-center">
+      <section className="px-4 sm:px-16 xl:px-32 pt-24 lg:pt-32 xl:pt-48 lg:text-center flex flex-col items-center">
         <h1>Traumatherapeutische Begleitung</h1>
         <div className="max-w-4xl flex flex-col gap-4">
           <p>

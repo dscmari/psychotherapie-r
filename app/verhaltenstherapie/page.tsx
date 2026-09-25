@@ -32,9 +32,9 @@ export default function page() {
       />
       <Features
         data={verhaltenstherapieFeatures}
-        className="px-4 py-24 md:px-16 lg:p-32 mt-24 lg:mt-32 2xl:mt-48 dark:mt-0"
+        className="px-4 py-24 md:px-16 lg:p-32 mt-24 lg:mt-32 xl:mt-48 dark:mt-0"
       />
-      <section className="pt-24 lg:pt-32 px-4 md:px-16 lg:px-32 ">
+      <section className="pt-24 lg:pt-32 xl:pt-48 px-4 md:px-16 lg:px-32 ">
         <div className="flex flex-col xl:flex-row gap-12 xl:gap-16">
           <div className="flex-1 flex flex-col gap-4">
             <h1>Wobei hilft die Verhaltenstherapie?</h1>
@@ -79,7 +79,7 @@ export default function page() {
             </div>
         </div>
       </section>
-      <section className="py-12 lg:py-32 px-4 md:px-16 lg:px-32 ">
+      <section className="pt-12 lg:pt-32 px-4 md:px-16 lg:px-32 ">
         <p className="text-center">
           Wenn Sie Unterstützung suchen oder Fragen zur Verhaltenstherapie
           haben, nehmen Sie gerne{" "}
@@ -92,6 +92,7 @@ export default function page() {
           auf.
         </p>
       </section>
+           <section className="py-12 lg:py-32 px-4 md:px-16 lg:px-32 "></section>
          <ScrollToTopBtn />
     </div>
   );

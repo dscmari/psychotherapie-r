@@ -38,7 +38,7 @@ export default function page() {
         btn={btn}
         imgPath={imgPath}
       />
-      <section className="text-xl py-16 lg:py-32 mt-24 lg:mt-32 dark:mt-0 px-4 md:px-16 lg:px-32 bg-sage-dark dark:!bg-sage-dark">
+      <section className="text-xl py-16 lg:py-32 mt-24 lg:mt-32 xl:mt-48 dark:mt-0 px-4 md:px-16 lg:px-32 bg-sage-dark dark:!bg-sage-dark">
         <div className="flex flex-col justify-center xl:flex-row xl:items-center gap-12 xl:gap-32">
           <div className="flex flex-col gap-4 lg:max-w-2xl xl:max-w-xl">
             <h1 className="!text-stone-light">
@@ -86,7 +86,7 @@ export default function page() {
           </div>
         </div>
       </section>
-      <section className="pt-24 lg:pt-32 px-4 md:px-16 lg:px-32">
+      <section className="pt-24 lg:pt-32 xl:pt-48 px-4 md:px-16 lg:px-32">
         <div className="flex flex-col xl:flex-row gap-12 xl:gap-16">
           <div className="flex-1 flex flex-col gap-4">
             <h1>Psychoonkologie – Psychologische Begleitung bei Krebs</h1>

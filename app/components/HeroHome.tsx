@@ -119,7 +119,7 @@ export default function HeroHome({ className, title }: Props) {
 
       {/* desktop */}
       {/* lg-xl */}
-      <section className="px-4 sm:px-16 xl:px-32 py-24 ">
+      <section className="hidden lg:block px-4 sm:px-16 xl:px-32 py-24 ">
         <div className="flex flex-col xl:flex-row xl:items-center gap-8 xl:gap-24 lg:border-b-1 border-slate-300 pb-12">
           <div className="flex-2 flex flex-col gap-4">
             <span className="">Privatpraxis in München</span>
