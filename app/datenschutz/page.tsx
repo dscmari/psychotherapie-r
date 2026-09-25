@@ -1,6 +1,6 @@
 export default function page() {
   return (
-    <div className="dark:bg-darkblue">
+    <main className="dark:bg-darkblue">
       <section className="max-w-7xl px-4 md:px-16 lg:px-32 py-12 md:py-16 lg:py-32">
         <div className="">
           <h1 className="">Datenschutzerklärung</h1>
@@ -267,6 +267,6 @@ export default function page() {
           </div>
         </article>
       </section>
-    </div>
+    </main>
   );
 }

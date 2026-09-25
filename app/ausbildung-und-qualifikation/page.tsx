@@ -9,12 +9,16 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Ausbildung Psychotherapeutin Anne Julia Röhl",
-  description: "Ausbildung und Qualifikation | Pychologische Psychotherapeutin & Psychoonkologin Anne Julia Röhl"
-}
+  description:
+    "Ausbildung und Qualifikation | Pychologische Psychotherapeutin & Psychoonkologin Anne Julia Röhl",
+      alternates: {
+    canonical: "https://psychotherapie-roehl.de/ausbildung-und-qualifikation/",
+  },
+};
 
 export default function page() {
   return (
-    <div>
+    <main>
       <section className="pt-4 md:pt-16 lg:pt-32 md:px-8 lg:px-16 xl:px-32">
         <div className="flex flex-col-reverse md:flex-row md:gap-8 lg:gap-16">
           <div className="flex-1 -mt-40 sm:-mt-60 md:mt-0 bg-stone-light dark:bg-darkblue px-4 md:px-0">
@@ -174,7 +178,7 @@ export default function page() {
         <h1>Ausbildung & psychotherapeutische Qualifikation</h1>
         <Qualifications qualifications={qualifications} className="max-w-4xl" />
       </section>
-           <section className="py-12 lg:py-32 px-4 md:px-16 lg:px-32 "></section>
-    </div>
+      <section className="py-12 lg:py-32 px-4 md:px-16 lg:px-32 "></section>
+    </main>
   );
 }

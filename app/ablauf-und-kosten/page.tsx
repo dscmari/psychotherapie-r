@@ -10,13 +10,16 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Ablauf und Kosten für Psychotherapie in München",
-  description: "Übersicht zu Ablauf und Kosten der Therapie in München | Pychologische Psychotherapeutin & Psychoonkologin Anne Julia Röhl"
+  description: "Übersicht zu Ablauf und Kosten der Therapie in München | Pychologische Psychotherapeutin & Psychoonkologin Anne Julia Röhl",
+    alternates: {
+    canonical: "https://psychotherapie-roehl.de/ablauf-und-kosten/",
+  },
 }
 
 export default function page() {
   const { title, subtitle, text_1, text_2} = ablaufKostenHero;
   return (
-    <div>
+    <main>
       <section className="px-4 md: lg:px-32 lg:pt-32 dark:py-8 dark:md:py-16 dark:lg:py-32">
         <div className="lg:flex-1 lg:flex flex-col">
           <p className="hidden lg:block xl:hidden mt-4">{text_2}</p>
@@ -173,6 +176,6 @@ export default function page() {
         {/* <Reimbursement /> */}
       </section>
       <ScrollToTopBtn />
-    </div>
+    </main>
   );
 }

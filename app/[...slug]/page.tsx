@@ -90,7 +90,7 @@ export default async function PostPage({
       >
         <ArrowLeft className="size-10 text-neutral-500" />
       </Link>
-      <div className="flex flex-col items-center max-w-4xl mx-4 lg:mx-auto max-w-3xl">
+      <article className="flex flex-col items-center max-w-4xl mx-4 lg:mx-auto max-w-3xl">
         {postImageUrl && (
           <Image
             src={postImageUrl}
@@ -159,7 +159,7 @@ export default async function PostPage({
         <div className="mt-4 lg:mt-8 lg:px-16 sanity-text">
           {Array.isArray(post.body_5) && <PortableText value={post.body_5} />}
         </div>
-      </div>
+      </article>
     </main>
   );
 }

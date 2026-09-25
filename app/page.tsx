@@ -13,6 +13,9 @@ export const metadata: Metadata = {
   title: "Psychotherapie & Psychoonkologie in München",
   description:
     "Privatpraxis für Psychotherapie | Psychologische Psychotherapeutin & Psychoonkologin Anne Julia Röhl",
+  alternates: {
+    canonical: "https://psychotherapie-roehl.de",
+  },
 };
 
 export default function Home() {
@@ -238,15 +241,14 @@ export default function Home() {
             Sollte eine vollständige Selbstzahlung für Sie nicht infrage kommen,
             besteht unter bestimmten Voraussetzungen die Möglichkeit, die Kosten
             über das Kostenerstattungsverfahren anteilig von Ihrer gesetzlichen
-            Krankenkasse erstattet zu bekommen. Mehr zum {" "} 
+            Krankenkasse erstattet zu bekommen. Mehr zum{" "}
             <Link
               href="https://www.ptk-bayern.de/ptk/web.nsf/id/li_veranstaltungkostenerstattung2018.html"
               className="text-sage-dark underline underline-offset-2 font-semibold"
               target="blank_"
             >
-                Formular zur Kostenerstattung der PTK Bayern erfahren Sie hier.
+              Formular zur Kostenerstattung der PTK Bayern erfahren Sie hier.
             </Link>
-           
           </p>
           <div className="flex flex-col lg:flex-row items-center gap-4 mt-4">
             <ContactBtn className="w-full lg:w-44" />

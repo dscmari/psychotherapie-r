@@ -22,12 +22,25 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const practiceSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'MedicalBusiness',
+    name: 'Psychotherapie Anne Julia Röhl',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'München',
+    },
+  };
   return (
     <html
       lang="de"
       className={`${lora.variable} ${dmSans.variable} h-full antialiased`}
     >
-      <body className="">
+      <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(practiceSchema) }}
+        />
         <Navbar />
         <main>{children}</main>
         <Footer />

@@ -1,8 +1,17 @@
-import React from "react";
+import { Metadata } from "next";
+
+  export const metadata: Metadata = {
+  title: "Impressum | Pychologische Psychotherapeutin & Psychoonkologin Anne Julia Röhl",
+  description:
+    "Impressum | Pychologische Psychotherapeutin & Psychoonkologin Anne Julia Röhl",
+  alternates: {
+    canonical: "https://psychotherapie-roehl.de/impressum/",
+  },
+};
 
 export default function page() {
   return (
-    <div className="dark:bg-darkblue">
+    <main className="dark:bg-darkblue">
       <section className="px-4 md:px-16 lg:px-32 py-16 lg:py-32 flex flex-col gap-4 max-w-7xl">
         <h1>Impressum</h1>
         <p>Angaben gemäß § 5 DDG</p>
@@ -14,8 +23,8 @@ export default function page() {
         </div>
         <div>
           <p>Kontakt</p>
-          <p>Telefon: 1234567891011</p>
-          <p>E-Mail: email@musterfrau.de</p>
+          <p>Telefon: 0176/21908630</p>
+          <p>E-Mail: info@psychotherapie-roehl.de</p>
           <p>Website: www.psychotherapie-roehl.de</p>
         </div>
         <div>
@@ -61,6 +70,6 @@ export default function page() {
           <p>80336 München</p>
         </div>
       </section>
-    </div>
+    </main>
   );
 }

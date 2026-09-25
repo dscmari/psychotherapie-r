@@ -10,7 +10,10 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Verhaltenstherapie | Psychotherapie in München",
-  description:"Privatpraxis für Psychotherapie | Psychologische Psychotherapeutin & Psychoonkologin Anne Julia Röhl"
+  description:"Privatpraxis für Psychotherapie | Psychologische Psychotherapeutin & Psychoonkologin Anne Julia Röhl",
+    alternates: {
+    canonical: "https://psychotherapie-roehl.de/verhaltenstherapie/",
+  },
 };
 
 export default function page() {
@@ -28,7 +31,7 @@ export default function page() {
   ];
   const { title, subtitle, text_1, btn, imgPath } = verhaltenstherapieHero;
   return (
-    <div>
+    <main>
       <Hero
         title={title}
         subtitle={subtitle}
@@ -100,6 +103,6 @@ export default function page() {
       </section>
            <section className="py-12 lg:py-32 px-4 md:px-16 lg:px-32 "></section>
          <ScrollToTopBtn />
-    </div>
+    </main>
   );
 }

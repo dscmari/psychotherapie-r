@@ -11,7 +11,10 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Medizinische Psychologie & Psychoonkologie in München",
-  description: "Psychologische Begleitung bei körperlichen Erkrankungen, chronischen Schmerzen und Krebs | Pychologische Psychotherapeutin & Psychoonkologin Anne Julia Röhl"
+  description: "Psychologische Begleitung bei körperlichen Erkrankungen, chronischen Schmerzen und Krebs | Pychologische Psychotherapeutin & Psychoonkologin Anne Julia Röhl",
+    alternates: {
+    canonical: "https://psychotherapie-roehl.de/psychoonkologie/",
+  },
 };
 
 export default function page() {
@@ -35,7 +38,7 @@ export default function page() {
   ];
   const { title, subtitle, text_1, text_2, btn, imgPath } = psyonkoHero;
   return (
-    <div>
+    <main>
       <Hero
         title={title}
         subtitle={subtitle}
@@ -160,6 +163,6 @@ export default function page() {
       <section className="py-12 lg:py-32 px-4 md:px-16 lg:px-32 "></section>
 
       <ScrollToTopBtn />
-    </div>
+    </main>
   );
 }

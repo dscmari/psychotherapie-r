@@ -1,11 +1,9 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { AnimatePresence, motion } from "motion/react";
 import DesktopNavbar from "./desktop/DesktopNavbar";
 import ContactBtn from "../btns/ContactBtn";
-import { div } from "motion/react-client";
 import { ChevronDown } from "lucide-react";
 
 type Props = {
@@ -33,7 +31,7 @@ export default function Navbar({ className }: Props) {
   };
 
   return (
-    <div className={`dark:bg-darkblue ${className}`}>
+    <nav className={`dark:bg-darkblue ${className}`}>
       {/* mobile & tablet */}
       <div className="lg:hidden w-full p-4 md:px-8 dark:text-stone">
         <div className="flex justify-between items-center">
@@ -182,6 +180,6 @@ export default function Navbar({ className }: Props) {
       <div className="hidden lg:block">
         <DesktopNavbar />
       </div>
-    </div>
+    </nav>
   );
 }

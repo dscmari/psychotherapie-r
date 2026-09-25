@@ -1,10 +1,20 @@
 import { Phone, Mail } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Kontakt | Psychotherapie in München",
+  description:
+    "Kontakt | Pychologische Psychotherapeutin & Psychoonkologin Anne Julia Röhl",
+  alternates: {
+    canonical: "https://psychotherapie-roehl.de/kontakt/",
+  },
+};
 
 export default function page() {
   return (
-    <div>
+    <main>
       <section className="pt-8 pb-24 lg:pt-32 px-4 md:px-8 lg:px-32 min-h-screen">
         <div className="flex flex-col lg:flex-row gap-16">
           <div className="flex-1 flex flex-col gap-4">
@@ -14,7 +24,15 @@ export default function page() {
               psychotherapeutischen Angebot? Gerne können Sie mich telefonisch
               oder per E-Mail kontaktieren.
             </p>
-            <p>Als <span className="!text-sage-brown dark:!text-stone-light">Privatpraxis</span>  kann die Abrechnung nicht direkt über die gesetzliche Krankenkasse erfolgen, sondern privat nach der Gebührenordnung für PsychotherapeutInnen (GOP).</p>
+            <p>
+              Als{" "}
+              <span className="!text-sage-brown dark:!text-stone-light">
+                Privatpraxis
+              </span>{" "}
+              kann die Abrechnung nicht direkt über die gesetzliche Krankenkasse
+              erfolgen, sondern privat nach der Gebührenordnung für
+              PsychotherapeutInnen (GOP).
+            </p>
             <div className="flex flex-col gap-4 my-8">
               <Link href="tel: 123456789" className="flex items-center gap-4">
                 <Phone className="shrink-0 size-6 text-sage" />
@@ -50,6 +68,6 @@ export default function page() {
           </div>
         </div>
       </section>
-    </div>
+    </main>
   );
 }

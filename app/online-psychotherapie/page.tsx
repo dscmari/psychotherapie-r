@@ -12,7 +12,10 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Online Psychotherapie in München",
-  description: "Digitale Psychotherapie in München | Pychologische Psychotherapeutin & Psychoonkologin Anne Julia Röhl"
+  description: "Digitale Psychotherapie in München | Pychologische Psychotherapeutin & Psychoonkologin Anne Julia Röhl",
+    alternates: {
+    canonical: "https://psychotherapie-roehl.de/online-psychotherapie/",
+  },
 }
 
 export default function page() {
@@ -25,7 +28,7 @@ export default function page() {
     "nicht regelmäßig eine Praxis vor Ort aufsuchen können",
   ];
   return (
-    <div>
+    <main>
       <Hero
         title={title}
         subtitle={subtitle}
@@ -145,6 +148,6 @@ export default function page() {
         <Accordeon faqs={faqsOnlinePsychotherapie} className="mt-8 lg:mt-16" />
       </section>
            <section className="py-12 lg:py-32 px-4 md:px-16 lg:px-32 "></section>
-    </div>
+    </main>
   );
 }

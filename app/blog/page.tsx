@@ -7,7 +7,10 @@ import { client } from "@/src/sanity/client";
 
 export const metadata: Metadata = {
   title: "Blogartikel zum Thema Psychologie und Psychotherapie",
-  description: "Texte und Informationen zum Thema psychische Gesundheit | Pychologische Psychotherapeutin & Psychoonkologin Anne Julia Röhl"
+  description: "Texte und Informationen zum Thema psychische Gesundheit | Pychologische Psychotherapeutin & Psychoonkologin Anne Julia Röhl",
+    alternates: {
+    canonical: "https://psychotherapie-roehl.de/blog/"
+  }
 }
 
 const POSTS_QUERY = `*[
@@ -28,7 +31,7 @@ export default async function Blog() {
   const posts = await client.fetch<SanityDocument[]>(POSTS_QUERY, {}, options);
 
   return (
-    <div className="dark:bg-darkblue">
+    <main className="dark:bg-darkblue">
       <div className="pt-12 lg:px-32 px-4 lg:pt-32 max-w-5xl">
         <h1 className="text-center md:px-32 lg:px-0 lg:text-start !text-sage-brown dark:!text-stone-light">
           Blogartikel
@@ -78,6 +81,6 @@ export default async function Blog() {
           </div>
         ))}
       </div>
-    </div>
+    </main>
   );
 }

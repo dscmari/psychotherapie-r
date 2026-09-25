@@ -10,12 +10,16 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Psychotherapy in English in Munic",
-  description: "Psychological Support in English for Internationals and Locals in Munich | Pychologische Psychotherapeutin & Psychoonkologin Anne Julia Röhl"
-}
+  description:
+    "Psychological Support in English for Internationals and Locals in Munich | Pychologische Psychotherapeutin & Psychoonkologin Anne Julia Röhl",
+  alternates: {
+    canonical: "https://psychotherapie-roehl.de/psychotherapy-in-english/",
+  },
+};
 
 export default function page() {
   return (
-    <div>
+    <main>
       <section className="px-4 md: lg:px-32 lg:pt-32 dark:py-8 dark:md:py-16 dark:lg:py-32">
         <div className="px-4 sm:px-8 md:px-16 lg:px-0 lg:flex-1 max-w-4xl">
           <h1 className="lg:!text-5xl font-bold !text-sage-brown dark:!text-stone-light mt-4 lg:mt-0">
@@ -120,7 +124,7 @@ export default function page() {
         </h1>
         <Accordeon faqs={faqsEnglishPsychotherapy} className="mt-8 lg:mt-16" />
       </section>
-           <section className="py-12 lg:py-32 px-4 md:px-16 lg:px-32 "></section>
-    </div>
+      <section className="py-12 lg:py-32 px-4 md:px-16 lg:px-32 "></section>
+    </main>
   );
 }

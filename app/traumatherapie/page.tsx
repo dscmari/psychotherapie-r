@@ -12,7 +12,10 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Traumatherapie in München",
-  description: "Psychotherapeutische Unterstützung nach belastenden Erfahrungen | Pychologische Psychotherapeutin & Psychoonkologin Anne Julia Röhl"
+  description: "Psychotherapeutische Unterstützung nach belastenden Erfahrungen | Pychologische Psychotherapeutin & Psychoonkologin Anne Julia Röhl",
+     alternates: {
+    canonical: "https://psychotherapie-roehl.de/traumatherapie/"
+  },
 }
 
 export default function page() {
@@ -45,7 +48,7 @@ export default function page() {
 
   const { title, subtitle, text_1, text_2, btn, imgPath } = traumaHero;
   return (
-    <div>
+    <main>
       <Hero
         title={title}
         subtitle={subtitle}
@@ -222,6 +225,6 @@ export default function page() {
       <section className="py-12 lg:py-32 px-4 md:px-16 lg:px-32 "></section>
 
       <ScrollToTopBtn />
-    </div>
+    </main>
   );
 }

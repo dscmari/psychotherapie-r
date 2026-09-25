@@ -11,7 +11,7 @@ type Props = {
 export default function DesktopNavbar({ className }: Props) {
   const pathname = usePathname();
   return (
-    <div
+    <nav
       className={`relative z-100 mx-auto pb-4 px-4 xl:px-8 2xl:px-16 dark:bg-darkblue dark:text-stone-light ${className}`}
     >
       <div className="flex justify-between font-light py-4 text-sm ">
@@ -176,6 +176,6 @@ export default function DesktopNavbar({ className }: Props) {
           </Link>
         </div>
       </div>
-    </div>
+    </nav>
   );
 }
