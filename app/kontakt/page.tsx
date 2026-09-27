@@ -1,4 +1,4 @@
-import { Phone, Mail } from "lucide-react";
+import { Phone, Mail, House } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { Metadata } from "next";
@@ -34,20 +34,36 @@ export default function page() {
               PsychotherapeutInnen (GOP).
             </p>
             <div className="flex flex-col gap-4 my-8">
-              <Link href="tel: 123456789" className="flex items-center gap-4">
+              <Link
+                href="tel:+4917621908630"
+                className="flex items-center gap-4"
+              >
                 <Phone className="shrink-0 size-6 text-sage" />
                 <span className="!cursor-pointer text-lg underline underline-offset-2">
                   {" "}
                   0176/21908630
                 </span>
               </Link>
-              <Link href="mailto:" className="flex items-center gap-4">
+              <Link
+                href="mailto:info@psychotherapie-roehl.de"
+                className="flex items-center gap-4"
+              >
                 <Mail className="shrink-0 size-6 text-sage" />
-                <span className="!cursor-pointer text-lg underline underline-offset-2">
+                <span className="!cursor-pointer lg:text-lg underline underline-offset-2">
                   {" "}
                   info@psychotherapie-roehl.de
                 </span>
               </Link>
+
+      <div className="flex items-start gap-4 col-span-2">
+            <House className="shrink-0 size-6 text-sage" />
+            <div className="lg:text-lg">
+              <p>Praxis am Nussbaumpark</p>
+              <p>z.Hd. Anne Julia Röhl</p>
+              <p>Nußbaumstraße 14, 80336 München</p>
+            </div>
+
+          </div>
             </div>
             <p className="max-w-2xl">
               Ich bemühe mich, Ihre Anfrage zeitnah zu beantworten und einen

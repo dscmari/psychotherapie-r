@@ -24,12 +24,10 @@ export default function DesktopNavbar({ className }: Props) {
           </p>
           <p>Psychologische Psychotherapeutin & Psychoonkologin</p>
         </div>
-        <div className="grid grid-cols-2 xl:flex items-center gap-2 xl:gap-4">
+        <div className="grid grid-cols-2 2xl:flex items-center gap-2 2xl:gap-4">
           <div className="flex items-center gap-2 col-span-2">
             <House className="shrink-0 size-4" />
-            <span>
-              c/o Praxis am Nussbaumpark, Nußbaumstraße 14, 80336 München
-            </span>
+            <span>Praxis am Nussbaumpark, z.Hd. Anne Julia Röhl, Nußbaumstraße 14, 80336 München </span>
           </div>
           <div className="flex items-center gap-2 ">
             <Phone className="shrink-0 size-4" />

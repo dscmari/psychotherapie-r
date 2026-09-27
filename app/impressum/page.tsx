@@ -17,8 +17,10 @@ export default function page() {
         <p>Angaben gemäß § 5 DDG</p>
         <div>
           <p>Anne Julia Röhl</p>
-          <p>Psychotherapeutische Praxis</p>
-          <p>c/o Praxis am Nussbaumpark, Nußbaumstraße 14</p>
+          <p>Psychotherapeutische Privatpraxis</p>
+          <p>Praxis am Nussbaumpark</p>
+          <p>z.Hd. Anne Julia Röhl</p>
+          <p>Nußbaumstraße 14</p>
           <p>80336 München</p>
         </div>
         <div>
