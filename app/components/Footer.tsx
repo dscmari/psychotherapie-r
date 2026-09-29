@@ -17,7 +17,8 @@ export default function Footer({ className }: Props) {
             <li>www.psychotherapie-roehl.de</li>
             <li>0176/21908630</li>
             <li>info@psychotherapie-roehl.de</li>
-            <li>c/o Praxis am Nussbaumpark</li>
+            <li>Praxis am Nussbaumpark</li>
+            <li>z.Hd. Anne Julia Röhl</li>
             <li>Nußbaumstraße 14</li>
             <li>80336 München</li>
           </ul>
