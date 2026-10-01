@@ -172,9 +172,13 @@ span {
   list-style: disc;
   padding-left: 1rem;
   color: var(--color-custom-blue);
+  margin-bottom: 1rem; 
+}
+.sanity-container li {
+  margin-top: 1rem;
 }
 
-/* @media (prefers-color-scheme: dark) {
+ @media (prefers-color-scheme: dark) {
   .sanity p,
   .sanity h1,
   .sanity h2,
@@ -184,7 +188,7 @@ span {
   .sanity li {
     color: var(--color-darkmode-white);
   }
-} */
+} 
 
 /* darkkmode */
 @media (prefers-color-scheme: dark) {

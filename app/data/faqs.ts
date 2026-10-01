@@ -57,6 +57,39 @@ export const faqsHome = [
   }
 ];
 
+export const faqsVerhaltenstherapie = [
+  {
+    id: "faq-vt-1",
+    question: "Was ist Verhaltenstherapie?",
+    answer:
+      "Die Verhaltenstherapie ist ein wissenschaftlich anerkanntes Psychotherapieverfahren zur Behandlung psychischer und psychosomatischer Beschwerden. Im Mittelpunkt stehen die Zusammenhänge zwischen Gedanken, Gefühlen und Verhalten. Gemeinsam werden belastende Muster verstanden und konkrete Möglichkeiten entwickelt, um langfristig Veränderungen im Alltag zu erreichen."
+  },
+  {
+    id: "faq-vt-2",
+    question: "Bei welchen Beschwerden kann eine Verhaltenstherapie sinnvoll sein?",
+    answer:
+      "Eine Verhaltenstherapie kann unter anderem bei Depressionen, Ängsten und Panik, Zwangserkrankungen, Erschöpfung und Stress, Selbstwertproblemen sowie psychosomatischen Beschwerden eingesetzt werden. Auch bei persönlichen Krisen oder wiederkehrenden belastenden Verhaltens- und Beziehungsmustern kann eine psychotherapeutische Unterstützung sinnvoll sein. Im Erstgespräch wird individuell geklärt, ob eine Verhaltenstherapie für Ihr Anliegen geeignet ist."
+  },
+  {
+    id: "faq-vt-3",
+    question: "Wie läuft eine Verhaltenstherapie in der Privatpraxis ab?",
+    answer:
+      "Zu Beginn steht ein ausführliches Erstgespräch, in dem wir Ihre aktuelle Lebenssituation, Ihre Beschwerden und Ihre persönlichen Anliegen betrachten. Anschließend werden gemeinsam individuelle Therapieziele entwickelt. Die Behandlung orientiert sich an Ihren Bedürfnissen und verbindet das Verständnis der zugrunde liegenden Zusammenhänge mit konkreten therapeutischen Interventionen und der Umsetzung im Alltag."
+  },
+  {
+    id: "faq-vt-4",
+    question: "Wie lange dauert eine Verhaltenstherapie?",
+    answer:
+      "Die Dauer einer Verhaltenstherapie lässt sich nicht pauschal festlegen. Sie hängt unter anderem von der Art und Ausprägung der Beschwerden, der individuellen Lebenssituation und den vereinbarten Therapiezielen ab. Im Therapieverlauf werden die Fortschritte regelmäßig gemeinsam reflektiert und die weitere Behandlung entsprechend angepasst."
+  },
+  {
+    id: "faq-vt-5",
+    question: "Was sollte ich zum ersten Gespräch mitbringen?",
+    answer:
+      "Für das Erstgespräch benötigen Sie keine besondere Vorbereitung. Sie können zunächst in Ruhe schildern, was Sie derzeit belastet und welche Veränderung Sie sich wünschen. Gemeinsam klären wir anschließend, welche therapeutischen Möglichkeiten bestehen und ob die Rahmenbedingungen für eine vertrauensvolle Zusammenarbeit passen. Falls bereits relevante Befunde oder Vorberichte vorliegen, können Sie diese gerne mitbringen."
+  }
+];
+
 export const faqsTrauma = [
   {
     id: "faq-1",

@@ -83,24 +83,25 @@ export default async function PostPage({
   const postImageUrl_5 = getImageUrl(post.image_5, 800, 500);
 
   return (
-    <main className="sanity-container">
+    <main className="sanity-container dark:bg-darkblue">
       <Link
         href="/blog/"
-        className="hidden lg:block mt-4 px-4  md:mt-8 md:px-8 lg:px-16 lg:px-32 font-light text-sm dark:text-custom-white"
+        className="hidden lg:block pt-4 px-4 lg:px-32 font-light text-sm"
       >
-        <ArrowLeft className="size-10 text-neutral-500" />
+        <ArrowLeft className="size-10 text-stone dark:text-stone-light" />
       </Link>
-      <article className="flex flex-col items-center max-w-4xl mx-4 lg:mx-auto max-w-3xl">
+      <article className="flex flex-col items-center max-w-4xl lg:mx-auto">
         {postImageUrl && (
           <Image
             src={postImageUrl}
             alt={post.title}
             width={800}
             height={500}
-            className="rounded-xl mt-16 "
+            className="lg:rounded-xl mt-16"
           />
         )}
-        <h1 className="mt-4 lg:mt-8 text-center">{post.title}</h1>
+        <div className="mx-4 lg:mx-0">
+ <h1 className="mt-4 lg:mt-8 text-center">{post.title}</h1>
         <p className="text-sm font-light text-center">
           {new Date(post.publishedAt).toLocaleDateString("de-DE", {
             day: "2-digit",
@@ -159,6 +160,8 @@ export default async function PostPage({
         <div className="mt-4 lg:mt-8 lg:px-16 sanity-text">
           {Array.isArray(post.body_5) && <PortableText value={post.body_5} />}
         </div>
+        </div>
+       
       </article>
     </main>
   );

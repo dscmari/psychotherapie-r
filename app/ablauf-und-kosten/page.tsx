@@ -10,14 +10,15 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Ablauf und Kosten für Psychotherapie in München",
-  description: "Übersicht zu Ablauf und Kosten der Therapie in München | Pychologische Psychotherapeutin & Psychoonkologin Anne Julia Röhl",
-    alternates: {
+  description:
+    "Übersicht zu Ablauf und Kosten der Therapie in München | Pychologische Psychotherapeutin & Psychoonkologin Anne Julia Röhl",
+  alternates: {
     canonical: "https://psychotherapie-roehl.de/ablauf-und-kosten/",
   },
-}
+};
 
 export default function page() {
-  const { title, subtitle, text_1, text_2} = ablaufKostenHero;
+  const { title, subtitle, text_1, text_2 } = ablaufKostenHero;
   return (
     <main>
       <section className="px-4 md: lg:px-32 lg:pt-32 dark:py-8 dark:md:py-16 dark:lg:py-32">
@@ -126,14 +127,14 @@ export default function page() {
                 Krankenkassen abrechnen. Wenn Sie gesetzlich versichert sind,
                 besteht jedoch die Möglichkeit, bei Ihrer gesetzlichen
                 Krankenkasse einen Antrag auf eine Kostenerstattungsverfahren zu
-                stellen. Weitere Informationen hierzu finden Sie{" "}
+                stellen. Weitere Informationen zum{" "}
                 <Link
-                  href="https://www.ptk-bayern.de/ptk/web.nsf/id/li_veranstaltungkostenerstattung2018.html"
-                  className="text-sage-dark underline underline-offset-2"
+                  href="https://www.therapie.de/psyche/info/fragen/wichtigste-fragen/psychotherapie-kostenerstattung/"
+                  className="text-sage-dark underline underline-offset-2 font-semibold"
+                  target="blank_"
                 >
-                  hier
+                  Formular zur Kostenerstattung der PTK Bayern finden Sie hier.
                 </Link>
-                .
               </p>
             </div>
           </div>

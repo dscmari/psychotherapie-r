@@ -102,7 +102,7 @@ export default function Home() {
         <div className="flex gap-4 ">
           <div className="mx-auto">
             <Image
-              src={"/images/portraits/40145-1171_squooshed.jpg"}
+              src={"/images/G-F2_sqooshed.jpg"}
               width={600}
               height={300}
               alt="Bild der Psychotherapiepraxis von Psychotherapeutin Anne Julia Röhl"
@@ -243,7 +243,7 @@ export default function Home() {
             über das Kostenerstattungsverfahren anteilig von Ihrer gesetzlichen
             Krankenkasse erstattet zu bekommen. Mehr zum{" "}
             <Link
-              href="https://www.ptk-bayern.de/ptk/web.nsf/id/li_veranstaltungkostenerstattung2018.html"
+              href="https://www.therapie.de/psyche/info/fragen/wichtigste-fragen/psychotherapie-kostenerstattung/"
               className="text-sage-dark underline underline-offset-2 font-semibold"
               target="blank_"
             >

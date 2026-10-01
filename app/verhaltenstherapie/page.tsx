@@ -7,11 +7,14 @@ import ContactBtn from "../components/btns/ContactBtn";
 import TopicBtn from "../components/btns/TopicBtn";
 import ScrollToTopBtn from "../components/btns/ScrollToTopBtn";
 import { Metadata } from "next";
+import { faqsVerhaltenstherapie } from "../data/faqs";
+import Accordeon from "../components/Accordeon";
 
 export const metadata: Metadata = {
   title: "Verhaltenstherapie | Psychotherapie in München",
-  description:"Privatpraxis für Psychotherapie | Psychologische Psychotherapeutin & Psychoonkologin Anne Julia Röhl",
-    alternates: {
+  description:
+    "Privatpraxis für Psychotherapie | Psychologische Psychotherapeutin & Psychoonkologin Anne Julia Röhl",
+  alternates: {
     canonical: "https://psychotherapie-roehl.de/verhaltenstherapie/",
   },
 };
@@ -78,14 +81,14 @@ export default function page() {
               ))}
             </ul>
           </div>
-               <div className="flex lg:hidden flex-col items-center gap-4 lg:flex-row mt-8">
-              <ContactBtn className="w-full lg:w-44 mx-4 lg:mx-0 " />
-              <TopicBtn
-                className="w-full lg:w-52 mx-4 lg:mx-0 "
-                text={`Online Psychotherapie`}
-                path={`/online-psychotherapie/`}
-              />
-            </div>
+          <div className="flex lg:hidden flex-col items-center gap-4 lg:flex-row mt-8">
+            <ContactBtn className="w-full lg:w-44 mx-4 lg:mx-0 " />
+            <TopicBtn
+              className="w-full lg:w-52 mx-4 lg:mx-0 "
+              text={`Online Psychotherapie`}
+              path={`/online-psychotherapie/`}
+            />
+          </div>
         </div>
       </section>
       <section className="pt-12 lg:pt-32 px-4 md:px-16 lg:px-32 ">
@@ -101,8 +104,14 @@ export default function page() {
           auf.
         </p>
       </section>
-           <section className="py-12 lg:py-32 px-4 md:px-16 lg:px-32 "></section>
-         <ScrollToTopBtn />
+      <section className="py-24 lg:py-48 px-4 md:px-16 lg:px-32 ">
+        <h1 className="text-center">
+          Häufig gestellte Fragen zur Verhaltenstherpie
+        </h1>
+        <Accordeon faqs={faqsVerhaltenstherapie} className="mt-8 lg:mt-16" />
+      </section>
+      <section className="py-12 lg:py-32 px-4 md:px-16 lg:px-32 "></section>
+      <ScrollToTopBtn />
     </main>
   );
 }
