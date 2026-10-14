@@ -247,7 +247,7 @@ export default function Home() {
               className="text-sage-dark underline underline-offset-2 font-semibold"
               target="blank_"
             >
-              Formular zur Kostenerstattung der PTK Bayern erfahren Sie hier.
+              Formular zur Kostenerstattung erfahren Sie hier.
             </Link>
           </p>
           <div className="flex flex-col lg:flex-row items-center gap-4 mt-4">
