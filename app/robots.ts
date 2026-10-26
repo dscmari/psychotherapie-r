@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://www.gabrielakramer.de/sitemap.xml',
+    sitemap: 'https://www.psychotherapie-roehl.de/sitemap.xml',
   }
 }
