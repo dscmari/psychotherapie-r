@@ -74,7 +74,8 @@ export default async function Blog() {
                 className="flex gap-2 pt-4 items-center text-sm font-semibold"
                 target="_blank"
               >
-                Zum Post
+                
+                Zum Post 
                 <SquareArrowOutUpRight className="shrink-0 text-sage-brown" />
               </Link>
             </div>
