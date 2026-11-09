@@ -5,11 +5,7 @@ import TopicBtn from "../components/btns/TopicBtn";
 import ScrollToTopBtn from "../components/btns/ScrollToTopBtn";
 import Link from "next/link";
 import { Metadata } from "next";
-import {
-  CircleSmall,
-  Eye,
-  HeartHandshake,
-} from "lucide-react";
+import { CircleSmall, Eye, HeartHandshake } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "EMDR im Rahmen der Psychotherapie in München",
@@ -124,13 +120,11 @@ export default function page() {
                   <ContactBtn className="w-full lg:w-44 mx-4 lg:mx-0 " />
                   <TopicBtn
                     className="w-full lg:w-52 mx-4 lg:mx-0 "
-                    text={`Online Psychotherapie`}
-                    path={`/online-psychotherapie/`}
+                    text={`Ablauf und Kosten`}
+                    path={`/ablauf-und-kosten/`}
                   />
                 </div>
               </div>
-
-              {/* <ContactBtn text={contactBtn.text} className="md:w-64 hidden md:flex" /> */}
             </div>
             <div className="xl:flex-1 grid md:grid-cols-2 xl:grid-cols-1 gap-4">
               {issues.map((e, index) => (
@@ -143,15 +137,66 @@ export default function page() {
                 </div>
               ))}
             </div>
-            {/* <ContactBtn text={contactBtn.text} className="md:hidden mt-12" /> */}
           </div>
           <div className="flex flex-col lg:flex-row xl:hidden items-center gap-4 mt-8">
             <ContactBtn className="w-full lg:w-44 mx-4 lg:mx-0 " />
             <TopicBtn
               className="w-full lg:w-52 mx-4 lg:mx-0 "
-              text={`Online Psychotherapie`}
-              path={`/online-psychotherapie/`}
+              text={`Ablauf und Kosten`}
+              path={`/ablauf-und-kosten/`}
             />
+          </div>
+        </div>
+      </section>
+      <section className="px-4 sm:px-16 xl:px-32 pt-24 lg:pt-32 xl:pt-48">
+        <h1>Wie läuft eine EMDR-Behandlung ab?</h1>
+        <p className="max-w-3xl">
+          Die EMDR-Behandlung erfolgt in mehreren aufeinander aufbauenden
+          Schritten und wird individuell an Ihre Bedürfnisse und Ihre
+          persönliche Belastbarkeit angepasst.
+        </p>
+        <div className="grid lg:grid-cols-2 gap-4 md:gap-8 lg:gap-16 mt-4 lg:mt-16 max-w-7xl">
+          <div className="md:pb-8 md:border-b-3 border-stone-300 lg:max-w-xl">
+            <h2 className="!mb-0">1. Erstgespräch und Anamnese</h2>
+            <p className="py-4 ">
+              Zu Beginn besprechen wir Ihre aktuelle Situation, Ihre Beschwerden
+              und Ihre bisherigen Erfahrungen. Gemeinsam klären wir, welche
+              Themen Sie beschäftigen und ob EMDR eine geeignete
+              Behandlungsmethode sein kann.
+            </p>
+          </div>
+          <div className="md:pb-8 md:border-b-3 border-stone-300 lg:max-w-xl">
+            <h2 className="!mb-0">2. Vorbereitung und Stabilisierung</h2>
+
+            <p className="py-4">
+              Bevor belastende Erinnerungen bearbeitet werden, ist es wichtig,
+              eine sichere therapeutische Grundlage zu schaffen. Sie lernen
+              Möglichkeiten kennen, mit aufkommenden Gefühlen und Anspannungen
+              umzugehen. Dabei stehen Ihre Stabilität und Ihr persönliches
+              Wohlbefinden im Vordergrund.
+            </p>
+          </div>
+          <div className="md:pb-8 md:border-b-3 border-stone-300 lg:max-w-xl">
+            <h2 className="!mb-0">3. Bearbeitung belastender Erinnerungen</h2>
+
+            <p className="py-4">
+              Im eigentlichen EMDR-Prozess konzentrieren Sie sich auf eine
+              ausgewählte belastende Erinnerung. Gleichzeitig erfolgt die
+              bilaterale Stimulation, beispielsweise durch geführte
+              Augenbewegungen. Dabei können unterschiedliche Gedanken, Gefühle
+              und Körperempfindungen auftauchen. Die Verarbeitung wird
+              therapeutisch begleitet.
+            </p>
+          </div>
+          <div className="md:pb-8 md:border-b-3 border-stone-300 lg:max-w-xl">
+            <h2 className="!mb-0">4. Integration und Abschluss</h2>
+            <p className="py-4">
+              Im weiteren Verlauf wird die Veränderung der emotionalen Belastung
+              betrachtet. Ziel ist, dass Sie die Erinnerung zunehmend mit mehr
+              innerem Abstand und weniger emotionalem Leidensdruck betrachten
+              können. Die Sitzung wird mit ausreichend Zeit für Stabilisierung
+              und einen sicheren Abschluss beendet.
+            </p>
           </div>
         </div>
       </section>
