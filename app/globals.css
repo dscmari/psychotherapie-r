@@ -10,6 +10,7 @@
   --color-sage-brown: oklch(55% 0.16 445);
   --color-cta: oklch(64.6% 0.222 41.116); /* cta */
   --color-darkblue: oklch(39.1% 0.09 240.876); /* darkmode: sky-900 */
+  --breakpoint-3xl: 112rem;
 }
 
 html {

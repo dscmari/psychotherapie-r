@@ -169,6 +169,11 @@ export default function Navbar({ className }: Props) {
                     Psychotherapy in English 🇬🇧
                   </Link>
                 </div>
+                     <div className="pb-1 border-b-2 border-slate-200 w-full flex justify-start">
+                  <Link href={"/emdr/"} className="text-right">
+                    EMDR
+                  </Link>
+                </div>
 
                 <ContactBtn className="mx-auto mt-8 w-full" />
               </div>

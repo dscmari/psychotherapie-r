@@ -27,7 +27,10 @@ export default function DesktopNavbar({ className }: Props) {
         <div className="grid grid-cols-2 2xl:flex items-center gap-2 2xl:gap-4">
           <div className="flex items-center gap-2 col-span-2">
             <House className="shrink-0 size-4" />
-            <span>Praxis am Nussbaumpark, z.Hd. Anne Julia Röhl, Nußbaumstraße 14, 80336 München </span>
+            <span>
+              Praxis am Nussbaumpark, z.Hd. Anne Julia Röhl, Nußbaumstraße 14,
+              80336 München{" "}
+            </span>
           </div>
           <div className="flex items-center gap-2 ">
             <Phone className="shrink-0 size-4" />
@@ -50,7 +53,7 @@ export default function DesktopNavbar({ className }: Props) {
           </span>
         </Link>
         {/* <ShiftingDropDown /> */}
-        <div className="lg:hidden 2xl:flex flex-col gap-2 !font-lora">
+        <div className="lg:hidden 3xl:flex flex-col gap-2 !font-lora">
           <div className="flex gap-4 xl:gap-8 2xl:gap-16">
             <Link
               className={`nav-link ${pathname === "/verhaltenstherapie/" ? "active" : ""}`}
@@ -109,13 +112,19 @@ export default function DesktopNavbar({ className }: Props) {
             >
               Blog
             </Link>
+            <Link
+              className={`nav-link ${pathname === "/emdr/" ? "active" : ""}`}
+              href={"/emdr/"}
+            >
+              EMDR
+            </Link>
           </div>
         </div>
         <div className="flex items-center gap-8">
           <ContactBtn />
         </div>
       </div>
-      <div className="bg-sage/40 p-4 2xl:hidden gap-2 !font-lora mt-8">
+      <div className="bg-sage/40 p-4 3xl:hidden gap-2 !font-lora mt-8">
         <div className="flex flex-wrap xl:max-w-2/3 gap-x-16 gap-y-4">
           <Link
             className={`nav-link ${pathname === "/verhaltenstherapie/" ? "active" : ""}`}
@@ -171,6 +180,12 @@ export default function DesktopNavbar({ className }: Props) {
             href={"/blog/"}
           >
             Blog
+          </Link>
+          <Link
+            className={`nav-link ${pathname === "/emdr/" ? "active" : ""}`}
+            href={"/emdr/"}
+          >
+            EMDR
           </Link>
         </div>
       </div>
