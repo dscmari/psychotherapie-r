@@ -6,6 +6,9 @@ import ScrollToTopBtn from "../components/btns/ScrollToTopBtn";
 import Link from "next/link";
 import { Metadata } from "next";
 import { CircleSmall, Eye, HeartHandshake } from "lucide-react";
+import Hero from "../components/Hero";
+import Accordeon from "../components/Accordeon";
+import { faqsVerhaltenstherapie } from "../data/faqs";
 
 export const metadata: Metadata = {
   title: "EMDR im Rahmen der Psychotherapie in München",
@@ -15,7 +18,7 @@ export const metadata: Metadata = {
 };
 
 export default function page() {
-  const { title, subtitle, text_1, text_2 } = emdrHero;
+  const { title, subtitle, text_1, text_2, btn, imgPath } = emdrHero;
   const issues = [
     {
       title: "Traumatische Erlebnisse",
@@ -39,8 +42,16 @@ export default function page() {
     },
   ];
   return (
-    <main>
-      <section className="px-4 md: lg:px-32 lg:pt-32 dark:py-8 dark:md:py-16 dark:lg:py-32">
+    <div>
+      <Hero
+        title={title}
+        subtitle={subtitle}
+        text_1={text_1}
+        text_2={text_2}
+        btn={btn}
+        imgPath={imgPath}
+      />
+      {/* <section className="px-4 md: lg:px-32 lg:pt-32 dark:py-8 dark:md:py-16 dark:lg:py-32">
         <div className="lg:flex-1 lg:flex flex-col">
           <p className="hidden lg:block xl:hidden mt-4">{text_2}</p>
         </div>
@@ -60,16 +71,16 @@ export default function page() {
             />
           </div>
         </div>
-      </section>
+      </section> */}
       <section className="px-4 sm:px-16 xl:px-32 pt-24 lg:pt-32 xl:pt-48 flex flex-col items-center">
         <h2 className="text-center"> Methode</h2>
-        <h1 className="text-center">
+        <h1 className="md:text-center">
           EMDR in der Psychotherapeutischen Praxis in München
         </h1>
 
         <div className="grid lg:grid-cols-2 gap-4 md:gap-8 lg:gap-16 mt-4 lg:mt-16">
           <div className="md:pb-8 md:border-b-3 border-stone-300">
-            <div className="flex items-center gap-4 text-stone">
+            <div className="flex items-center gap-4 text-stone dark:text-stone-light">
               <Eye className="shrink-0" />
               <h2 className="!mb-0">Geführte Augenbewegungen</h2>
             </div>
@@ -83,7 +94,7 @@ export default function page() {
             </p>
           </div>
           <div className="md:border-b-3 border-stone-300">
-            <div className="flex items-center gap-4 text-stone">
+            <div className="flex items-center gap-4 text-stone dark:text-stone-light">
               <HeartHandshake className="shrink-0" />
               <h2 className="!mb-0">Traumaverarbeitung stützen</h2>
             </div>
@@ -200,7 +211,28 @@ export default function page() {
           </div>
         </div>
       </section>
+      <section className="py-24 lg:py-48 px-4 md:px-16 lg:px-32 ">
+        <h1 className="text-center">Häufig gestellte Fragen zu EMDR</h1>
+        <Accordeon faqs={faqsVerhaltenstherapie} className="mt-8 lg:mt-16" />
+        <p className="max-w-3xl text-center pt-12 lg:pt-24 mx-auto">
+          Belastende Erfahrungen müssen nicht dauerhaft bestimmen, wie wir uns
+          fühlen und unser Leben gestalten. In einem geschützten und
+          wertschätzenden therapeutischen Rahmen können wir gemeinsam schauen,
+          welche Unterstützung für Sie hilfreich ist. Gerne informiere ich Sie
+          in einem persönlichen Gespräch über die Möglichkeiten einer
+          EMDR-Behandlung.
+        </p>
+        <div className="flex flex-col lg:flex-row items-center gap-4 mt-8 justify-center">
+          <ContactBtn className="w-full lg:w-44 mx-4 lg:mx-0 " />
+          <TopicBtn
+            className="w-full lg:w-52 mx-4 lg:mx-0 "
+            text={`Ablauf und Kosten`}
+            path={`/ablauf-und-kosten/`}
+          />
+        </div>
+      </section>
+      <section className="py-12 lg:py-32 px-4 md:px-16 lg:px-32 "></section>
       <ScrollToTopBtn />
-    </main>
+    </div>
   );
 }

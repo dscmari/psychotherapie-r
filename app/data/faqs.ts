@@ -274,4 +274,37 @@ export const faqsEnglishPsychotherapy = [
     answer:
       "The initial consultation gives us an opportunity to get to know each other, discuss your concerns, and see whether working together feels right for you. You are welcome to ask any questions you may have about psychotherapy in English."
   }
+]
+
+export const faqsEmdr = [
+  {
+    id: "faq-emdr-1",
+    question: "Was bedeutet EMDR und wie wirkt die Methode?",
+    answer:
+      "EMDR steht für „Eye Movement Desensitization and Reprocessing“, übersetzt etwa Desensibilisierung und Verarbeitung durch Augenbewegungen. Die Methode wurde von der amerikanischen Psychologin Francine Shapiro entwickelt. Bei EMDR werden belastende Erinnerungen mit einer gleichzeitigen bilateralen Stimulation verbunden. Dabei werden beispielsweise die Augen abwechselnd nach rechts und links bewegt. Die Methode soll die Verarbeitung von Erinnerungen unterstützen, sodass diese weniger stark emotional belasten. Die genaue Wirkweise wird wissenschaftlich weiterhin untersucht."
+  },
+  {
+    id: "faq-emdr-2",
+    question: "Muss ich mein traumatisches Erlebnis ausführlich erzählen?",
+    answer:
+      "Nein. Sie müssen nicht jedes Detail eines belastenden Erlebnisses schildern. Für die EMDR-Behandlung ist es wichtig, dass Sie sich auf bestimmte Aspekte der Erinnerung konzentrieren können. Wie viel Sie erzählen möchten, entscheiden Sie gemeinsam mit Ihrer Therapeutin oder Ihrem Therapeuten. Dabei wird stets auf Ihr individuelles Tempo und Ihr Sicherheitsgefühl geachtet."
+  },
+  {
+    id: "faq-emdr-3",
+    question: "Ist eine EMDR-Behandlung belastend oder unangenehm?",
+    answer:
+      "Während der Bearbeitung können vorübergehend intensive Gefühle, Gedanken oder Körperempfindungen auftreten. Das ist Teil des Verarbeitungsprozesses. Deshalb findet die Behandlung in einem geschützten therapeutischen Rahmen statt. Sie können jederzeit eine Pause einlegen oder die Bearbeitung unterbrechen. Eine gute Vorbereitung und Stabilisierung sind wichtige Voraussetzungen."
+  },
+  {
+    id: "faq-emdr-4",
+    question: "Wie viele EMDR-Sitzungen sind notwendig?",
+    answer:
+      "Die Anzahl der Sitzungen ist individuell unterschiedlich. Sie hängt unter anderem von der Art der Belastung, der persönlichen Lebensgeschichte und den vorhandenen Ressourcen ab. Manchmal kann bereits die Bearbeitung eines einzelnen Ereignisses hilfreich sein. Bei komplexeren oder länger zurückliegenden Belastungen kann eine längere therapeutische Begleitung sinnvoll sein."
+  },
+  {
+    id: "faq-emdr-5",
+    question: "Ist EMDR für jeden Menschen geeignet?",
+    answer:
+      "Nicht jede psychische Belastung und nicht jede Lebenssituation eignet sich gleichermaßen für EMDR. Vor Beginn der Behandlung wird deshalb sorgfältig geprüft, ob die Methode sinnvoll und angemessen ist. Insbesondere bei starker psychischer Instabilität oder komplexen Traumatisierungen kann zunächst eine stabilisierende therapeutische Begleitung erforderlich sein."
+  }
 ];

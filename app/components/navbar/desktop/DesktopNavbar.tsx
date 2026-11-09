@@ -125,7 +125,7 @@ export default function DesktopNavbar({ className }: Props) {
         </div>
       </div>
       <div className="bg-sage/40 p-4 3xl:hidden gap-2 !font-lora mt-8">
-        <div className="flex flex-wrap xl:max-w-2/3 gap-x-16 gap-y-4">
+        <div className="flex flex-wrap xl:max-w-3/4 gap-x-16 gap-y-4">
           <Link
             className={`nav-link ${pathname === "/verhaltenstherapie/" ? "active" : ""}`}
             href={"/verhaltenstherapie/"}
