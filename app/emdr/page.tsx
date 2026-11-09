@@ -2,15 +2,11 @@ import { emdrHero } from "../data/hero";
 import Image from "next/image";
 import ContactBtn from "../components/btns/ContactBtn";
 import TopicBtn from "../components/btns/TopicBtn";
-import Process from "../components/Process";
-import { processCircles } from "../data/process";
 import ScrollToTopBtn from "../components/btns/ScrollToTopBtn";
 import Link from "next/link";
 import { Metadata } from "next";
 import {
-  Circle,
   CircleSmall,
-  Diamond,
   Eye,
   HeartHandshake,
 } from "lucide-react";
@@ -108,7 +104,7 @@ export default function page() {
       <section className="pt-24 lg:pt-32 xl:pt-48 px-4 md:px-16 lg:px-32">
         <div className="flex flex-col xl:flex-row gap-12 xl:gap-16">
           <div
-            className={`flex flex-col xl:flex-row gap-8 xl:gap-16 2xl:gap-32  md:py-16 lg:pt-0`}
+            className={`flex flex-col xl:flex-row gap-8 xl:gap-16 2xl:gap-32`}
           >
             <div className="xl:flex-1">
               <h1 className="max-w-lg">Wann kann EMDR helfen?</h1>
@@ -124,7 +120,7 @@ export default function page() {
                   Ob EMDR für Ihr persönliches Anliegen geeignet ist, wird im
                   Rahmen eines therapeutischen Gesprächs gemeinsam geklärt.
                 </p>
-                <div className="hidden lg:flex flex-col items-center gap-4 lg:flex-row mt-8">
+                <div className="hidden xl:flex items-center gap-4 lg:flex-row mt-8">
                   <ContactBtn className="w-full lg:w-44 mx-4 lg:mx-0 " />
                   <TopicBtn
                     className="w-full lg:w-52 mx-4 lg:mx-0 "
@@ -136,7 +132,7 @@ export default function page() {
 
               {/* <ContactBtn text={contactBtn.text} className="md:w-64 hidden md:flex" /> */}
             </div>
-            <div className="xl:flex-1 grid md:grid-cols-2 xl:grid-cols-1 gap-4 pb-12 xl:pb-0">
+            <div className="xl:flex-1 grid md:grid-cols-2 xl:grid-cols-1 gap-4">
               {issues.map((e, index) => (
                 <div key={index} className={``}>
                   <div className="flex items-center gap-2">
@@ -149,7 +145,7 @@ export default function page() {
             </div>
             {/* <ContactBtn text={contactBtn.text} className="md:hidden mt-12" /> */}
           </div>
-          <div className="flex lg:hidden flex-col items-center gap-4 lg:flex-row mt-8">
+          <div className="flex flex-col lg:flex-row xl:hidden items-center gap-4 mt-8">
             <ContactBtn className="w-full lg:w-44 mx-4 lg:mx-0 " />
             <TopicBtn
               className="w-full lg:w-52 mx-4 lg:mx-0 "
@@ -158,9 +154,6 @@ export default function page() {
             />
           </div>
         </div>
-      </section>
-      <section className="px-4 sm:px-16 xl:px-32 py-24 lg:py-32 ">
-        {/* <Reimbursement /> */}
       </section>
       <ScrollToTopBtn />
     </main>
