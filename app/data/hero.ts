@@ -62,3 +62,17 @@ export const onlinePsychHero = {
   },
   imgPath: "/images/G-F2_sqooshed.jpg",
 };
+
+export const emdrHero = {
+  title: "EMDR – belastende Erfahrungen verarbeiten und neue Perspektiven entwickeln",
+  subtitle: "Eye Movement Desensitization and Reprocessing",
+  text_1:
+    "Manche Erlebnisse hinterlassen Spuren, die auch lange Zeit später noch unser Denken, Fühlen und Handeln beeinflussen können. Erinnerungen können immer wieder auftauchen, Ängste auslösen oder dazu führen, dass wir uns in bestimmten Situationen unsicher und belastet fühlen.",
+  text_2:
+    "EMDR ist eine wissenschaftlich anerkannte psychotherapeutische Methode, die insbesondere zur Verarbeitung traumatischer und belastender Erfahrungen eingesetzt wird.",
+  btn: {
+    text: "Ablauf und Kosten",
+    className: "lg:!w-60",
+  },
+  imgPath: "/images/G-F2_sqooshed.jpg",
+};
