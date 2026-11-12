@@ -33,6 +33,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: "https://www.psychotherapie-roehl.de/emdr/",
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
       url: "https://www.psychotherapie-roehl.de/psychotherapy-in-english/",
       lastModified: new Date(),
       changeFrequency: "weekly",
