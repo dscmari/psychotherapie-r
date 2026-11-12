@@ -28,3 +28,22 @@ export const onlinePsyCircles = [
     text: "Regelmäßige psychotherapeutischen Sitzungen per Videotelefonie",
   },
 ];
+
+export const emdrCircles= [
+  {
+    title: "Erstgespräch",
+    text: "Besprechung der aktuellen Situation und individuelle Abklärung hinsichtlich EMDR-Anwendung",
+  },
+  {
+    title: "Vorbereitung",
+    text: "Stabilisierung der emotionalen Resilienz und Stärkung ihrer Ressourcen",
+  },
+  {
+    title: "Umsetzung",
+    text: "Therapeutisch begleitete Bearbeitung der belastenden Erinnerung mit Hilfe der EMDR-Methode",
+  },
+    {
+    title: "Abschluss",
+    text: "Betrachtung der Erinnerung mit mehr innerem Abstand und weniger emotionalem Leidensdruck",
+  }
+];

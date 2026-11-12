@@ -40,7 +40,7 @@ export default function Accordeon({ className, faqs }: Props) {
                 <span className="pointer-events-none dark:text-darkmode-white">
                   {faq.question}
                 </span>
-                <ChevronDown className="text-stone dark:text-stone-light shrink-0 transition-transform duration-300 group-has-[:checked]:scale-y-[-1] group-has-[:checked]:text-custom-blue" />
+                <ChevronDown className="text-sage-brown dark:text-stone-light shrink-0 transition-transform duration-300 group-has-[:checked]:scale-y-[-1] group-has-[:checked]:text-custom-blue" />
               </label>
 
               <div className="grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-in-out group-has-[:checked]:grid-rows-[1fr]">

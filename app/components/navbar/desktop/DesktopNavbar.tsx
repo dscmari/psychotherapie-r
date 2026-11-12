@@ -125,7 +125,7 @@ export default function DesktopNavbar({ className }: Props) {
         </div>
       </div>
       <div className="bg-sage/40 p-4 3xl:hidden gap-2 !font-lora mt-8">
-        <div className="flex flex-wrap xl:max-w-3/4 gap-x-16 gap-y-4">
+        <div className="flex flex-wrap gap-x-16 gap-y-4">
           <Link
             className={`nav-link ${pathname === "/verhaltenstherapie/" ? "active" : ""}`}
             href={"/verhaltenstherapie/"}
@@ -144,7 +144,18 @@ export default function DesktopNavbar({ className }: Props) {
           >
             Traumatherapie
           </Link>
-
+          <Link
+            className={`nav-link ${pathname === "/blog/" ? "active" : ""}`}
+            href={"/blog/"}
+          >
+            Blog
+          </Link>
+          <Link
+            className={`nav-link ${pathname === "/emdr/" ? "active" : ""}`}
+            href={"/emdr/"}
+          >
+            EMDR
+          </Link>
           <Link
             className={`nav-link lg:hidden 2xl:inline-block ${pathname === "/ausbildung-und-qualifikation/" ? "active" : ""}`}
             href={"/ausbildung-und-qualifikation/"}
@@ -175,18 +186,7 @@ export default function DesktopNavbar({ className }: Props) {
           >
             Ablauf & Kosten
           </Link>
-          <Link
-            className={`nav-link ${pathname === "/blog/" ? "active" : ""}`}
-            href={"/blog/"}
-          >
-            Blog
-          </Link>
-          <Link
-            className={`nav-link ${pathname === "/emdr/" ? "active" : ""}`}
-            href={"/emdr/"}
-          >
-            EMDR
-          </Link>
+
         </div>
       </div>
     </nav>

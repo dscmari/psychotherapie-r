@@ -8,7 +8,10 @@ import { Metadata } from "next";
 import { CircleSmall, Eye, HeartHandshake } from "lucide-react";
 import Hero from "../components/Hero";
 import Accordeon from "../components/Accordeon";
-import { faqsVerhaltenstherapie } from "../data/faqs";
+import { faqsEmdr, faqsVerhaltenstherapie } from "../data/faqs";
+import Process from "../components/Process";
+import { emdrCircles, onlinePsyCircles } from "../data/process";
+import Process4Circles from "../components/Process4Circles";
 
 export const metadata: Metadata = {
   title: "EMDR im Rahmen der Psychotherapie in München",
@@ -72,7 +75,7 @@ export default function page() {
           </div>
         </div>
       </section> */}
-      <section className="px-4 sm:px-16 xl:px-32 pt-24 lg:pt-32 xl:pt-48 flex flex-col items-center">
+      <section className="px-4 sm:px-8 md:px-16 xl:px-32 pt-24 lg:pt-32 xl:pt-48 flex flex-col items-center">
         <h2 className="text-center"> Methode</h2>
         <h1 className="md:text-center">
           EMDR in der Psychotherapeutischen Praxis in München
@@ -108,7 +111,7 @@ export default function page() {
           </div>
         </div>
       </section>
-      <section className="pt-24 lg:pt-32 xl:pt-48 px-4 md:px-16 lg:px-32">
+      <section className="pt-24 lg:pt-32 xl:pt-48 px-4 sm:px-8 md:px-16 lg:px-32">
         <div className="flex flex-col xl:flex-row gap-12 xl:gap-16">
           <div
             className={`flex flex-col xl:flex-row gap-8 xl:gap-16 2xl:gap-32`}
@@ -159,14 +162,25 @@ export default function page() {
           </div>
         </div>
       </section>
-      <section className="px-4 sm:px-16 xl:px-32 pt-24 lg:pt-32 xl:pt-48">
-        <h1>Wie läuft eine EMDR-Behandlung ab?</h1>
-        <p className="max-w-3xl">
+      <section className="px-4 sm:px-8 md:px-16 xl:px-32 pt-24 lg:pt-32 xl:pt-48">
+        <h1 className="text-center">Wie läuft eine EMDR-Behandlung ab?</h1>
+        <p className="max-w-3xl md:text-center md:mx-auto">
           Die EMDR-Behandlung erfolgt in mehreren aufeinander aufbauenden
           Schritten und wird individuell an Ihre Bedürfnisse und Ihre
           persönliche Belastbarkeit angepasst.
         </p>
-        <div className="grid lg:grid-cols-2 gap-4 md:gap-8 lg:gap-16 mt-4 lg:mt-16 max-w-7xl">
+        <Image
+          src={"/images/emdrProcess.png"}
+          width={1000}
+          height={800}
+          alt="Portraitbild von Psychotherapeutin Anne Julia Röhl"
+          className="hidden md:block 2xl:hidden mx-auto"
+        />
+        <Process4Circles
+          circles={emdrCircles}
+          className="md:hidden 2xl:block"
+        />
+        <div className="grid lg:grid-cols-2 gap-4 md:gap-8 lg:gap-16 mt-4 lg:mt-16 max-w-7xl mx-auto 2xl:pt-12">
           <div className="md:pb-8 md:border-b-3 border-stone-300 lg:max-w-xl">
             <h2 className="!mb-0">1. Erstgespräch und Anamnese</h2>
             <p className="py-4 ">
@@ -211,9 +225,9 @@ export default function page() {
           </div>
         </div>
       </section>
-      <section className="py-24 lg:py-48 px-4 md:px-16 lg:px-32 ">
+      <section className="py-24 lg:py-48 px-4 sm:px-8 md:px-16 lg:px-32 ">
         <h1 className="text-center">Häufig gestellte Fragen zu EMDR</h1>
-        <Accordeon faqs={faqsVerhaltenstherapie} className="mt-8 lg:mt-16" />
+        <Accordeon faqs={faqsEmdr} className="mt-8 lg:mt-16" />
         <p className="max-w-3xl text-center pt-12 lg:pt-24 mx-auto">
           Belastende Erfahrungen müssen nicht dauerhaft bestimmen, wie wir uns
           fühlen und unser Leben gestalten. In einem geschützten und

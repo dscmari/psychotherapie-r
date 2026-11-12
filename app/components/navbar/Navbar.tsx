@@ -144,7 +144,17 @@ export default function Navbar({ className }: Props) {
                 )}
               </AnimatePresence>
               <div className="flex flex-col items-start  gap-4 pb-12 font-semibold text-custom-blue">
-                <div className="pt-4 pb-1 border-b-2 border-slate-200 w-full flex justify-start">
+                             <div className="pt-4 pb-1 border-b-2 border-slate-200 w-full flex justify-start">
+                  <Link href={"/emdr/"} className="text-right">
+                    EMDR
+                  </Link>
+                </div>
+                           <div className="pb-1 border-b-2 border-slate-200 w-full flex justify-start">
+                  <Link href={"/blog/"} className="text-right">
+                    Blog
+                  </Link>
+                </div>
+                <div className="pb-1 border-b-2 border-slate-200 w-full flex justify-start">
                   <Link href={"/ausbildung-und-qualifikation/"} className="text-right">
                     Ausbildung & Qualifikation
                   </Link>
@@ -154,11 +164,7 @@ export default function Navbar({ className }: Props) {
                     Ablauf und Kosten
                   </Link>
                 </div>
-                <div className="pb-1 border-b-2 border-slate-200 w-full flex justify-start">
-                  <Link href={"/blog/"} className="text-right">
-                    Blog
-                  </Link>
-                </div>
+     
                         <div className="pb-1 border-b-2 border-slate-200 w-full flex justify-start">
                   <Link href={"/online-psychotherapie/"} className="text-right">
                     Online Psychotherapie
@@ -169,11 +175,7 @@ export default function Navbar({ className }: Props) {
                     Psychotherapy in English 🇬🇧
                   </Link>
                 </div>
-                     <div className="pb-1 border-b-2 border-slate-200 w-full flex justify-start">
-                  <Link href={"/emdr/"} className="text-right">
-                    EMDR
-                  </Link>
-                </div>
+        
 
                 <ContactBtn className="mx-auto mt-8 w-full" />
               </div>
